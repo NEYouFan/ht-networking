@@ -1,0 +1,12 @@
+{
+   "data": {
+       "accessToken": "11111111-d595-4623-bc23-90f7123bc551",
+       "admin": true,
+       "expireIn": 604800,
+       "refreshToken": "11111111-ac5a-4fda-8c45-4af6341aeb5a",
+       "refreshTokenExpireIn": 2592000,
+       "userName": "测试",
+       "yunxinToken":"11111111-acda-4gda-8cd5-4afd341ded5d"
+   },
+   "code": 200
+}

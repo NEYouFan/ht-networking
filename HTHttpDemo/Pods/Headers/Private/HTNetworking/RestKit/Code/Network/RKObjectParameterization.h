@@ -1,0 +1,1 @@
+../../../../../../../../HTHttp/RestKit/Code/Network/RKObjectParameterization.h

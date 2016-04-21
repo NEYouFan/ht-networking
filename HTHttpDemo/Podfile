@@ -1,0 +1,7 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://git.hz.netease.com/git/open/HTSpecRepo.git'
+
+platform :ios, '7.0'
+pod 'HTNetworking', :path => '../'
+pod 'HTCommonUtility'
+pod 'YYModel'

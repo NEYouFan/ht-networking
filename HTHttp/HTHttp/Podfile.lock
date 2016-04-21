@@ -1,0 +1,85 @@
+PODS:
+  - AFNetworking (2.6.2):
+    - AFNetworking/NSURLConnection (= 2.6.2)
+    - AFNetworking/NSURLSession (= 2.6.2)
+    - AFNetworking/Reachability (= 2.6.2)
+    - AFNetworking/Security (= 2.6.2)
+    - AFNetworking/Serialization (= 2.6.2)
+    - AFNetworking/UIKit (= 2.6.2)
+  - AFNetworking/NSURLConnection (2.6.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.2)
+  - AFNetworking/Security (2.6.2)
+  - AFNetworking/Serialization (2.6.2)
+  - AFNetworking/UIKit (2.6.2):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - CocoaLumberjack (2.0.1):
+    - CocoaLumberjack/Default (= 2.0.1)
+    - CocoaLumberjack/Extensions (= 2.0.1)
+  - CocoaLumberjack/Core (2.0.1)
+  - CocoaLumberjack/Default (2.0.1):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.1):
+    - CocoaLumberjack/Default
+  - Expecta (0.3.1)
+  - FMDB (2.6):
+    - FMDB/standard (= 2.6)
+  - FMDB/standard (2.6)
+  - HTCommonUtility (0.0.1):
+    - CocoaLumberjack (= 2.0.1)
+  - ISO8601DateFormatterValueTransformer (0.6.1):
+    - RKValueTransformers (~> 1.1.0)
+  - OCHamcrest (3.0.1)
+  - OCMock (2.2.4)
+  - ReactiveCocoa (2.1.8):
+    - ReactiveCocoa/Core (= 2.1.8)
+    - ReactiveCocoa/no-arc (= 2.1.8)
+  - ReactiveCocoa/Core (2.1.8):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.1.8)
+  - RKCLLocationValueTransformer (1.1.0):
+    - RKValueTransformers (~> 1.1.0)
+  - RKValueTransformers (1.1.2)
+  - SOCKit (1.1)
+  - Specta (0.2.1)
+  - TransitionKit (2.1.1)
+
+DEPENDENCIES:
+  - AFNetworking (= 2.6.2)
+  - Expecta (= 0.3.1)
+  - FMDB
+  - HTCommonUtility
+  - ISO8601DateFormatterValueTransformer (~> 0.6.0)
+  - OCHamcrest (= 3.0.1)
+  - OCMock (= 2.2.4)
+  - ReactiveCocoa (= 2.1.8)
+  - RKCLLocationValueTransformer (~> 1.1.0)
+  - RKValueTransformers (~> 1.1.0)
+  - SOCKit
+  - Specta (= 0.2.1)
+  - TransitionKit (~> 2.1.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: 7f317038a9710cabfa43ec56396b307b45df72ab
+  CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
+  Expecta: a354d4633409dd9fe8c4f5ff5130426adbe31628
+  FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
+  HTCommonUtility: dd8b506e97450c45da30d84326ba7af5c9e65cba
+  ISO8601DateFormatterValueTransformer: 52da467d6ec899d6aedda8e48280ac92e8ee97e6
+  OCHamcrest: e19857683e4eefab64b878668eac04c2f4567118
+  OCMock: a6a7dc0e3997fb9f35d99f72528698ebf60d64f2
+  ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
+  RKCLLocationValueTransformer: 2cf0ea0fb7cd4bc70c56834fb92abc717c66f982
+  RKValueTransformers: 66ac5e4f077fdbe3496e792d89eeff4c3eb67701
+  SOCKit: c7376ac262bea9115b8f749358f762522a47d392
+  Specta: 15a276a6343867b426d5ed135d5aa4d04123a573
+  TransitionKit: 3a14b6acc7cf2d1dd3e454e24dbad1cfab9a1ef1
+
+COCOAPODS: 0.38.2

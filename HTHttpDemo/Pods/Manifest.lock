@@ -1,0 +1,123 @@
+PODS:
+  - AFDownloadRequestOperation (2.0.1):
+    - AFNetworking (~> 2.0)
+  - AFNetworking (2.6.2):
+    - AFNetworking/NSURLConnection (= 2.6.2)
+    - AFNetworking/NSURLSession (= 2.6.2)
+    - AFNetworking/Reachability (= 2.6.2)
+    - AFNetworking/Security (= 2.6.2)
+    - AFNetworking/Serialization (= 2.6.2)
+    - AFNetworking/UIKit (= 2.6.2)
+  - AFNetworking/NSURLConnection (2.6.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.2)
+  - AFNetworking/Security (2.6.2)
+  - AFNetworking/Serialization (2.6.2)
+  - AFNetworking/UIKit (2.6.2):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - CocoaLumberjack (2.0.1):
+    - CocoaLumberjack/Default (= 2.0.1)
+    - CocoaLumberjack/Extensions (= 2.0.1)
+  - CocoaLumberjack/Core (2.0.1)
+  - CocoaLumberjack/Default (2.0.1):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.1):
+    - CocoaLumberjack/Default
+  - FMDB (2.6):
+    - FMDB/standard (= 2.6)
+  - FMDB/standard (2.6)
+  - HTCommonUtility (0.0.1):
+    - CocoaLumberjack (= 2.0.1)
+  - HTNetworking (0.1.0):
+    - HTNetworking/HT (= 0.1.0)
+    - HTNetworking/HTRestKit (= 0.1.0)
+  - HTNetworking/HT (0.1.0):
+    - HTNetworking/HT/Core (= 0.1.0)
+    - HTNetworking/HTRestKit
+  - HTNetworking/HT/Cache (0.1.0):
+    - FMDB
+    - HTCommonUtility (~> 0.0.1)
+    - HTNetworking/HT/Support
+    - HTNetworking/HTRestKit
+  - HTNetworking/HT/Core (0.1.0):
+    - AFDownloadRequestOperation (~> 2.0)
+    - HTNetworking/HT/Cache
+    - HTNetworking/HT/Freeze
+    - HTNetworking/HT/RACSupport
+    - HTNetworking/HT/Support
+    - HTNetworking/HTRestKit
+  - HTNetworking/HT/Freeze (0.1.0):
+    - HTNetworking/HT/Cache
+    - HTNetworking/HTRestKit
+  - HTNetworking/HT/RACSupport (0.1.0):
+    - HTCommonUtility (~> 0.0.1)
+    - HTNetworking/HT/Support
+    - HTNetworking/HTRestKit
+    - ReactiveCocoa (= 2.1.8)
+  - HTNetworking/HT/Support (0.1.0):
+    - HTCommonUtility (~> 0.0.1)
+    - HTNetworking/HTRestKit
+  - HTNetworking/HTRestKit (0.1.0):
+    - HTNetworking/HTRestKit/Core (= 0.1.0)
+  - HTNetworking/HTRestKit/Core (0.1.0):
+    - HTNetworking/HTRestKit/CoreData
+    - HTNetworking/HTRestKit/Network
+    - HTNetworking/HTRestKit/ObjectMapping
+  - HTNetworking/HTRestKit/CoreData (0.1.0):
+    - HTNetworking/HTRestKit/ObjectMapping
+  - HTNetworking/HTRestKit/Network (0.1.0):
+    - AFNetworking (= 2.6.2)
+    - HTNetworking/HTRestKit/ObjectMapping
+    - HTNetworking/HTRestKit/Support
+    - SOCKit
+  - HTNetworking/HTRestKit/ObjectMapping (0.1.0):
+    - HTNetworking/HTRestKit/Support
+    - ISO8601DateFormatterValueTransformer (~> 0.6.1)
+    - RKValueTransformers (~> 1.1.0)
+  - HTNetworking/HTRestKit/Support (0.1.0):
+    - CocoaLumberjack
+    - TransitionKit (~> 2.1.0)
+  - ISO8601DateFormatterValueTransformer (0.6.1):
+    - RKValueTransformers (~> 1.1.0)
+  - ReactiveCocoa (2.1.8):
+    - ReactiveCocoa/Core (= 2.1.8)
+    - ReactiveCocoa/no-arc (= 2.1.8)
+  - ReactiveCocoa/Core (2.1.8):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.1.8)
+  - RKValueTransformers (1.1.2)
+  - SOCKit (1.1)
+  - TransitionKit (2.1.1)
+  - YYModel (1.0.1)
+
+DEPENDENCIES:
+  - HTCommonUtility
+  - HTNetworking (from `../`)
+  - YYModel
+
+EXTERNAL SOURCES:
+  HTNetworking:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFDownloadRequestOperation: 748a1643423e1ddb23f2178f778087d4f0ae8ac7
+  AFNetworking: 7f317038a9710cabfa43ec56396b307b45df72ab
+  CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
+  FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
+  HTCommonUtility: 5621497b74177eefa80b7c888e9a9eb6bbbd3cb2
+  HTNetworking: d53658a1d892c94b441bf5145bb6dcf1c9ac415f
+  ISO8601DateFormatterValueTransformer: 52da467d6ec899d6aedda8e48280ac92e8ee97e6
+  ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
+  RKValueTransformers: 66ac5e4f077fdbe3496e792d89eeff4c3eb67701
+  SOCKit: c7376ac262bea9115b8f749358f762522a47d392
+  TransitionKit: 3a14b6acc7cf2d1dd3e454e24dbad1cfab9a1ef1
+  YYModel: 794f0820a9a9703615bc166aa8e336abaf422c2b
+
+COCOAPODS: 0.38.2
