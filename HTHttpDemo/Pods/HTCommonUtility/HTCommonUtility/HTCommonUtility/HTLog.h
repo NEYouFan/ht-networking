@@ -34,7 +34,7 @@ void HTLogInit();
  *  会被打印在日志的开头，建议使用module做流程打印
  *
  *  3.log flag,用于和log level做按位与运算，返回为真时才会触发日志打印
- *  HTLog的文档https://git.hz.netease.com/hzzhangping/heartouch/blob/master/docs/%E6%97%A5%E5%BF%97/Lumberjack%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.md
+
  */
 
 /*---------------log level----------------*/

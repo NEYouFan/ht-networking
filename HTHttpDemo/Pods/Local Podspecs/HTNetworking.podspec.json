@@ -8,9 +8,7 @@
     "git": "https://github.com/NEYouFan/HTNetworking.git",
     "tag": "v0.1.0"
   },
-  "authors": {
-    "wlp": "hzwangliping@corp.netease.com"
-  },
+  "authors": "wlp",
   "requires_arc": true,
   "platforms": {
     "ios": "7.0"

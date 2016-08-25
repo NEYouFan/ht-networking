@@ -59,7 +59,6 @@
 #pragma mark - Load Data
 
 - (NSArray *)generateMethodNameList {
-    // 测试Server参见 https://git.hz.netease.com/hzwangliping/TrainingServer
     return @[@"testYYModel",
              @"testYYModelPerformance",
              @"testYYModelUnsupportType",
