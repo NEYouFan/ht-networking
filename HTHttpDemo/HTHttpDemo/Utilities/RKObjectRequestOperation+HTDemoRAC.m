@@ -8,7 +8,7 @@
 
 #import "RKObjectRequestOperation+HTDemoRAC.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
-#import "RestKit.h"
+#import "HTNetworking.h"
 
 @implementation RKObjectRequestOperation (HTDemoRAC)
 

@@ -7,7 +7,7 @@
 //
 
 #import "HTCommentRequest.h"
-#import "NSObject+HTModel.h"
+#import "HTNetworking.h"
 #import "HTComment.h"
 
 @implementation HTCommentRequest

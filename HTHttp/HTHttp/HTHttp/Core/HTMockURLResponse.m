@@ -6,7 +6,7 @@
 //
 //
 
-#import "HTMockURLResponse.h"
+#import <HTHttp/Core/HTMockURLResponse.h>
 
 @implementation HTMockURLResponse
 

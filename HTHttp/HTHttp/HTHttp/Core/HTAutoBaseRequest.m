@@ -7,9 +7,9 @@
 //
 
 #import "HTAutoBaseRequest.h"
-#import "RKObjectManager.h"
+#import <RestKit/Network/RKObjectManager.h>
 #import "NSObject+HTModel.h"
-#import "HTModelProtocol.h"
+#import <HTHttp/Core/HTModelProtocol.h>
 
 @interface HTAutoBaseRequest () <HTModelProtocol>
 

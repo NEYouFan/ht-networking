@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RKObjectRequestOperation+HTRAC.h"
+#import <HTHttp/RACSupport/RKObjectRequestOperation+HTRAC.h>
 
 @class RACSignal;
 @class RKObjectRequestOperation;

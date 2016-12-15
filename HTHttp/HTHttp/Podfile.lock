@@ -1,4 +1,6 @@
 PODS:
+  - AFDownloadRequestOperation (2.0.1):
+    - AFNetworking (~> 2.0)
   - AFNetworking (2.6.2):
     - AFNetworking/NSURLConnection (= 2.6.2)
     - AFNetworking/NSURLSession (= 2.6.2)
@@ -29,11 +31,69 @@ PODS:
   - CocoaLumberjack/Extensions (2.0.1):
     - CocoaLumberjack/Default
   - Expecta (0.3.1)
-  - FMDB (2.6):
-    - FMDB/standard (= 2.6)
-  - FMDB/standard (2.6)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
   - HTCommonUtility (0.0.1):
     - CocoaLumberjack (= 2.0.1)
+  - HTNetworking (0.1.0):
+    - HTNetworking/HT (= 0.1.0)
+    - HTNetworking/HTRestKit (= 0.1.0)
+  - HTNetworking/HT (0.1.0):
+    - HTNetworking/HT/PublicHeaders (= 0.1.0)
+    - HTNetworking/HTRestKit
+  - HTNetworking/HT/Cache (0.1.0):
+    - FMDB
+    - HTCommonUtility (~> 0.0.1)
+    - HTNetworking/HT/Support
+    - HTNetworking/HTRestKit
+  - HTNetworking/HT/Core (0.1.0):
+    - AFDownloadRequestOperation (~> 2.0)
+    - HTNetworking/HT/Cache
+    - HTNetworking/HT/Freeze
+    - HTNetworking/HT/RACSupport
+    - HTNetworking/HT/Support
+    - HTNetworking/HTRestKit
+  - HTNetworking/HT/Freeze (0.1.0):
+    - HTNetworking/HT/Cache
+    - HTNetworking/HTRestKit
+  - HTNetworking/HT/PublicHeaders (0.1.0):
+    - HTNetworking/HT/Core
+    - HTNetworking/HTRestKit
+  - HTNetworking/HT/RACSupport (0.1.0):
+    - HTCommonUtility (~> 0.0.1)
+    - HTNetworking/HT/Support
+    - HTNetworking/HTRestKit
+    - ReactiveCocoa (= 2.1.8)
+  - HTNetworking/HT/Support (0.1.0):
+    - HTCommonUtility (~> 0.0.1)
+    - HTNetworking/HTRestKit
+  - HTNetworking/HTRestKit (0.1.0):
+    - HTNetworking/HTRestKit/Core (= 0.1.0)
+  - HTNetworking/HTRestKit/CocoaLumberjack (0.1.0):
+    - CocoaLumberjack
+    - HTNetworking/HTRestKit/Support
+  - HTNetworking/HTRestKit/Core (0.1.0):
+    - HTNetworking/HTRestKit/CoreData
+    - HTNetworking/HTRestKit/Network
+    - HTNetworking/HTRestKit/ObjectMapping
+  - HTNetworking/HTRestKit/CoreData (0.1.0):
+    - HTNetworking/HTRestKit/ObjectMapping
+  - HTNetworking/HTRestKit/Network (0.1.0):
+    - AFNetworking (= 2.6.2)
+    - HTNetworking/HTRestKit/ObjectMapping
+    - HTNetworking/HTRestKit/Support
+    - SOCKit
+  - HTNetworking/HTRestKit/ObjectMapping (0.1.0):
+    - HTNetworking/HTRestKit/Support
+    - ISO8601DateFormatterValueTransformer (~> 0.6.1)
+    - RKValueTransformers (~> 1.1.0)
+  - HTNetworking/HTRestKit/Search (0.1.0):
+    - HTNetworking/HTRestKit/CoreData
+  - HTNetworking/HTRestKit/Support (0.1.0):
+    - TransitionKit (~> 2.1.0)
+  - HTNetworking/HTRestKit/Testing (0.1.0):
+    - HTNetworking/HTRestKit/Network
   - ISO8601DateFormatterValueTransformer (0.6.1):
     - RKValueTransformers (~> 1.1.0)
   - OCHamcrest (3.0.1)
@@ -46,7 +106,7 @@ PODS:
   - ReactiveCocoa/no-arc (2.1.8)
   - RKCLLocationValueTransformer (1.1.0):
     - RKValueTransformers (~> 1.1.0)
-  - RKValueTransformers (1.1.2)
+  - RKValueTransformers (1.1.3)
   - SOCKit (1.1)
   - Specta (0.2.1)
   - TransitionKit (2.1.1)
@@ -56,6 +116,10 @@ DEPENDENCIES:
   - Expecta (= 0.3.1)
   - FMDB
   - HTCommonUtility
+  - HTNetworking (from `../../`)
+  - HTNetworking/HTRestKit/CocoaLumberjack (from `../../`)
+  - HTNetworking/HTRestKit/Search (from `../../`)
+  - HTNetworking/HTRestKit/Testing (from `../../`)
   - ISO8601DateFormatterValueTransformer (~> 0.6.0)
   - OCHamcrest (= 3.0.1)
   - OCMock (= 2.2.4)
@@ -66,20 +130,26 @@ DEPENDENCIES:
   - Specta (= 0.2.1)
   - TransitionKit (~> 2.1.0)
 
+EXTERNAL SOURCES:
+  HTNetworking:
+    :path: "../../"
+
 SPEC CHECKSUMS:
+  AFDownloadRequestOperation: 748a1643423e1ddb23f2178f778087d4f0ae8ac7
   AFNetworking: 7f317038a9710cabfa43ec56396b307b45df72ab
   CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
   Expecta: a354d4633409dd9fe8c4f5ff5130426adbe31628
-  FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
-  HTCommonUtility: dd8b506e97450c45da30d84326ba7af5c9e65cba
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  HTCommonUtility: 5621497b74177eefa80b7c888e9a9eb6bbbd3cb2
+  HTNetworking: 6313a822bc9b628043b7a6e680f5d448ffcdf733
   ISO8601DateFormatterValueTransformer: 52da467d6ec899d6aedda8e48280ac92e8ee97e6
   OCHamcrest: e19857683e4eefab64b878668eac04c2f4567118
   OCMock: a6a7dc0e3997fb9f35d99f72528698ebf60d64f2
   ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
   RKCLLocationValueTransformer: 2cf0ea0fb7cd4bc70c56834fb92abc717c66f982
-  RKValueTransformers: 66ac5e4f077fdbe3496e792d89eeff4c3eb67701
+  RKValueTransformers: e5ed67e3811229b616fe01bddeeafe3bb337b1b9
   SOCKit: c7376ac262bea9115b8f749358f762522a47d392
   Specta: 15a276a6343867b426d5ed135d5aa4d04123a573
   TransitionKit: 3a14b6acc7cf2d1dd3e454e24dbad1cfab9a1ef1
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

@@ -6,8 +6,8 @@
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
 
-#import "HTBaseRequest+RACSupport.h"
-#import "ReactiveCocoa.h"
+#import <HTHttp/Core/HTBaseRequest+RACSupport.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @implementation HTBaseRequest (RACSupport)
 

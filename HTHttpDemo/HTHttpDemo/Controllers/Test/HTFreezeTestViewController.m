@@ -8,19 +8,15 @@
 
 #import "HTFreezeTestViewController.h"
 #import "RKDemoUserInfo.h"
-#import "RestKit.h"
-#import "HTFreezeManager.h"
-#import "HTHTTPRequestOperation.h"
-#import "HTCacheManager.h"
-#import "NSURLRequest+HTFreeze.h"
-#import "NSURLRequest+HTCache.h"
-#import "NSURLRequest+RKRequest.h"
-#import "HTFrozenRequest.h"
+#import "HTNetworking.h"
+#import <HTNetworking/HTHttp/Freeze/HTFrozenRequest.h>
+#import <HTNetworking/HTHttp/Core/HTHTTPRequestOperation.h>
 #import "HTDemoResponse.h"
-#import "HTCachedResponse.h"
-#import "HTCacheDBHelper.h"
 #import "HTDemoHelper.h"
-#import "HTFreezeRequestHelper.h"
+#import <HTNetworking/HTHttp/Freeze/HTFreezeRequestHelper.h>
+#import <HTNetworking/HTHttp/Cache/HTDatabaseHelper.h>
+#import <HTNetworking/HTHttp/Cache/HTCacheDBHelper.h>
+#import <HTNetworking/RestKit/Network/NSURLRequest+RKRequest.h>
 
 @interface HTFreezeTestViewController () <HTFreezeManagerProtocol>
 

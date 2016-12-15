@@ -8,7 +8,7 @@
 
 #import "HTDemoCacheRequest.h"
 #import "RKDemoUserInfo.h"
-#import "NSObject+HTMapping.h"
+#import "HTNetworking.h"
 
 @implementation HTDemoCacheRequest
 

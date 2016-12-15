@@ -6,7 +6,7 @@
 //  Copyright © 2015年 NetEase. All rights reserved.
 //
 
-#import "HTBaseRequest.h"
+#import "HTNetworking.h"
 
 @class HTAddress;
 

@@ -7,12 +7,12 @@
 //
 
 #import "HTHTTPModel.h"
-#import "HTHttpLog.h"
-#import "RestKit.h"
-#import "RKObjectUtilities.h"
+#import <HTHttp/Support/HTHttpLog.h>
+#import <RestKit/RestKit.h>
+#import <RestKit/ObjectMapping/RKObjectUtilities.h>
 #import <objc/runtime.h>
 #import "NSObject+HTModel.h"
-#import "NSObject+HTMapping.h"
+#import <HTHttp/Core/NSObject+HTMapping.h>
 
 @implementation HTHTTPModel
 

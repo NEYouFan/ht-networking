@@ -6,8 +6,7 @@
 //  Copyright © 2015年 NetEase. All rights reserved.
 //
 
-#import "HTBaseRequest.h"
-#import "HTModelProtocol.h"
+#import "HTNetworking.h"
 
 @class HTArticle;
 @class HTAuthor;

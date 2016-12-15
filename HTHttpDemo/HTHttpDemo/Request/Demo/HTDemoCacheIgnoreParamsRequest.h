@@ -6,7 +6,7 @@
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
 
-#import "HTAutoBaseRequest.h"
+#import "HTNetworking.h"
 
 @interface HTDemoCacheIgnoreParamsRequest : HTAutoBaseRequest
 

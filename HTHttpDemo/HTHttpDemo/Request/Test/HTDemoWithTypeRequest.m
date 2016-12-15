@@ -7,7 +7,7 @@
 //
 
 #import "HTDemoWithTypeRequest.h"
-#import "RKRequestTypes.h"
+#import <HTNetworking/RestKit/Network/RKRequestTypes.h>
 
 @implementation HTDemoWithTypeRequest
 

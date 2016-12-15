@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "HTLogFormatter.h"
 #import "CocoaLumberjack.h"
-#import "RKLog.h"
 #import "HTNetworking.h"
 
 static NSString * const HTDemoBaseUrl = @"http://localhost:3000";

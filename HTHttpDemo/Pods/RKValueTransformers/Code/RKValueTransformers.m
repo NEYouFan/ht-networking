@@ -447,7 +447,7 @@ static BOOL RKVTClassIsCollection(Class aClass)
                     [newInputString appendString:[inputValue substringFromIndex:index]];
                 
                 inputValue = [NSString stringWithString:newInputString];
-                milliseconds = [millisecondsString doubleValue]/1000.f;
+                milliseconds = [millisecondsString doubleValue] / pow(10, millisecondsString.length);
             }
             
             const char *constSource = [(NSString *)inputValue cStringUsingEncoding:NSUTF8StringEncoding];
@@ -723,9 +723,9 @@ static dispatch_once_t RKDefaultValueTransformerOnceToken;
 {
     self = [super init];
     if (self) {
-        self.valueTransformers = [NSMutableArray new];
-        self.transformerCache = [NSMutableDictionary new];
-        self.cacheQueue = dispatch_queue_create("org.restkit.value-transformer.compound-cache", DISPATCH_QUEUE_CONCURRENT);
+        _valueTransformers = [NSMutableArray new];
+        _transformerCache = [NSMutableDictionary new];
+        _cacheQueue = dispatch_queue_create("org.restkit.value-transformer.compound-cache", DISPATCH_QUEUE_CONCURRENT);
     }
     return self;
 }
@@ -784,7 +784,7 @@ static dispatch_once_t RKDefaultValueTransformerOnceToken;
     /* See if we have cached values */
     __block NSArray *transformers;
     dispatch_sync(self.cacheQueue, ^{
-        transformers = [[[self transformerCache] objectForKey:(id)sourceClass] objectForKey:(id)destinationClass];
+        transformers = [[self.transformerCache objectForKey:(id)sourceClass] objectForKey:(id)destinationClass];
     });
 
     if (transformers != nil) return transformers;
@@ -823,7 +823,7 @@ static dispatch_once_t RKDefaultValueTransformerOnceToken;
 - (BOOL)transformValue:(id)inputValue toValue:(__autoreleasing id *)outputValue ofClass:(__unsafe_unretained Class)outputValueClass error:(NSError *__autoreleasing *)error
 {
     NSArray *matchingTransformers = [self valueTransformersForTransformingFromClass:[inputValue class] toClass:outputValueClass];
-    NSMutableArray *errors;
+    NSMutableArray *errors = nil;
     NSError *underlyingError = nil;
     for (id<RKValueTransforming> valueTransformer in matchingTransformers) {
         BOOL success = [valueTransformer transformValue:inputValue toValue:outputValue ofClass:outputValueClass error:&underlyingError];
@@ -832,9 +832,9 @@ static dispatch_once_t RKDefaultValueTransformerOnceToken;
         [errors addObject:underlyingError];
     }
 
-    if (errors.count > 0) {
-        errors = errors ?: (id)[NSArray new];
-        NSDictionary *userInfo = @{ NSLocalizedDescriptionKey: [NSString stringWithFormat:@"Failed transformation of value '%@' to %@: none of the %lu value transformers consulted were successful.", inputValue, outputValueClass, (unsigned long)[matchingTransformers count]], RKValueTransformersDetailedErrorsKey: errors };
+    if (error) {
+        NSArray *detailedErrors = errors ?: [NSArray new];
+        NSDictionary *userInfo = @{ NSLocalizedDescriptionKey: [NSString stringWithFormat:@"Failed transformation of value '%@' to %@: none of the %lu value transformers consulted were successful.", inputValue, outputValueClass, (unsigned long)[matchingTransformers count]], RKValueTransformersDetailedErrorsKey: detailedErrors };
         *error = [NSError errorWithDomain:RKValueTransformersErrorDomain code:RKValueTransformationErrorTransformationFailed userInfo:userInfo];
     }
     return NO;

@@ -47,6 +47,8 @@
         }
     }
     
+    free(properties);
+    
     return propertyList;
 }
 

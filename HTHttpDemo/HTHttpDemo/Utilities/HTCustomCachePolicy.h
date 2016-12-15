@@ -6,7 +6,7 @@
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
 
-#import "HTCachePolicy.h"
+#import <HTNetworking/HTHttp/Cache/HTCachePolicy.h>
 
 @interface HTCustomCachePolicy : HTCachePolicy
 

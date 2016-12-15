@@ -20,9 +20,7 @@
 //  This file is added to RestKit by WangLiping to support creating different NSURLRequests.
 
 #import <Foundation/Foundation.h>
-
-#import "RKRequestProvider.h"
-
+#import <RestKit/Network/RKRequestProvider.h>
 #import <Availability.h>
 
 #ifdef _SYSTEMCONFIGURATION_H

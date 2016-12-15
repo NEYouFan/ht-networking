@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name         = "HTNetworking"
-  s.version      = "0.1.0"
+  s.version      = "0.2.0"
   s.summary      = "HTNetworking is a high level request util based on AFNetworking and RestKit."
   s.homepage     = "https://github.com/NEYouFan/HTNetworking"
   s.license      = "Apache License, Version 2.0"
   s.source        = { :git => "https://github.com/NEYouFan/HTNetworking.git", :tag => "v#{s.version}"}
-  s.author        = "wlp"
+  s.author        = { "wlp" => "hzwangliping@corp.netease.com" }
   s.requires_arc  = true
 
   # Platform setup
@@ -21,14 +21,24 @@ Pod::Spec.new do |s|
 #endif
 EOS
 
-  # Preserve the layout of headers in the Code directory
-  s.header_mappings_dir = 'HTHttp'
+  # Preserve the layout of headers in the Code directory. HTHttp/HTHttp下的文件夹保持原有的文件夹组织结构
+  #s.header_mappings_dir = 'HTHttp/HTHttp'
 
   s.subspec 'HT' do |ht|
     ht.name = 'HT'
     ht.dependency       'HTNetworking/HTRestKit'
-    ht.source_files = 'HTHttp/HTHttp/HThttp/HTNetworking.h'
-    ht.default_subspec = 'Core'
+    ht.header_mappings_dir = 'HTHttp/HTHttp'
+    #ht.default_subspec = 'PublicHeaders'
+
+    ht.subspec 'PublicHeaders' do |htp|
+      htp.source_files = 'HTHttp/HTHttp/HThttp/HTNetworking.h', 
+                         'HTHttp/HTHttp/HThttp/HTAutoBaseRequest.h', 
+                         'HTHttp/HTHttp/HThttp/HTBaseRequest.h',
+                         'HTHttp/HTHttp/HThttp/HTHTTPModel.h',
+                         'HTHttp/HTHttp/HThttp/NSObject+HTModel.h'
+      htp.header_mappings_dir = 'HTHttp/HTHttp/HTHttp'
+      htp.dependency 'HTNetworking/HT/Core'
+    end
 
     ht.subspec 'Core' do |hto|
       hto.source_files   = 'HTHttp/HTHttp/HThttp/Core/*.{h,m}'
@@ -67,7 +77,11 @@ EOS
 
   s.subspec 'HTRestKit' do |rs|
     rs.name = 'HTRestKit'
-    rs.default_subspec = 'Core'
+    #rs.default_subspec = 'Core'
+
+    # Preserve the layout of headers in the 'HTHttp/RestKit/Code' directory and map to header_dir 'RestKit'
+    rs.header_mappings_dir = 'HTHttp/RestKit/Code'
+    rs.header_dir = 'RestKit'
 
     rs.subspec 'Core' do |cs|
       cs.dependency 'HTNetworking/HTRestKit/ObjectMapping'
@@ -136,11 +150,15 @@ EOS
     end
 
     rs.subspec 'Support' do |ss|
-      ss.source_files   = 'HTHTTP/RestKit/Code/RestKit.h', 'HTHTTP/RestKit/Code/Support.h', 'HTHTTP/RestKit/Code/Support', "HTHttp/RestKit/Vendor/LibComponentLogging/**/*.{h,m,c}"
-      ss.preserve_paths = 'HTHTTP/RestKit/Vendor/LibComponentLogging/Core' # Preserved because they are symlinked
+      ss.source_files   = 'HTHTTP/RestKit/Code/RestKit.h', 'HTHTTP/RestKit/Code/Support.h', 'HTHTTP/RestKit/Code/Support'
       ss.dependency 'TransitionKit', '~> 2.1.0'
-      ss.dependency 'CocoaLumberjack'
     end
+
+    rs.subspec 'CocoaLumberjack' do |cl|
+      cl.source_files = 'HTHTTP/RestKit/Code/CocoaLumberjack/RKLumberjackLogger.*'
+      cl.dependency 'CocoaLumberjack'
+      cl.dependency 'HTNetworking/HTRestKit/Support'
+  end
   
   end
 

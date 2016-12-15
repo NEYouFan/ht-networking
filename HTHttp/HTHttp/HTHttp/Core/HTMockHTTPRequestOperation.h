@@ -6,7 +6,7 @@
 //
 //
 
-#import "HTHTTPRequestOperation.h"
+#import <HTHttp/Core/HTHTTPRequestOperation.h>
 
 @interface HTMockHTTPRequestOperation : HTHTTPRequestOperation
 

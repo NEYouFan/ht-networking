@@ -38,20 +38,22 @@ void HTLogInit();
  */
 
 /*---------------log level----------------*/
+
 #if DEBUG
 
-#define LOG_LEVEL_COMMON  DDLogLevelAll
+//默认关闭HTLog，防止影响用户的日志打印。
+#define HT_LOG_LEVEL_COMMON  DDLogLevelOff
 
-#else
+#else //
 
-#define LOG_LEVEL_COMMON 0
+#define HT_LOG_LEVEL_COMMON 0
 
-#endif
+#endif //
 
 /*---------------custom log declare----------------*/
-#define HTLogError(frmt, ...)   HT_LOG_MAYBE(NO,                LOG_LEVEL_COMMON, DDLogFlagError,   0, nil, __PRETTY_FUNCTION__, frmt, ##__VA_ARGS__)
-#define HTLogWarn(frmt, ...)    HT_LOG_MAYBE(LOG_ASYNC_ENABLED, LOG_LEVEL_COMMON, DDLogFlagWarning, 0, nil, __PRETTY_FUNCTION__, frmt, ##__VA_ARGS__)
-#define HTLogInfo(frmt, ...)    HT_LOG_MAYBE(LOG_ASYNC_ENABLED, LOG_LEVEL_COMMON, DDLogFlagInfo,    0, nil, __PRETTY_FUNCTION__, frmt, ##__VA_ARGS__)
-#define HTLogDebug(frmt, ...)   HT_LOG_MAYBE(LOG_ASYNC_ENABLED, LOG_LEVEL_COMMON, DDLogFlagDebug,   0, nil, __PRETTY_FUNCTION__, frmt, ##__VA_ARGS__)
-#define HTLogVerbose(frmt, ...) HT_LOG_MAYBE(LOG_ASYNC_ENABLED, LOG_LEVEL_COMMON, DDLogFlagVerbose, 0, nil, __PRETTY_FUNCTION__, frmt, ##__VA_ARGS__)
+#define HTLogError(frmt, ...)   HT_LOG_MAYBE(NO,                HT_LOG_LEVEL_COMMON, DDLogFlagError,   0, nil, __PRETTY_FUNCTION__, frmt, ##__VA_ARGS__)
+#define HTLogWarn(frmt, ...)    HT_LOG_MAYBE(LOG_ASYNC_ENABLED, HT_LOG_LEVEL_COMMON, DDLogFlagWarning, 0, nil, __PRETTY_FUNCTION__, frmt, ##__VA_ARGS__)
+#define HTLogInfo(frmt, ...)    HT_LOG_MAYBE(LOG_ASYNC_ENABLED, HT_LOG_LEVEL_COMMON, DDLogFlagInfo,    0, nil, __PRETTY_FUNCTION__, frmt, ##__VA_ARGS__)
+#define HTLogDebug(frmt, ...)   HT_LOG_MAYBE(LOG_ASYNC_ENABLED, HT_LOG_LEVEL_COMMON, DDLogFlagDebug,   0, nil, __PRETTY_FUNCTION__, frmt, ##__VA_ARGS__)
+#define HTLogVerbose(frmt, ...) HT_LOG_MAYBE(LOG_ASYNC_ENABLED, HT_LOG_LEVEL_COMMON, DDLogFlagVerbose, 0, nil, __PRETTY_FUNCTION__, frmt, ##__VA_ARGS__)
 #endif

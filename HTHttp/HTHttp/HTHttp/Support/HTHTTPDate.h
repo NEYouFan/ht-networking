@@ -13,7 +13,7 @@
 @optional
 
 // 获取当前时间. 外部可以提供一个时间作为当前时间，例如从网络上取一个服务器时间作为当前时间.
-- (NSDate *)getCurrentTime;
+- (NSDate *)htGetCurrentTime;
 
 @end
 

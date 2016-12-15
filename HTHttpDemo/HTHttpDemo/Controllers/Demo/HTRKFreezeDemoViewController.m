@@ -8,19 +8,9 @@
 
 #import "HTRKFreezeDemoViewController.h"
 #import "RKDemoUserInfo.h"
-#import "RestKit.h"
-#import "HTFreezeManager.h"
-#import "HTHTTPRequestOperation.h"
-#import "HTCacheManager.h"
-#import "NSURLRequest+HTFreeze.h"
-#import "NSURLRequest+HTCache.h"
-#import "NSURLRequest+RKRequest.h"
-#import "HTFrozenRequest.h"
+#import "HTNetworking.h"
 #import "HTDemoResponse.h"
-#import "HTCachedResponse.h"
-#import "HTCacheDBHelper.h"
 #import "HTDemoHelper.h"
-#import "HTFreezeRequestHelper.h"
 
 /**
  *  遵循HTFreezeManagerProtocol以提供发送冻结请求的RKObjectMananger; 否则使用默认的RKObjectManager来发送.

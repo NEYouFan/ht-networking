@@ -8,15 +8,9 @@
 
 #import "HTRKDemoViewController.h"
 #import "RKDemoUserInfo.h"
-#import "HTFreezeManager.h"
-#import "NSURLRequest+HTFreeze.h"
-#import "NSURLRequest+HTMock.h"
-#import "NSURLRequest+RKRequest.h"
-#import "NSURLRequest+HTCache.h"
-#import "HTMockHTTPRequestOperation.h"
-#import "NSObject+HTMapping.h"
+#import "HTNetworking.h"
+#import <HTNetworking/HTHttp/Core/HTMockHTTPRequestOperation.h>
 #import "HTMockUserInfo.h"
-#import "HTMockURLResponse.h"
 #import "HTMainFreezeDemoViewController.h"
 #import "HTCacheDemoViewController.h"
 #import "HTAdvanceFeatureDemoViewController.h"
@@ -44,6 +38,7 @@
 #pragma mark - Load Data 
 
 - (NSArray *)generateMethodNameList {
+    // 测试Server参见 https://git.hz.netease.com/hzwangliping/TrainingServer
     return @[@"demoGetUserInfoWithRKObjectMananger",
              @"demoCustomRequestWithRKObjectMananger",
              @"demoSendRequestSynchronously",
@@ -62,6 +57,7 @@
 
 /**
  *  展示通过RKObjectManager发起请求的基本步骤与工作流程.
+ *  示例Server与设置方法参见: https://git.hz.netease.com/hzwangliping/TrainingServer
  *  请求信息: Method: GET URL: http://localhost:3000/user. 返回数据: MIMEType:@"text/plain" 
  *  正确返回时JSON数据为: {"data":{"userId":1854002,"balance":500,"updateTime":1429515081463,"version":26,"status":0,"blockBalance":600},"code":200}
  *  错误返回时JSON数据为: {"errorMessage":"It is a test error msg", "code":200}

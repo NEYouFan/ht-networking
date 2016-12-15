@@ -8,13 +8,13 @@
 
 #import "NSObject+HTModel.h"
 #import <objc/runtime.h>
-#import "RestKit.h"
-#import "RKObjectUtilities.h"
+#import <RestKit/RestKit.h>
+#import <RestKit/ObjectMapping/RKObjectUtilities.h>
 #import "RKObjectMappingOperationDataSource.h"
-#import "HTModelProtocol.h"
-#import "HTModelMappingHandler.h"
-#import "HTObjectHelper.h"
-#import "NSObject+HTMapping.h"
+#import <HTHttp/Core/HTModelProtocol.h>
+#import <HTHttp/Core/HTModelMappingHandler.h>
+#import <HTHttp/Core/HTObjectHelper.h>
+#import <HTHttp/Core/NSObject+HTMapping.h>
 
 static void * HTModelCachedPropertyDicKey = &HTModelCachedPropertyDicKey;
 static void * HTModelCachedAllPropertyDicKey = &HTModelCachedAllPropertyDicKey;
@@ -312,6 +312,8 @@ static void * HTModelCachedAllPropertyDicKey = &HTModelCachedAllPropertyDicKey;
         [dic setObject:aClassName forKey:propertyNameString];
     }
     
+    free(properties);
+    
     // It doesn't really matter if we replace another thread's work, since we do
     // it atomically and the result should be the same.
     objc_setAssociatedObject(self, HTModelCachedPropertyDicKey, dic, OBJC_ASSOCIATION_COPY);
@@ -352,6 +354,8 @@ static void * HTModelCachedAllPropertyDicKey = &HTModelCachedAllPropertyDicKey;
             
             [dic setObject:aClassName forKey:propertyNameString];
         }
+        
+        free(properties);
 
         cls = [cls superclass];
     }

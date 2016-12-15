@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
-#import "HTHTTPRequestOperation.h"
+#import <HTHttp/Core/HTHTTPRequestOperation.h>
 #import "HTCachePolicyManager.h"
 #import "NSURLRequest+HTCache.h"
 #import "NSURLResponse+HTCache.h"

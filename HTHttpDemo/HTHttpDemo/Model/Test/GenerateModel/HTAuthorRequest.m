@@ -8,7 +8,7 @@
 
 #import "HTAuthorRequest.h"
 #import "HTAuthor.h"
-#import "NSObject+HTModel.h"
+#import "HTNetworking.h"
 #import "HTAddress.h"
 
 @implementation HTAuthorRequest

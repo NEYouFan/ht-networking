@@ -6,7 +6,7 @@
 //
 //
 
-#import "NSURLRequest+HTMock.h"
+#import <HTHttp/Core/NSURLRequest+HTMock.h>
 #import <objc/runtime.h>
 
 static const void *keyHTMockResponseObject = &keyHTMockResponseObject;
@@ -16,8 +16,6 @@ static const void *keyHTMockError = &keyHTMockError;
 static const void *keyHTMockResponse = &keyHTMockResponse;
 static const void *keyHTMockBlock = &keyHTMockBlock;
 static const void *keyHTMockJsonFilePath = &keyHTMockJsonFilePath;
-
-//@property (nonatomic, copy) NSString *ht_mockJsonFilePath;
 
 @implementation NSURLRequest (HTMock)
 

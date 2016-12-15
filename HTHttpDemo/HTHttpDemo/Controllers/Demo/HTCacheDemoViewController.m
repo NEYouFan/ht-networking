@@ -7,10 +7,8 @@
 //
 
 #import "HTCacheDemoViewController.h"
-#import "HTCacheManager.h"
+#import "HTNetworking.h"
 #import "HTDemoCustomizeRequest.h"
-#import "NSURLResponse+HTCache.h"
-#import "HTCachePolicyManager.h"
 #import "HTCustomCachePolicy.h"
 #import "HTDemoCacheIgnoreParamsRequest.h"
 

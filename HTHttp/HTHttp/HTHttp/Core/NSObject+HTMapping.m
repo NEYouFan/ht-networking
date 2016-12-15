@@ -6,11 +6,11 @@
 //
 //
 
-#import "NSObject+HTMapping.h"
+#import <HTHttp/Core/NSObject+HTMapping.h>
 #import "NSObject+HTModel.h"
-#import "HTObjectHelper.h"
-#import "HTModelProtocol.h"
-#import "RKObjectMapping.h"
+#import <HTHttp/Core/HTObjectHelper.h>
+#import <HTHttp/Core/HTModelProtocol.h>
+#import <RestKit/ObjectMapping/RKObjectMapping.h>
 #import <objc/runtime.h>
 
 static const NSInteger kMaxRelationshipMappingLevel = 6;

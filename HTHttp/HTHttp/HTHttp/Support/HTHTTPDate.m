@@ -6,7 +6,7 @@
 //
 //
 
-#import "HTHTTPDate.h"
+#import <HTHttp/Support/HTHTTPDate.h>
 
 @implementation HTHTTPDate
 
@@ -21,7 +21,7 @@
 }
 
 - (NSDate *)now {
-    NSDate *currentTime = [_delegate respondsToSelector:@selector(getCurrentTime)] ? [_delegate getCurrentTime] : [NSDate date];
+    NSDate *currentTime = [_delegate respondsToSelector:@selector(htGetCurrentTime)] ? [_delegate htGetCurrentTime] : [NSDate date];
     return currentTime;
 }
 

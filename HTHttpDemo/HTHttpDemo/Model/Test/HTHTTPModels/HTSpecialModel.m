@@ -7,8 +7,7 @@
 //
 
 #import "HTSpecialModel.h"
-#import "NSObject+HTModel.h"
-#import "HTModelProtocol.h"
+#import "HTNetworking.h"
 
 @interface HTSpecialModel() <HTModelProtocol>
 

@@ -7,11 +7,9 @@
 //
 
 #import "HTCustomCachePolicy.h"
-#import "HTCacheManager.h"
-#import "HTCachedResponse.h"
-#import "HTHTTPDate.h"
-#import "NSURLRequest+HTCache.h"
-#import "HTHTTPLog.h"
+#import "HTNetworking.h"
+#import <HTNetworking/HTHttp/Cache/HTCachedResponse.h>
+#import <HTNetworking/HTHttp/Support/HTHTTPDate.h>
 
 @implementation HTCustomCachePolicy
 

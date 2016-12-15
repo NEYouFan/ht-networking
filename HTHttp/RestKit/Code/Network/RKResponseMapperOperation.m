@@ -20,20 +20,20 @@
 //  Modified by (Netease)Wangliping on 08/31/15.
 //  Main Modification: Log the warnings instead of failing directly even if there is no matching response descriptor. Then it still works correctly even if the users don't want any object mapping.
 
-#import "RKObjectMappingOperationDataSource.h"
-#import "RKLog.h"
-#import "RKResponseDescriptor.h"
-#import "RKPathMatcher.h"
-#import "RKHTTPUtilities.h"
-#import "RKResponseMapperOperation.h"
-#import "RKMappingErrors.h"
-#import "RKMIMETypeSerialization.h"
-#import "RKDictionaryUtilities.h"
+#import <RestKit/Network/RKPathMatcher.h>
+#import <RestKit/Network/RKResponseDescriptor.h>
+#import <RestKit/Network/RKResponseMapperOperation.h>
+#import <RestKit/ObjectMapping/RKHTTPUtilities.h>
+#import <RestKit/ObjectMapping/RKMappingErrors.h>
+#import <RestKit/ObjectMapping/RKObjectMappingOperationDataSource.h>
+#import <RestKit/Support/RKDictionaryUtilities.h>
+#import <RestKit/Support/RKLog.h>
+#import <RestKit/Support/RKMIMETypeSerialization.h>
 
 #ifdef _COREDATADEFINES_H
 #if __has_include("RKCoreData.h")
 #define RKCoreDataIncluded
-#import "RKManagedObjectMappingOperationDataSource.h"
+#import <RestKit/CoreData/RKManagedObjectMappingOperationDataSource.h>
 #endif
 #endif
 

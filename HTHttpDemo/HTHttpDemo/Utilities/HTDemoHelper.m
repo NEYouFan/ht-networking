@@ -8,7 +8,6 @@
 
 #import "HTDemoHelper.h"
 #import <objc/runtime.h>
-#import "RKObjectUtilities.h"
 #import "HTLog.h"
 
 @implementation HTDemoHelper
@@ -44,6 +43,8 @@
         
         [dic setObject:filedTypeString forKey:propertyNameString];
     }
+    
+    free(properties);
     
     return [dic allKeys];
 }

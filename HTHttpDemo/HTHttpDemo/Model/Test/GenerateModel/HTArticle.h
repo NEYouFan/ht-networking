@@ -6,7 +6,7 @@
 //  Copyright © 2015年 NetEase. All rights reserved.
 //
 
-#import "HTHTTPModel.h"
+#import "HTNetworking.h"
 
 @class HTAuthor;
 @class HTComment;

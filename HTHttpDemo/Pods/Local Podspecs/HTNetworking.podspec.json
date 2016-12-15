@@ -1,20 +1,21 @@
 {
   "name": "HTNetworking",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "HTNetworking is a high level request util based on AFNetworking and RestKit.",
   "homepage": "https://github.com/NEYouFan/HTNetworking",
   "license": "Apache License, Version 2.0",
   "source": {
     "git": "https://github.com/NEYouFan/HTNetworking.git",
-    "tag": "v0.1.0"
+    "tag": "v0.2.0"
   },
-  "authors": "wlp",
+  "authors": {
+    "wlp": "hzwangliping@corp.netease.com"
+  },
   "requires_arc": true,
   "platforms": {
     "ios": "7.0"
   },
   "prefix_header_contents": "#if __has_include(\"RKCoreData.h\")\n    #import <CoreData/CoreData.h>\n#endif",
-  "header_mappings_dir": "HTHttp",
   "subspecs": [
     {
       "name": "HT",
@@ -23,9 +24,24 @@
 
         ]
       },
-      "source_files": "HTHttp/HTHttp/HThttp/HTNetworking.h",
-      "default_subspecs": "Core",
+      "header_mappings_dir": "HTHttp/HTHttp",
       "subspecs": [
+        {
+          "name": "PublicHeaders",
+          "source_files": [
+            "HTHttp/HTHttp/HThttp/HTNetworking.h",
+            "HTHttp/HTHttp/HThttp/HTAutoBaseRequest.h",
+            "HTHttp/HTHttp/HThttp/HTBaseRequest.h",
+            "HTHttp/HTHttp/HThttp/HTHTTPModel.h",
+            "HTHttp/HTHttp/HThttp/NSObject+HTModel.h"
+          ],
+          "header_mappings_dir": "HTHttp/HTHttp/HTHttp",
+          "dependencies": {
+            "HTNetworking/HT/Core": [
+
+            ]
+          }
+        },
         {
           "name": "Core",
           "source_files": "HTHttp/HTHttp/HThttp/Core/*.{h,m}",
@@ -99,7 +115,8 @@
     },
     {
       "name": "HTRestKit",
-      "default_subspecs": "Core",
+      "header_mappings_dir": "HTHttp/RestKit/Code",
+      "header_dir": "RestKit",
       "subspecs": [
         {
           "name": "Core",
@@ -213,15 +230,22 @@
           "source_files": [
             "HTHTTP/RestKit/Code/RestKit.h",
             "HTHTTP/RestKit/Code/Support.h",
-            "HTHTTP/RestKit/Code/Support",
-            "HTHttp/RestKit/Vendor/LibComponentLogging/**/*.{h,m,c}"
+            "HTHTTP/RestKit/Code/Support"
           ],
-          "preserve_paths": "HTHTTP/RestKit/Vendor/LibComponentLogging/Core",
           "dependencies": {
             "TransitionKit": [
               "~> 2.1.0"
-            ],
+            ]
+          }
+        },
+        {
+          "name": "CocoaLumberjack",
+          "source_files": "HTHTTP/RestKit/Code/CocoaLumberjack/RKLumberjackLogger.*",
+          "dependencies": {
             "CocoaLumberjack": [
+
+            ],
+            "HTNetworking/HTRestKit/Support": [
 
             ]
           }

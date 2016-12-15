@@ -252,6 +252,22 @@ static const NSTimeInterval kHTDefaultTimeInterval = 60;
     // Nothing needs to be done.
 }
 
+- (NSString *)mockJsonFilePath {
+    if (!self.enableMock || [_mockJsonFilePath length] > 0) {
+        return _mockJsonFilePath;
+    }
+    
+    return [self defaultMockJsonFilePath];
+}
+
+- (NSString *)defaultMockJsonFilePath {
+    NSString *method = [RKStringFromRequestMethod([[self class] requestMethod]) lowercaseString];
+    NSString *requestUrl = [[self class] requestUrl];
+    NSString *requestUrlToName = [requestUrl stringByReplacingOccurrencesOfString:@"/" withString:@"_"];
+    NSString *jsonFileName = [NSString stringWithFormat:@"%@%@", method, requestUrlToName];
+    return [[NSBundle mainBundle] pathForResource:jsonFileName ofType:@"json"];
+}
+
 #pragma mark - Frozen Requests
 
 - (BOOL)canFreeze {

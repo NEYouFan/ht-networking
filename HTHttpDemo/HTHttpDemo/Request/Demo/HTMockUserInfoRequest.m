@@ -7,7 +7,7 @@
 //
 
 #import "HTMockUserInfoRequest.h"
-#import "NSObject+HTMapping.h"
+#import "HTNetworking.h"
 #import "HTMockUserInfo.h"
 
 @implementation HTMockUserInfoRequest

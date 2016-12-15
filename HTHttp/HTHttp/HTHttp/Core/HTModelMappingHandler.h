@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RKMappingOperation.h"
+#import <RestKit/ObjectMapping/RKMappingOperation.h>
 
 @interface HTModelMappingHandler : NSObject <RKMappingOperationDelegate>
 

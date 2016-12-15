@@ -6,7 +6,7 @@
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
 
-#import "HTBaseRequest.h"
+#import "HTNetworking.h"
 
 @interface HTDemoFreezeRequest : HTBaseRequest
 

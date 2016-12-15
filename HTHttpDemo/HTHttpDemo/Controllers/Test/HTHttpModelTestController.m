@@ -11,9 +11,9 @@
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
 
-#import "RKObjectMappingOperationDataSource.h"
+#import <HTNetworking/RestKit/ObjectMapping/RKObjectMappingOperationDataSource.h>
 #import "RKWikiPage.h"
-#import "HTHTTPModel+Validate.h"
+#import <HTNetworking/HTHttp/Core/HTHTTPModel+Validate.h>
 #import "HTDemoPerson.h"
 #import "HTDemoArticle.h"
 #import "HTDemoAuthor.h"
@@ -59,6 +59,7 @@
 #pragma mark - Load Data
 
 - (NSArray *)generateMethodNameList {
+    // 测试Server参见 https://git.hz.netease.com/hzwangliping/TrainingServer
     return @[@"testYYModel",
              @"testYYModelPerformance",
              @"testYYModelUnsupportType",
@@ -71,7 +72,6 @@
              @"testRequestParams",
              @"testRequestParamsPerformance",
              @"testModelWithRestKit",
-             @"testModelWrapperWithRestKit",
              @"testSpecialModel",
              @"testInvalidRequestDescriptor",
              @"testInvalidModel",
@@ -517,51 +517,11 @@
         //    return self.rootKeyPath ? [NSMutableDictionary dictionaryWithObject:dictionary forKey:self.rootKeyPath] : dictionary;
         
     }
-    
-    {
-        NSDictionary *propertyInspection = [[RKPropertyInspector sharedInspector] propertyInspectionForClass:[HTDemoPerson class]];
-        NSLog(@"%@", propertyInspection);
-    }
-}
-
-- (void)testModelWrapperWithRestKit {
-//    NSLog(@"start testRequestToJSON");
-//    
-//    HTPostArticleRequest *request = [[HTPostArticleRequest alloc] init];
-//    request.cacheId = HTCachePolicyCacheFirst;
-//    request.name = @"lwang";
-//    request.length = 12333;
-//    request.allowComment = YES;
-//    
-//    HTArticle *article = [[HTArticle alloc] init];
-//    article.title = @"这是一篇文章";
-//    article.body = @"这是文章正文";
-//    article.author = nil;
-//    article.comments = [NSMutableArray array];
-//    request.article = article;
-//    
-//    HTAuthor *testAuthor = [[HTAuthor alloc] init];
-//    testAuthor.name = @"作者是李白";
-//    NSLog(@"%@", [testAuthor yy_modelToJSONString]);
-//    request.testDic = @{@"hehe":@"value"};
-//    request.authors = @[testAuthor];
-//    
-//    // TODO: 这里为什么YYModel会出错了？
-//    NSLog(@"JSON String: %@", [request yy_modelToJSONString]);
-//    
-//    NSLog(@"JSON Object: %@", [request ht_modelToJSONObject]);
-//    NSLog(@"JSON Data: %@", [request ht_modelToJSONData]);
-//    NSLog(@"JSON String: %@", [request ht_modelToJSONString]);
 }
 
 - (void)testSpecialModel {
     // 性能测试的结果比Mantle要稍差.
     NSString *methodName = NSStringFromSelector(_cmd);
-    
-    {
-        NSDictionary *propertyInspection = [[RKPropertyInspector sharedInspector] propertyInspectionForClass:[HTSpecialModel class]];
-        NSLog(@"%@", propertyInspection);
-    }
     
     HTSpecialModel *model = [[HTSpecialModel alloc] init];
     {

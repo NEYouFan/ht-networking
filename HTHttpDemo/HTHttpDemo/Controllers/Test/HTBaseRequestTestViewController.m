@@ -165,6 +165,7 @@ static NSString * const HTBaseRequestDemoBaseUrl = @"http://localhost:3000";
 #pragma mark - Load Data
 
 - (NSArray *)generateMethodNameList {
+    // 测试Server参见 https://git.hz.netease.com/hzwangliping/TrainingServer
     return @[@"getUserInfoRequest",
              @"getUserInfoRequestWithDelegate",
              @"getUserPhotoList",

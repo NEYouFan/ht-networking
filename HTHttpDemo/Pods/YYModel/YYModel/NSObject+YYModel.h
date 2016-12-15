@@ -248,7 +248,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param json  A json dictionary of `NSDictionary`, `NSString` or `NSData`.
               Example: {"user1":{"name","Mary"}, "user2": {name:"Joe"}}
  
- @return A array, or nil if an error occurs.
+ @return A dictionary, or nil if an error occurs.
  */
 + (nullable NSDictionary *)yy_modelDictionaryWithClass:(Class)cls json:(id)json;
 @end
@@ -380,6 +380,20 @@ NS_ASSUME_NONNULL_BEGIN
  @return An array of property's name.
  */
 + (nullable NSArray<NSString *> *)modelPropertyWhitelist;
+
+/**
+ This method's behavior is similar to `- (BOOL)modelCustomTransformFromDictionary:(NSDictionary *)dic;`, 
+ but be called before the model transform.
+ 
+ @discussion If the model implements this method, it will be called before
+ `+modelWithJSON:`, `+modelWithDictionary:`, `-modelSetWithJSON:` and `-modelSetWithDictionary:`.
+ If this method returns nil, the transform process will ignore this model.
+ 
+ @param dic  The json/kv dictionary.
+ 
+ @return Returns the modified dictionary, or nil to ignore this model.
+ */
+- (NSDictionary *)modelCustomWillTransformFromDictionary:(NSDictionary *)dic;
 
 /**
  If the default json-to-model transform does not fit to your model object, implement

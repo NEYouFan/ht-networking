@@ -12,6 +12,7 @@
 #import "RKObjectMapping.h"
 #import "RKLog.h"
 #import "HTModelProtocol.h"
+#import <RestKit/RestKit.h>
 
 @implementation HTModelMappingHandler
 
@@ -85,7 +86,8 @@
     }
     
     if (transformedValue) {
-        RKLogDebug(@"Serialized %@ value at keyPath to %@ (%@)", NSStringFromClass([value class]), NSStringFromClass([transformedValue class]), value);
+#warning 这里有编译问题，原因未知.
+//        RKLogDebug(@"Serialized %@ value at keyPath to %@ (%@)", NSStringFromClass([value class]), NSStringFromClass([transformedValue class]), value);
         [operation.destinationObject setValue:transformedValue forKeyPath:keyPath];
     }
 }

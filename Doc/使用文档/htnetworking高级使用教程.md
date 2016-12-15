@@ -423,7 +423,7 @@ HTCacheMananger提供了对Cache的管理功能，包括配置cache占用内存�
 		 *  @param conditionRequest 作为判断条件的请求.
 		 *  @param trueRequest      conditionRequest成功后需要发送的请求.
 		 *  @param falseRequest     conditionRequest失败后需要发送的请求.
-		 *  @param mananger         发送请求的Manager, 如果为nil, 则使用HTNetworkAgent中默认的方式发送请求.
+		 *  @param mananger         发送请求的Manager, 如果为nil, 则使用默认的Manager发送请求.
 		 *
 		 *  @return 返回一个RACSignal信号对象.
 		 */
@@ -528,7 +528,7 @@ HTCacheMananger提供了对Cache的管理功能，包括配置cache占用内存�
 
 注册到RKObjectManager中：
 	
-	[[HTNetworkAgent sharedInstance].objectManager registerRequestOperationClass:[HTHTTPRequestOperation class]];
+	[[HTBaseRequest objectManager] registerRequestOperationClass:[HTHTTPRequestOperation class]];
 
 HTHTTPRequestOperation中的主要处理流程如下：(示意代码)
 

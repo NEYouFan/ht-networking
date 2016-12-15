@@ -20,9 +20,10 @@
 //  Modified by (Netease)Wangliping on 12/10/15.
 //  Main Modification: 1. Don't depend on AFNetworking directly any more. 2 Allow user to access response object.
 
-#import "RKHTTPRequestOperation.h"
-#import "RKMappingResult.h"
-#import "RKMapperOperation.h"
+#import <RestKit/Network/RKHTTPRequestOperation.h>
+#import <RestKit/ObjectMapping/RKMapperOperation.h>
+#import <RestKit/ObjectMapping/RKMappingResult.h>
+
 
 /**
  *  用于校验结果是否有效的block

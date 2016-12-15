@@ -20,8 +20,8 @@
 //  Modified by (Netease)Wangliping on 12/15/15.
 //  Main Modification: RKConcreteHTTPRequestOperation is similar with old RKHTTPRequestOperation which is responsible to send request via AFNetworking.
 
-#import "AFHTTPRequestOperation.h"
-#import "RKHTTPRequestOperationProtocol.h"
+#import <AFNetworking/AFHTTPRequestOperation.h>
+#import <RestKit/Network/RKHTTPRequestOperationProtocol.h>
 
 /**
  The `RKConcreteHTTPRequestOperation` class is a subclass of `AFHTTPRequestOperation` for HTTP or HTTPS requests made by RestKit. It provides per-instance configuration of the acceptable status codes and content types and integrates with the `RKLog` system to provide detailed requested and response logging. Instances of `RKHTTPRequest` are created by `RKObjectRequestOperation` and its subclasses to HTTP requests that will be object mapped. When used to make standalone HTTP requests, `RKHTTPRequestOperation` instance behave identically to `AFHTTPRequestOperation` with the exception of emitting logging information.

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
-#import "RKObjectRequestOperation.h"
+#import "HTNetworking.h"
 
 @class RACSignal;
 @class RKObjectManager;

@@ -13,6 +13,10 @@ def import_pods
   pod 'RKCLLocationValueTransformer', '~> 1.1.0'
   
   # Following dependencies are used to replace dependency to RestKit.
+  pod 'HTNetworking', :path => '../../'
+  pod 'HTNetworking/HTRestKit/Testing', :path => '../../'
+  pod 'HTNetworking/HTRestKit/Search', :path => '../../'
+  pod 'HTNetworking/HTRestKit/CocoaLumberjack', :path => '../../'
   pod 'TransitionKit', '~> 2.1.0'
   pod 'SOCKit'
   pod 'AFNetworking', '2.6.2'

@@ -253,7 +253,7 @@ HTNetworking的核心功能都通过上面几个步骤来得到体现，具体�
 
 	#ifdef DEBUG
 	
-	   [[HTNetworkAgent sharedInstance] enableMockTest];
+	   [HTBaseRequest enableMockTest];
 	   
 	#endif
 
@@ -267,6 +267,11 @@ HTNetworking的核心功能都通过上面几个步骤来得到体现，具体�
 		// 模拟的返回数据从HTMockInfo.json文件中读出.
 		return [[NSBundle mainBundle] pathForResource:@"HTMockInfo" ofType:@"json"];
 	}
+	
+或者在创建`Request`的实例后设置`Request`的属性`enableMock`与`mockJsonFilePath`来对该请求指定Mock数据来源:
+
+	request.enableMock = YES;
+	request.mockJsonFilePath = [[NSBundle mainBundle] pathForResource:@"HTMockInfo" ofType:@"json"];
 
 除了可以通过JSON文件来模拟数据外，如下属性都可以通过在基类中覆盖对应的实例方法来进行数据模拟, 一般选择一样即可。
 	
@@ -486,7 +491,7 @@ HTNetworking的核心功能都通过上面几个步骤来得到体现，具体�
 	    
 ### 配置Mock数据开关
 
-在需要mock时，打开全局mock开关。可以在每个请求之前调用，但是建议在`[HTNetworkAgent setupWithObjectManager:manager];`之后调用，这样需要开启或者关闭模拟测试会非常方便.
+在需要mock时，打开全局mock开关。可以在每个请求之前调用，但是建议在`HTNetworkingInit(baseURL)`之后调用，这样需要开启或者关闭模拟测试会非常方便.
 
     [HTBaseRequest enableMockTest];
 

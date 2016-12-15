@@ -8,7 +8,7 @@
 
 #import "HTTestRefreshTokenRequest.h"
 #import "HTMockUserInfo.h"
-#import "NSObject+HTMapping.h"
+#import "HTNetworking.h"
 
 @implementation HTTestRefreshTokenRequest
 

@@ -7,15 +7,13 @@
 //
 
 #import "HTRACTestViewController.h"
-#import "RKObjectRequestOperation+HTRAC.h"
-#import "RestKit.h"
+#import "HTNetworking.h"
 #import "RKDemoUserInfo.h"
-#import "ReactiveCocoa/ReactiveCocoa.h"
-#import "RKObjectManager+HTRAC.h"
+#import <HTNetworking/HTHttp/RACSupport/RKObjectManager+HTRAC.h>
+#import <HTNetworking/HTHttp/RACSupport/HTOperationHelper.h>
 #import "RKObjectRequestOperation+HTDemoRAC.h"
 #import "HTDemoPhotoInfo.h"
 #import "HTDemoHelper.h"
-#import "HTOperationHelper.h"
 
 @interface HTRACTestViewController ()
 

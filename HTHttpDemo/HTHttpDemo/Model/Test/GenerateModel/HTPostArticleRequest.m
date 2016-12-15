@@ -8,7 +8,7 @@
 
 #import "HTPostArticleRequest.h"
 #import "HTArticle.h"
-#import "NSObject+HTModel.h"
+#import "HTNetworking.h"
 
 @implementation HTPostArticleRequest
 

@@ -20,25 +20,27 @@
 //  Modified by (Netease)Wangliping on 12/10/15.
 //  Main Modification: 1. Don't depend on AFNetworking directly any more. 2 Allow user to access response object.
 
+#import <RestKit/Network/RKObjectRequestOperation.h>
+#import <RestKit/Network/RKResponseDescriptor.h>
+#import <RestKit/Network/RKResponseMapperOperation.h>
+#import <RestKit/ObjectMapping/RKHTTPUtilities.h>
+#import <RestKit/ObjectMapping/RKMappingErrors.h>
+#import <RestKit/Support/RKLog.h>
+#import <RestKit/Support/RKMIMETypeSerialization.h>
+#import <RestKit/Support/RKOperationStateMachine.h>
 #import <objc/runtime.h>
-#import "RKObjectRequestOperation.h"
-#import "RKResponseMapperOperation.h"
-#import "RKResponseDescriptor.h"
-#import "RKMIMETypeSerialization.h"
-#import "RKHTTPUtilities.h"
-#import "RKLog.h"
-#import "RKMappingErrors.h"
-#import "RKOperationStateMachine.h"
 
 #import <Availability.h>
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED
-#import "AFNetworkActivityIndicatorManager.h"
+#import <AFNetworking/AFNetworkActivityIndicatorManager.h>
 #endif
 
 // Set Logging Component
 #undef RKLogComponent
 #define RKLogComponent RKlcl_cRestKitNetwork
+
+#define RKLogIsTrace() (_RKlcl_component_level[(__RKlcl_log_symbol(RKlcl_cRestKitNetwork))]) >= (__RKlcl_log_symbol(RKlcl_vTrace))
 
 static BOOL RKLogIsStringBlank(NSString *string)
 {

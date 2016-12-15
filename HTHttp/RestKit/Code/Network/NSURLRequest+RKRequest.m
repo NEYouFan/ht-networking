@@ -19,7 +19,7 @@
 //
 //  This file is added to RestKit by WangLiping to support different transfer protocol rather than HTTP/HTTPS.
 
-#import "NSURLRequest+RKRequest.h"
+#import <RestKit/Network/NSURLRequest+RKRequest.h>
 #import <objc/runtime.h>
 
 static const void *keyRKRequestTypeName = &keyRKRequestTypeName;
