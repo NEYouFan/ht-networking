@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/NEYouFan/HTNetworking"
   s.license      = "Apache License, Version 2.0"
   s.source        = { :git => "https://github.com/NEYouFan/HTNetworking.git", :tag => "v#{s.version}"}
-  s.author        = { "netease" }
+  s.author        = { "netease" => "taozeyu890217@126.com"}
   s.requires_arc  = true
 
   # Platform setup
