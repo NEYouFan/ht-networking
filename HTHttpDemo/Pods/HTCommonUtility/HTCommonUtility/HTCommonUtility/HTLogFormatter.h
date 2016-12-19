@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DDLog.h"
+#import <CocoaLumberjack/DDLog.h>
 @protocol DDLogFormatter;
 /**
  *  处理HTLog添加的module功能

@@ -51,7 +51,7 @@ THE SOFTWARE.
 
 Software License Agreement (BSD License)
 
-Copyright (c) 2010-2015, Deusty, LLC
+Copyright (c) 2010-2016, Deusty, LLC
 All rights reserved.
 
 Redistribution and use of this software in source and binary forms,
@@ -491,7 +491,7 @@ third-party archives.
 
 ## ReactiveCocoa
 
-**Copyright (c) 2012 - 2013, GitHub, Inc.**
+**Copyright (c) 2012 - 2015, GitHub, Inc.**
 **All rights reserved.**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -909,7 +909,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright 2009-2012 The RestKit Project
+   Copyright 2013-2014 Blake Watters
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.

@@ -24,28 +24,22 @@
 
         ]
       },
-      "header_mappings_dir": "HTHttp/HTHttp",
+      "header_mappings_dir": "HTHttp/HTHttp/HTHttp",
       "subspecs": [
         {
-          "name": "PublicHeaders",
+          "name": "Core",
           "source_files": [
+            "HTHttp/HTHttp/HThttp/Core/*.{h,m}",
             "HTHttp/HTHttp/HThttp/HTNetworking.h",
             "HTHttp/HTHttp/HThttp/HTAutoBaseRequest.h",
             "HTHttp/HTHttp/HThttp/HTBaseRequest.h",
             "HTHttp/HTHttp/HThttp/HTHTTPModel.h",
             "HTHttp/HTHttp/HThttp/NSObject+HTModel.h"
           ],
-          "header_mappings_dir": "HTHttp/HTHttp/HTHttp",
           "dependencies": {
-            "HTNetworking/HT/Core": [
+            "HTNetworking/HTRestKit/Core": [
 
-            ]
-          }
-        },
-        {
-          "name": "Core",
-          "source_files": "HTHttp/HTHttp/HThttp/Core/*.{h,m}",
-          "dependencies": {
+            ],
             "HTNetworking/HT/Cache": [
 
             ],
@@ -70,11 +64,14 @@
             "HTNetworking/HT/Support": [
 
             ],
+            "HTNetworking/HTRestKit": [
+
+            ],
             "FMDB": [
 
             ],
             "HTCommonUtility": [
-              "~> 0.0.1"
+
             ]
           }
         },
@@ -84,6 +81,9 @@
           "dependencies": {
             "HTNetworking/HT/Cache": [
 
+            ],
+            "HTNetworking/HTRestKit": [
+
             ]
           }
         },
@@ -92,12 +92,15 @@
           "source_files": "HTHttp/HTHttp/HThttp/RACSupport/*.{h,m}",
           "dependencies": {
             "ReactiveCocoa": [
-              "2.1.8"
+              "~> 2.1"
             ],
             "HTCommonUtility": [
-              "~> 0.0.1"
+
             ],
             "HTNetworking/HT/Support": [
+
+            ],
+            "HTNetworking/HTRestKit": [
 
             ]
           }
@@ -107,7 +110,7 @@
           "source_files": "HTHttp/HTHttp/HThttp/Support/*.{h,m}",
           "dependencies": {
             "HTCommonUtility": [
-              "~> 0.0.1"
+
             ]
           }
         }
@@ -176,7 +179,7 @@
 
             ],
             "AFNetworking": [
-              "2.6.2"
+              "~> 2.5"
             ],
             "HTNetworking/HTRestKit/ObjectMapping": [
 
@@ -234,7 +237,7 @@
           ],
           "dependencies": {
             "TransitionKit": [
-              "~> 2.1.0"
+              "~> 2.2"
             ]
           }
         },
@@ -243,7 +246,7 @@
           "source_files": "HTHTTP/RestKit/Code/CocoaLumberjack/RKLumberjackLogger.*",
           "dependencies": {
             "CocoaLumberjack": [
-
+              "~> 2.0"
             ],
             "HTNetworking/HTRestKit/Support": [
 

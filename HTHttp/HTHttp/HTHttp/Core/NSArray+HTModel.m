@@ -6,7 +6,7 @@
 //
 //
 
-#import <HTHttp/Core/NSArray+HTModel.h>
+#import <Core/NSArray+HTModel.h>
 #import "NSObject+HTModel.h"
 
 @implementation NSArray (HTModel)

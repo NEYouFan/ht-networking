@@ -9,7 +9,7 @@
 #ifndef HTCommonUtility_HTLog_h
 #define HTCommonUtility_HTLog_h
 
-#import "CocoaLumberjack.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 #define LOG_MACR(isAsynchronous, lvl, flg, ctx, atag, fnct, frmt, ...) \
 [DDLog log : isAsynchronous                                     \

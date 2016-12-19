@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
-#import <HTHttp/RACSupport/RKObjectRequestOperation+HTRAC.h>
+#import <RACSupport/RKObjectRequestOperation+HTRAC.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <RestKit/Network/RKObjectManager.h>
 #import <RestKit/ObjectMapping/RKErrorMessage.h>

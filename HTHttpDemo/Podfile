@@ -1,6 +1,6 @@
 platform :ios, '7.0'
 source 'https://github.com/CocoaPods/Specs.git'
-source 'https://git.hz.netease.com/git/open/HTSpecRepo.git'
+#source 'https://git.hz.netease.com/git/open/HTSpecRepo.git'
 
 target 'HTHttpDemo' do
 	pod 'HTNetworking', :path => '../'

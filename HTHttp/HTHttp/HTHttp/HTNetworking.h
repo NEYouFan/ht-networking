@@ -14,14 +14,14 @@
 #import "HTAutoBaseRequest.h"
 #import "HTHTTPModel.h"
 #import "NSObject+HTModel.h"
-#import <HTHttp/Core/NSObject+HTMapping.h>
-#import <HTHttp/Core/HTBaseRequest+Advanced.h>
-#import <HTHttp/Core/HTBaseRequest+RACSupport.h>
-#import <HTHttp/Cache/NSURLRequest+HTCache.h>
-#import <HTHttp/Cache/NSURLResponse+HTCache.h>
-#import <HTHttp/Freeze/NSURLRequest+HTFreeze.h>
-#import <HTHttp/Core/HTNetworkingHelper.h>
-#import <HTHttp/Core/HTMockURLResponse.h>
+#import <Core/NSObject+HTMapping.h>
+#import <Core/HTBaseRequest+Advanced.h>
+#import <Core/HTBaseRequest+RACSupport.h>
+#import <Cache/NSURLRequest+HTCache.h>
+#import <Cache/NSURLResponse+HTCache.h>
+#import <Freeze/NSURLRequest+HTFreeze.h>
+#import <Core/HTNetworkingHelper.h>
+#import <Core/HTMockURLResponse.h>
 #endif
 
 #if __has_include(<RestKit/RestKit.h>)
@@ -32,23 +32,23 @@
 #import <RestKit/Network/RKRequestTypeOperation.h>
 #endif
 
-#if __has_include(<HTHttp/Support/HTHttpLog.h>)
-#import <HTHttp/Support/HTHttpLog.h>
+#if __has_include(<Support/HTHttpLog.h>)
+#import <Support/HTHttpLog.h>
 #endif
 
-#if __has_include(<HTHttp/Cache/HTCacheManager.h>)
-#import <HTHttp/Cache/HTCacheManager.h>
-#import <HTHttp/Cache/HTCachePolicyManager.h>
+#if __has_include(<Cache/HTCacheManager.h>)
+#import <Cache/HTCacheManager.h>
+#import <Cache/HTCachePolicyManager.h>
 #endif
 
 #if __has_include(<ReactiveCocoa/ReactiveCocoa.h>)
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #endif
 
-#if __has_include(<HTHttp/Freeze/HTFreezeManager.h>)
-#import <HTHttp/Freeze/HTFreezeManager.h>
-#import <HTHttp/Freeze/HTFreezePolicy.h>
-#import <HTHttp/Freeze/HTFreezePolicyMananger.h>
+#if __has_include(<Freeze/HTFreezeManager.h>)
+#import <Freeze/HTFreezeManager.h>
+#import <Freeze/HTFreezePolicy.h>
+#import <Freeze/HTFreezePolicyMananger.h>
 #endif
 
 #endif /* HTNetworking_h */

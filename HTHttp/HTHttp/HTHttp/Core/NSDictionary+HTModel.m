@@ -6,7 +6,7 @@
 //
 //
 
-#import <HTHttp/Core/NSDictionary+HTModel.h>
+#import <Core/NSDictionary+HTModel.h>
 #import "NSObject+HTModel.h"
 
 @implementation NSDictionary (HTModel)

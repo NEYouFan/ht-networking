@@ -6,10 +6,10 @@
 //
 //
 
-#import <HTHttp/Core/NSObject+HTMapping.h>
+#import <Core/NSObject+HTMapping.h>
 #import "NSObject+HTModel.h"
-#import <HTHttp/Core/HTObjectHelper.h>
-#import <HTHttp/Core/HTModelProtocol.h>
+#import <Core/HTObjectHelper.h>
+#import <Core/HTModelProtocol.h>
 #import <RestKit/ObjectMapping/RKObjectMapping.h>
 #import <objc/runtime.h>
 

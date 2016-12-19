@@ -6,9 +6,9 @@
 //
 //
 
-#import <HTHttp/Core/HTMockHTTPRequestOperation.h>
-#import <HTHttp/Core/NSURLRequest+HTMock.h>
-#import <HTHttp/Core/HTMockURLResponse.h>
+#import <Core/HTMockHTTPRequestOperation.h>
+#import <Core/NSURLRequest+HTMock.h>
+#import <Core/HTMockURLResponse.h>
 #import <RestKit/Support/RKMIMETypes.h>
 
 @interface HTMockHTTPRequestOperation ()

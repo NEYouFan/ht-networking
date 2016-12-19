@@ -10,7 +10,7 @@
 #import "HTHttpModelTestController.h"
 #import "RKDemoUserInfo.h"
 #import "HTNetworking.h"
-#import <HTNetworking/HTHttp/Core/HTMockHTTPRequestOperation.h>
+#import <HTNetworking/Core/HTMockHTTPRequestOperation.h>
 #import "HTBaseRequestTestViewController.h"
 
 @interface HTTestViewController ()

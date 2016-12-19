@@ -9,8 +9,8 @@
 #import "HTRACTestViewController.h"
 #import "HTNetworking.h"
 #import "RKDemoUserInfo.h"
-#import <HTNetworking/HTHttp/RACSupport/RKObjectManager+HTRAC.h>
-#import <HTNetworking/HTHttp/RACSupport/HTOperationHelper.h>
+#import <HTNetworking/RACSupport/RKObjectManager+HTRAC.h>
+#import <HTNetworking/RACSupport/HTOperationHelper.h>
 #import "RKObjectRequestOperation+HTDemoRAC.h"
 #import "HTDemoPhotoInfo.h"
 #import "HTDemoHelper.h"

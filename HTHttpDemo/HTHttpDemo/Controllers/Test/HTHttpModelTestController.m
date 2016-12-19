@@ -13,7 +13,7 @@
 
 #import <HTNetworking/RestKit/ObjectMapping/RKObjectMappingOperationDataSource.h>
 #import "RKWikiPage.h"
-#import <HTNetworking/HTHttp/Core/HTHTTPModel+Validate.h>
+#import <HTNetworking/Core/HTHTTPModel+Validate.h>
 #import "HTDemoPerson.h"
 #import "HTDemoArticle.h"
 #import "HTDemoAuthor.h"

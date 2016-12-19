@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <RestKit/ObjectMapping/RKHTTPUtilities.h>
-#import <HTHttp/Cache/HTCachePolicyProtocol.h>
-#import <HTHttp/Freeze/HTFreezePolicyProtocol.h>
-#import <HTHttp/RACSupport/RKObjectRequestOperation+HTRAC.h>
-#import <HTHttp/Core/NSURLRequest+HTMock.h>
+#import <Cache/HTCachePolicyProtocol.h>
+#import <Freeze/HTFreezePolicyProtocol.h>
+#import <RACSupport/RKObjectRequestOperation+HTRAC.h>
+#import <Core/NSURLRequest+HTMock.h>
 
 @class RKRequestDescriptor;
 @class RKResponseDescriptor;

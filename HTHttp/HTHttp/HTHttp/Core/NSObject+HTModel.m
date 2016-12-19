@@ -11,10 +11,10 @@
 #import <RestKit/RestKit.h>
 #import <RestKit/ObjectMapping/RKObjectUtilities.h>
 #import "RKObjectMappingOperationDataSource.h"
-#import <HTHttp/Core/HTModelProtocol.h>
-#import <HTHttp/Core/HTModelMappingHandler.h>
-#import <HTHttp/Core/HTObjectHelper.h>
-#import <HTHttp/Core/NSObject+HTMapping.h>
+#import <Core/HTModelProtocol.h>
+#import <Core/HTModelMappingHandler.h>
+#import <Core/HTObjectHelper.h>
+#import <Core/NSObject+HTMapping.h>
 
 static void * HTModelCachedPropertyDicKey = &HTModelCachedPropertyDicKey;
 static void * HTModelCachedAllPropertyDicKey = &HTModelCachedAllPropertyDicKey;

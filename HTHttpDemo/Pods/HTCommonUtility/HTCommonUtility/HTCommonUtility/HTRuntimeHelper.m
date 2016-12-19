@@ -25,6 +25,8 @@
         }
     }
     
+    free(properties);
+    
     return propertyList;
 }
 

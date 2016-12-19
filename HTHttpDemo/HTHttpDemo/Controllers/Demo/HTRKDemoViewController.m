@@ -9,7 +9,7 @@
 #import "HTRKDemoViewController.h"
 #import "RKDemoUserInfo.h"
 #import "HTNetworking.h"
-#import <HTNetworking/HTHttp/Core/HTMockHTTPRequestOperation.h>
+#import <HTNetworking/Core/HTMockHTTPRequestOperation.h>
 #import "HTMockUserInfo.h"
 #import "HTMainFreezeDemoViewController.h"
 #import "HTCacheDemoViewController.h"
@@ -44,7 +44,6 @@
              @"demoSendRequestSynchronously",
              @"demoSendRequestWithAbsoluteUrl",
              @"demoSendRequestWithValidBlock",
-             @"demoSendHttpsRequest",
              @"demoSendRequestWithMockData",
              @"demoSendRequestWithCache",
              @"demoSendRequestWithFreezeEnabled",
@@ -254,42 +253,6 @@
     // 利用RKObjectRequestOperation直接发送请求的方式可以参见本类中方法`demoCustomRequestWithRKObjectMananger`, 设置validResultBlock属性的方式同上.
     
     [manager getObject:nil path:@"/user" parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-        [self showResult:YES operation:operation result:mappingResult error:nil];
-    } failure:^(RKObjectRequestOperation *operation, NSError *error) {
-        [self showResult:NO operation:operation result:nil error:error];
-    }];
-}
-
-/**
- *  展示如何发送一个HTTPS的请求.
- *  请求的API同demoGetUserInfoWithRKObjectMananger.
- *
- *  Note: 由于暂时缺乏自己的测试HTTPS服务器，所以借助了运维项目的测试服务器. 测试地址为"https://106.2.44.242". 后续需要替换成为自己的测试服务器.
- */
-- (void)demoSendHttpsRequest {
-#warning 需要搭建自己的HTTPS测试服务器.
-    RKMapping *mapping = [HTMockUserInfo ht_modelMapping];
-    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:mapping method:RKRequestMethodPOST pathPattern:@"/authorize" keyPath:@"data" statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
-    
-    RKObjectManager *manager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"https://106.2.44.242"]];
-    // 该测试服务器的MIME Type为@"text/html", 实际返回的仍然是JSON.
-    [RKMIMETypeSerialization registerClass:[RKNSJSONSerialization class] forMIMEType:@"text/html"];
-    [manager addResponseDescriptor:responseDescriptor];
-    
-    // 根据实际情况设置ASSecurityPolicy.
-    // 对于该测试服务器, 暂时只支持自建证书. 如果服务器证书合法，不需要改变securityPolicy的默认值.
-    manager.requestProvider.securityPolicy.allowInvalidCertificates = YES;
-    manager.requestProvider.securityPolicy.validatesDomainName = NO;
-    
-//    // 也可以按照实际情况创建正确的securityPolicy. 创建与设置方法如下:
-//    AFSecurityPolicy * securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
-//    //    AFSecurityPolicy * securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModePublicKey];
-//    securityPolicy.allowInvalidCertificates = YES;
-//    securityPolicy.validatesDomainName = NO;
-//    manager.requestProvider.securityPolicy = securityPolicy;
-    
-    NSDictionary *params = @{@"clientId" : @(1), @"clientSecret" : @"secret1", @"account" : @"测试时替换为自己的账号", @"password" : @"测试时替换为自己的密码"};
-    [manager postObject:nil path:@"/authorize" parameters:params success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
         [self showResult:YES operation:operation result:mappingResult error:nil];
     } failure:^(RKObjectRequestOperation *operation, NSError *error) {
         [self showResult:NO operation:operation result:nil error:error];

@@ -1,40 +1,40 @@
 PODS:
   - AFDownloadRequestOperation (2.0.1):
     - AFNetworking (~> 2.0)
-  - AFNetworking (2.6.2):
-    - AFNetworking/NSURLConnection (= 2.6.2)
-    - AFNetworking/NSURLSession (= 2.6.2)
-    - AFNetworking/Reachability (= 2.6.2)
-    - AFNetworking/Security (= 2.6.2)
-    - AFNetworking/Serialization (= 2.6.2)
-    - AFNetworking/UIKit (= 2.6.2)
-  - AFNetworking/NSURLConnection (2.6.2):
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.2):
+  - AFNetworking/NSURLSession (2.6.3):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.2)
-  - AFNetworking/Security (2.6.2)
-  - AFNetworking/Serialization (2.6.2)
-  - AFNetworking/UIKit (2.6.2):
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - CocoaLumberjack (2.0.1):
-    - CocoaLumberjack/Default (= 2.0.1)
-    - CocoaLumberjack/Extensions (= 2.0.1)
-  - CocoaLumberjack/Core (2.0.1)
-  - CocoaLumberjack/Default (2.0.1):
+  - CocoaLumberjack (2.4.0):
+    - CocoaLumberjack/Default (= 2.4.0)
+    - CocoaLumberjack/Extensions (= 2.4.0)
+  - CocoaLumberjack/Core (2.4.0)
+  - CocoaLumberjack/Default (2.4.0):
     - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (2.0.1):
+  - CocoaLumberjack/Extensions (2.4.0):
     - CocoaLumberjack/Default
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
-  - HTCommonUtility (0.0.1):
-    - CocoaLumberjack (= 2.0.1)
+  - HTCommonUtility (0.0.2):
+    - CocoaLumberjack
   - HTNetworking (0.2.0):
     - HTNetworking/HT (= 0.2.0)
     - HTNetworking/HTRestKit (= 0.2.0)
@@ -42,13 +42,12 @@ PODS:
     - HTNetworking/HT/Cache (= 0.2.0)
     - HTNetworking/HT/Core (= 0.2.0)
     - HTNetworking/HT/Freeze (= 0.2.0)
-    - HTNetworking/HT/PublicHeaders (= 0.2.0)
     - HTNetworking/HT/RACSupport (= 0.2.0)
     - HTNetworking/HT/Support (= 0.2.0)
     - HTNetworking/HTRestKit
   - HTNetworking/HT/Cache (0.2.0):
     - FMDB
-    - HTCommonUtility (~> 0.0.1)
+    - HTCommonUtility
     - HTNetworking/HT/Support
     - HTNetworking/HTRestKit
   - HTNetworking/HT/Core (0.2.0):
@@ -58,19 +57,17 @@ PODS:
     - HTNetworking/HT/RACSupport
     - HTNetworking/HT/Support
     - HTNetworking/HTRestKit
+    - HTNetworking/HTRestKit/Core
   - HTNetworking/HT/Freeze (0.2.0):
     - HTNetworking/HT/Cache
     - HTNetworking/HTRestKit
-  - HTNetworking/HT/PublicHeaders (0.2.0):
-    - HTNetworking/HT/Core
-    - HTNetworking/HTRestKit
   - HTNetworking/HT/RACSupport (0.2.0):
-    - HTCommonUtility (~> 0.0.1)
+    - HTCommonUtility
     - HTNetworking/HT/Support
     - HTNetworking/HTRestKit
-    - ReactiveCocoa (= 2.1.8)
+    - ReactiveCocoa (~> 2.1)
   - HTNetworking/HT/Support (0.2.0):
-    - HTCommonUtility (~> 0.0.1)
+    - HTCommonUtility
     - HTNetworking/HTRestKit
   - HTNetworking/HTRestKit (0.2.0):
     - HTNetworking/HTRestKit/CocoaLumberjack (= 0.2.0)
@@ -82,7 +79,7 @@ PODS:
     - HTNetworking/HTRestKit/Support (= 0.2.0)
     - HTNetworking/HTRestKit/Testing (= 0.2.0)
   - HTNetworking/HTRestKit/CocoaLumberjack (0.2.0):
-    - CocoaLumberjack
+    - CocoaLumberjack (~> 2.0)
     - HTNetworking/HTRestKit/Support
   - HTNetworking/HTRestKit/Core (0.2.0):
     - HTNetworking/HTRestKit/CoreData
@@ -91,7 +88,7 @@ PODS:
   - HTNetworking/HTRestKit/CoreData (0.2.0):
     - HTNetworking/HTRestKit/ObjectMapping
   - HTNetworking/HTRestKit/Network (0.2.0):
-    - AFNetworking (= 2.6.2)
+    - AFNetworking (~> 2.5)
     - HTNetworking/HTRestKit/ObjectMapping
     - HTNetworking/HTRestKit/Support
     - SOCKit
@@ -102,20 +99,21 @@ PODS:
   - HTNetworking/HTRestKit/Search (0.2.0):
     - HTNetworking/HTRestKit/CoreData
   - HTNetworking/HTRestKit/Support (0.2.0):
-    - TransitionKit (~> 2.1.0)
+    - TransitionKit (~> 2.2)
   - HTNetworking/HTRestKit/Testing (0.2.0):
     - HTNetworking/HTRestKit/Network
   - ISO8601DateFormatterValueTransformer (0.6.1):
     - RKValueTransformers (~> 1.1.0)
-  - ReactiveCocoa (2.1.8):
-    - ReactiveCocoa/Core (= 2.1.8)
-    - ReactiveCocoa/no-arc (= 2.1.8)
-  - ReactiveCocoa/Core (2.1.8):
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
     - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.1.8)
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
   - RKValueTransformers (1.1.3)
   - SOCKit (1.1)
-  - TransitionKit (2.1.1)
+  - TransitionKit (2.2.1)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -129,18 +127,18 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFDownloadRequestOperation: 748a1643423e1ddb23f2178f778087d4f0ae8ac7
-  AFNetworking: 7f317038a9710cabfa43ec56396b307b45df72ab
-  CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  CocoaLumberjack: aa9dcab71bdf9eaf2a63bbd9ddc87863efe45457
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
-  HTCommonUtility: 5621497b74177eefa80b7c888e9a9eb6bbbd3cb2
-  HTNetworking: c46dec57f7d3c258433b06f44ac390ca63dc354f
+  HTCommonUtility: 194b5c1b774dca8f093625bef44d07fcef906d1b
+  HTNetworking: 764b439469d9a247d7bb572454723bf47ef8b960
   ISO8601DateFormatterValueTransformer: 52da467d6ec899d6aedda8e48280ac92e8ee97e6
-  ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RKValueTransformers: e5ed67e3811229b616fe01bddeeafe3bb337b1b9
   SOCKit: c7376ac262bea9115b8f749358f762522a47d392
-  TransitionKit: 3a14b6acc7cf2d1dd3e454e24dbad1cfab9a1ef1
+  TransitionKit: 9ceccda4cd0cdc0a05ef85eb235e5a3292c3c250
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 5e84ee0b26ecbe3c68f42f85c5493f4474f27958
+PODFILE CHECKSUM: d303df545850efd06f96b4f63e3a9d7445d7e0a7
 
 COCOAPODS: 1.0.1
