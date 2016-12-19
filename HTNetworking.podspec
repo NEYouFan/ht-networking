@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary      = "HTNetworking is a high level request util based on AFNetworking and RestKit."
   s.homepage     = "https://github.com/NEYouFan/HTNetworking"
   s.license      = "Apache License, Version 2.0"
-  s.source        = { :git => "https://g.hz.netease.com/HeartTouchOpen/HTNetworking.git", :tag => "v#{s.version}"}
+  s.source        = { :git => "https://github.com/NEYouFan/ht-networking.git", :tag => "v#{s.version}"}
   s.author        = { "wlp" => "hzwangliping@corp.netease.com" }
   s.requires_arc  = true
   # Platform setup
