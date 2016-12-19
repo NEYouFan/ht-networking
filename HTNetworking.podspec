@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "HTNetworking"
-  s.version      = "0.2.0"
+  s.version      = "0.2.1"
   s.summary      = "HTNetworking is a high level request util based on AFNetworking and RestKit."
   s.homepage     = "https://github.com/NEYouFan/HTNetworking"
   s.license      = "Apache License, Version 2.0"
