@@ -6,10 +6,10 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
-#import <RACSupport/RKObjectRequestOperation+HTRAC.h>
+#import "RKObjectRequestOperation+HTRAC.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
-#import <RestKit/Network/RKObjectManager.h>
-#import <RestKit/ObjectMapping/RKErrorMessage.h>
+#import "RKObjectManager.h"
+#import "RKErrorMessage.h"
 #import <objc/runtime.h>
 
 static const void *keyHTEnqueueSignal = &keyHTEnqueueSignal;

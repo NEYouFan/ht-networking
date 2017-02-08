@@ -72,6 +72,8 @@ static HTCacheManager *sharedManager = nil;
         _responseCache.countLimit = HTDefaultMemCacheCount;
         _responseCache.totalCostLimit = HTDefaultMemCacheCost;
         
+        // 默认的超时时间也设置为Cache的最大保存时间. 否则这个Cache会永远不超时.
+        _defaultExpireTime = HTDefaultMaxCacheAge;
         _maxCacheAge = HTDefaultMaxCacheAge;
         if (0 != diskCacheCapacity) {
             _diskCacheCapacity = diskCacheCapacity;

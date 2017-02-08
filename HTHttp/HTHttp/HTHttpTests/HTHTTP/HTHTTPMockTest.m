@@ -58,13 +58,13 @@
         mockRequest.ht_mockResponseObject =
             @{
                 @"data": @{
-                    @"accessToken": @"1111111-d595-4623-bc23-90f7123bc551",
+                    @"accessToken": @"1111111-d595-4623-bc23",
                     @"admin": @(YES),
                     @"expireIn": @(604800),
-                    @"refreshToken": @"1111111-ac5a-4fda-8c45-4af6341aeb5a",
+                    @"refreshToken": @"1111111-ac5a-4fda-8c45",
                     @"refreshTokenExpireIn": @(2592000),
                     @"userName": @"测试",
-                    @"yunxinToken":@"1111111-acda-4gda-8cd5-4afd341ded5d"
+                    @"testToken":@"1111111-acda-4gda-8cd5"
                 },
                 @"code": @(200)
             };
@@ -101,13 +101,13 @@
         mockRequest.ht_mockResponseObject =
         @{
           @"data": @{
-                  @"accessToken": @"1111111-d595-4623-bc23-90f7123bc551",
+                  @"accessToken": @"1111111-d595-4623",
                   @"admin": @(YES),
                   @"expireIn": @(604800),
-                  @"refreshToken": @"1111111-ac5a-4fda-8c45-4af6341aeb5a",
+                  @"refreshToken": @"1111111-ac5a-4fda",
                   @"refreshTokenExpireIn": @(2592000),
                   @"userName": @"测试",
-                  @"yunxinToken":@"1111111-acda-4gda-8cd5-4afd341ded5d"
+                  @"testToken":@"1111111-acda-4gda"
                   },
           @"code": @(200)
           };
@@ -146,13 +146,13 @@
     NSURLRequest *request = [manager requestWithObject:nil method:RKRequestMethodPOST path:@"/authorize" parameters:nil];
     request.ht_mockResponseObject = @{
           @"data": @{
-                  @"accessToken": @"1111111-d595-4623-bc23-90f7123bc551",
+                  @"accessToken": @"1111111-d595-4623-bc23",
                   @"admin": @(YES),
                   @"expireIn": @(604800),
-                  @"refreshToken": @"1111111-ac5a-4fda-8c45-4af6341aeb5a",
+                  @"refreshToken": @"1111111-ac5a-4fda-8c45",
                   @"refreshTokenExpireIn": @(2592000),
                   @"userName": @"测试",
-                  @"yunxinToken":@"1111111-acda-4gda-8cd5-4afd341ded5d"
+                  @"testToken":@"1111111-acda-4gda-8cd5"
                   },
           @"code": @(200)};
     RKObjectRequestOperation *operation = [manager objectRequestOperationWithRequest:request success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
@@ -189,13 +189,13 @@
     NSURLRequest *request = [manager requestWithObject:nil method:RKRequestMethodPOST path:@"/authorize" parameters:nil];
     NSDictionary *responseObject = @{
                                       @"data": @{
-                                              @"accessToken": @"1111111-d595-4623-bc23-90f7123bc551",
+                                              @"accessToken": @"1111111-d595-4623-bc23",
                                               @"admin": @(YES),
                                               @"expireIn": @(604800),
-                                              @"refreshToken": @"1111111-ac5a-4fda-8c45-4af6341aeb5a",
+                                              @"refreshToken": @"1111111-ac5a-4fda-8c45",
                                               @"refreshTokenExpireIn": @(2592000),
                                               @"userName": @"测试",
-                                              @"yunxinToken":@"1111111-acda-4gda-8cd5-4afd341ded5d"
+                                              @"testToken":@"1111111-acda-4gda-8cd5"
                                               },
                                       @"code": @(200)};
     request.ht_mockResponseData = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil];
@@ -233,13 +233,13 @@
     NSURLRequest *request = [manager requestWithObject:nil method:RKRequestMethodPOST path:@"/authorize" parameters:nil];
     NSDictionary *responseObject = @{
                                      @"data": @{
-                                             @"accessToken": @"1111111-d595-4623-bc23-90f7123bc551",
+                                             @"accessToken": @"1111111-d595-4623-bc23",
                                              @"admin": @(YES),
                                              @"expireIn": @(604800),
-                                             @"refreshToken": @"1111111-ac5a-4fda-8c45-4af6341aeb5a",
+                                             @"refreshToken": @"1111111-ac5a-4fda-8c45",
                                              @"refreshTokenExpireIn": @(2592000),
                                              @"userName": @"测试",
-                                             @"yunxinToken":@"1111111-acda-4gda-8cd5-4afd341ded5d"
+                                             @"testToken":@"1111111-acda-4gda-8cd5"
                                              },
                                      @"code": @(200)};
     NSData *data = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil];

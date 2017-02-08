@@ -1,0 +1,13 @@
+0.3.0   
+    - Bug Fix
+    - HTCachePolicyProtocol中增加方法willCacheResponse允许使用者在缓存Response前才决定该请求是否需要缓存
+    - 将SOCKit替换为ARC版本并且每次避免每次都创建nonParameterCharacterSet而引起iOS 10 nano_free Crash的问题
+    - 支持POST请求中部分参数以QueryString的方式而不是以POST BODY的方式传递
+    - 对中文URL Path进行URL Encode
+    - 自动生成代码时去掉requestURL中可能带有的参数信息
+
+0.2.0   
+    - 默认请求基于AFNetworking 2.0
+    - 支持CocoaPods 1.0版本
+
+

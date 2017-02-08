@@ -1,1 +1,0 @@
-../../../../../../HTHttp/Core/HTMockURLResponse.h

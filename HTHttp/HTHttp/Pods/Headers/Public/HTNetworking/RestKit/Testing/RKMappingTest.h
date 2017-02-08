@@ -1,1 +1,0 @@
-../../../../../../../RestKit/Code/Testing/RKMappingTest.h

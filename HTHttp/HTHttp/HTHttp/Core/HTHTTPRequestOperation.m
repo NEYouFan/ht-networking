@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
-#import <Core/HTHTTPRequestOperation.h>
+#import "HTHTTPRequestOperation.h"
 #import "HTCachePolicyManager.h"
 #import "NSURLRequest+HTCache.h"
 #import "NSURLResponse+HTCache.h"
@@ -84,12 +84,10 @@ NSString * const HTResponseCacheExpireTimeUserInfoKey = @"HTResponseCacheExpireT
 }
 
 - (void)ht_checkAndFreezeRequest {
-    if (![AFNetworkReachabilityManager sharedManager].reachable) {
-        NSURLRequest *request = self.request;
-        if (request.ht_canFreeze) {
-            request.ht_isFrozen = YES;
-            [[HTFreezeManager sharedInstance] freeze:request];
-        }
+    NSURLRequest *request = self.request;
+    if (request.ht_canFreeze && ![AFNetworkReachabilityManager sharedManager].reachable) {
+        request.ht_isFrozen = YES;
+        [[HTFreezeManager sharedInstance] freeze:request];
     }
 }
 
@@ -112,13 +110,17 @@ NSString * const HTResponseCacheExpireTimeUserInfoKey = @"HTResponseCacheExpireT
     
     NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
     userInfo[RKResponseHasBeenMappedCacheUserInfoKey] = @YES;
-    NSCachedURLResponse *cachedResponse = [[NSCachedURLResponse alloc] initWithResponse:self.response data:self.responseData userInfo:userInfo storagePolicy:NSURLCacheStorageAllowed];
-    HTCachedResponse *htResponse = [[HTCachedResponse alloc] init];
-    htResponse.response = cachedResponse;
-    htResponse.createDate = [[HTHTTPDate sharedInstance] now];
-    htResponse.version = self.request.ht_responseVersion;
+    NSCachedURLResponse *originalCachedResponse = [[NSCachedURLResponse alloc] initWithResponse:self.response data:self.responseData userInfo:userInfo storagePolicy:NSURLCacheStorageAllowed];
 
-    [[HTCacheManager sharedManager] storeCachedResponse:htResponse forRequest:self.request];
+    Class<HTCachePolicyProtocol> cachePolicyClass = [[HTCachePolicyManager sharedInstance] cachePolicyClassForRequest:self];
+    NSCachedURLResponse *cachedResponse = [cachePolicyClass willCacheResponse:originalCachedResponse forRequest:self];
+    if (nil != cachedResponse) {
+        HTCachedResponse *htResponse = [[HTCachedResponse alloc] init];
+        htResponse.response = cachedResponse;
+        htResponse.createDate = [[HTHTTPDate sharedInstance] now];
+        htResponse.version = self.request.ht_responseVersion;
+        [[HTCacheManager sharedManager] storeCachedResponse:htResponse forRequest:self.request];
+    }
 }
 
 - (BOOL)isResponseFromCache {

@@ -21,9 +21,9 @@
 //  Main Modification: Don't depend on AFNetworking directly any more.
 
 
-#import <RestKit/Network/RKPaginator.h>
-#import <RestKit/Network/RKRouter.h>
-#import <RestKit/Support/RKMacros.h>
+#import "RKPaginator.h"
+#import "RKRouter.h"
+#import "RKMacros.h"
 
 #import <AFNetworking/AFNetworking.h>
 

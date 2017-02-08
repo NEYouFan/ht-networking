@@ -23,20 +23,20 @@
 #ifdef _COREDATADEFINES_H
 #if __has_include("RKManagedObjectCaching.h")
 
-#import <RestKit/CoreData/NSManagedObject+RKAdditions.h>
-#import <RestKit/CoreData/NSManagedObjectContext+RKAdditions.h>
-#import <RestKit/Network/RKManagedObjectRequestOperation.h>
-#import <RestKit/Network/RKObjectRequestOperationSubclass.h>
-#import <RestKit/Network/RKResponseMapperOperation.h>
-#import <RestKit/ObjectMapping/RKHTTPUtilities.h>
-#import <RestKit/ObjectMapping/RKObjectUtilities.h>
-#import <RestKit/Support/RKLog.h>
+#import "NSManagedObject+RKAdditions.h"
+#import "NSManagedObjectContext+RKAdditions.h"
+#import "RKManagedObjectRequestOperation.h"
+#import "RKObjectRequestOperationSubclass.h"
+#import "RKResponseMapperOperation.h"
+#import "RKHTTPUtilities.h"
+#import "RKObjectUtilities.h"
+#import "RKLog.h"
 
 // Graph visitor
-#import <RestKit/CoreData/RKEntityMapping.h>
-#import <RestKit/Network/RKResponseDescriptor.h>
-#import <RestKit/ObjectMapping/RKDynamicMapping.h>
-#import <RestKit/ObjectMapping/RKRelationshipMapping.h>
+#import "RKEntityMapping.h"
+#import "RKResponseDescriptor.h"
+#import "RKDynamicMapping.h"
+#import "RKRelationshipMapping.h"
 
 // Set Logging Component
 #undef RKLogComponent

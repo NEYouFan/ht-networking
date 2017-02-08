@@ -18,13 +18,13 @@
 //  limitations under the License.
 //
 
-#import <RestKit/CoreData/NSManagedObjectContext+RKAdditions.h>
-#import <RestKit/ObjectMapping/RKObjectUtilities.h>
-#import <RestKit/Search/RKSearchIndexer.h>
-#import <RestKit/Search/RKSearchWord.h>
-#import <RestKit/Search/RKSearchWordEntity.h>
-#import <RestKit/Support/RKLog.h>
-#import <RestKit/Support/RKStringTokenizer.h>
+#import "NSManagedObjectContext+RKAdditions.h"
+#import "RKObjectUtilities.h"
+#import "RKSearchIndexer.h"
+#import "RKSearchWord.h"
+#import "RKSearchWordEntity.h"
+#import "RKLog.h"
+#import "RKStringTokenizer.h"
 
 // Set Logging Component
 #undef RKLogComponent

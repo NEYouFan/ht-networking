@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
-#import <RestKit/ObjectMapping/RKHTTPUtilities.h>
-#import <Cache/HTCachePolicyProtocol.h>
-#import <Freeze/HTFreezePolicyProtocol.h>
-#import <RACSupport/RKObjectRequestOperation+HTRAC.h>
-#import <Core/NSURLRequest+HTMock.h>
+#import "RKHTTPUtilities.h"
+#import "HTCachePolicyProtocol.h"
+#import "HTFreezePolicyProtocol.h"
+#import "RKObjectRequestOperation+HTRAC.h"
+#import "NSURLRequest+HTMock.h"
 
 @class RKRequestDescriptor;
 @class RKResponseDescriptor;
@@ -154,6 +154,14 @@ typedef void (^HTConfigRequestBlock)(HTBaseRequest *request);
  *  @return 请求的参数.
  */
 - (NSDictionary *)requestParams;
+
+/**
+ *  URL参数. 
+ *  正常情况下，参数都通过requestParams传递，但如果有部分POST请求，部分参数需要添加到URL上，其他参数要添加到请求BODY上，那么需要添加到URL的Query参数在此处指定, 例如：POST请求URL为`/user/login.do?t=1462267261268&v=1.0`, 那么`t=1462267261268&v=1.0`需在此处传入; requestParams中信息会放在HTTP BODY中.
+ *
+ *  @return 返回一个字符串.
+ */
+- (NSString *)urlQueryParamString;
 
 /**
  *  请求自定义的Header. 默认情况下为nil, 如果有，那么会加到HTTP请求的Header中. 如果原来的header存在对应的key, 则会被替换掉.

@@ -20,14 +20,14 @@
 //  Modified by (Netease)Wangliping on 12/10/15.
 //  Main Modification: 1. Don't depend on AFNetworking directly any more. 2 Allow user to access response object.
 
-#import <RestKit/Network/RKObjectRequestOperation.h>
-#import <RestKit/Network/RKResponseDescriptor.h>
-#import <RestKit/Network/RKResponseMapperOperation.h>
-#import <RestKit/ObjectMapping/RKHTTPUtilities.h>
-#import <RestKit/ObjectMapping/RKMappingErrors.h>
-#import <RestKit/Support/RKLog.h>
-#import <RestKit/Support/RKMIMETypeSerialization.h>
-#import <RestKit/Support/RKOperationStateMachine.h>
+#import "RKObjectRequestOperation.h"
+#import "RKResponseDescriptor.h"
+#import "RKResponseMapperOperation.h"
+#import "RKHTTPUtilities.h"
+#import "RKMappingErrors.h"
+#import "RKLog.h"
+#import "RKMIMETypeSerialization.h"
+#import "RKOperationStateMachine.h"
 #import <objc/runtime.h>
 
 #import <Availability.h>

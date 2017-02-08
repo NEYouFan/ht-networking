@@ -7,7 +7,7 @@
 //
 
 #import "HTLogFormatter.h"
-#import "CocoaLumberjack.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
 @implementation HTLogFormatter
 
 - (NSString *)formatLogMessage:(DDLogMessage *)logMessage {

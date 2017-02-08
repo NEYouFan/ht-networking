@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FMDatabase.h"
+#import <FMDB/FMDatabase.h>
 
 @interface HTDatabaseHelper : NSObject
 

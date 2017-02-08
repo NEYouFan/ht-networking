@@ -25,6 +25,19 @@ typedef NS_ENUM(NSUInteger, HTCachePolicyId) {
 @required
 
 /**
+ *  是否cache Response. 
+ *  该方法允许使用者在自己的缓存策略类中判断是否需要缓存, 以及返回缓存前是否需要对数据进行修改.
+ *  默认情况下，不作任何处理并直接返回cachedResponse.
+ *  如果返回nil, 则不缓存. 否则缓存的实际数据来源于cachedResponse.
+ *
+ *  @param cachedResponse   待缓存的response.
+ *  @param requestOperation 待缓存的operation.
+ *
+ *  @return 返回允许缓存的operation.
+ */
++ (NSCachedURLResponse *)willCacheResponse:(NSCachedURLResponse *)cachedResponse forRequest:(RKHTTPRequestOperation *)requestOperation;
+
+/**
  *  是否存在requestOperation对应的缓存结果.
  *
  *  @param requestOperation 网络请求Operation对象.

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
-#import <RestKit/Network/RKHTTPRequestOperation.h>
+#import "RKHTTPRequestOperation.h"
 
 extern NSString * const HTResponseFromCacheUserInfoKey;
 extern NSString * const HTResponseCacheVersionUserInfoKey;

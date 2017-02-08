@@ -6,10 +6,10 @@
 //
 //
 
-#import <Core/HTMockHTTPRequestOperation.h>
-#import <Core/NSURLRequest+HTMock.h>
-#import <Core/HTMockURLResponse.h>
-#import <RestKit/Support/RKMIMETypes.h>
+#import "HTMockHTTPRequestOperation.h"
+#import "NSURLRequest+HTMock.h"
+#import "HTMockURLResponse.h"
+#import "RKMIMETypes.h"
 
 @interface HTMockHTTPRequestOperation ()
 

@@ -19,10 +19,10 @@
 //
 
 #import <CoreData/CoreData.h>
-#import <RestKit/CoreData/RKPropertyInspector+CoreData.h>
-#import <RestKit/ObjectMapping/RKObjectUtilities.h>
-#import <RestKit/Support/RKLog.h>
-#import <RestKit/Support/RKMacros.h>
+#import "RKPropertyInspector+CoreData.h"
+#import "RKObjectUtilities.h"
+#import "RKLog.h"
+#import "RKMacros.h"
 #import <objc/message.h>
 
 // Set Logging Component

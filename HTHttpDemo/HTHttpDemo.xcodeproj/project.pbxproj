@@ -8,84 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		4D67C0A009C1DC2F3551A243 /* libPods-HTHttpDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB674F7DAB8804A02E71979 /* libPods-HTHttpDemo.a */; };
-		E60D79151C6300C000CEBDE0 /* HTDemoFreezeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79141C6300C000CEBDE0 /* HTDemoFreezeRequest.m */; };
-		E60D79181C63018300CEBDE0 /* HTDemoCustomizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79171C63018300CEBDE0 /* HTDemoCustomizeRequest.m */; };
-		E60D79611C63344000CEBDE0 /* HTDemoErrorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79201C63344000CEBDE0 /* HTDemoErrorInfo.m */; };
-		E60D79621C63344000CEBDE0 /* HTDemoPhotoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79221C63344000CEBDE0 /* HTDemoPhotoInfo.m */; };
-		E60D79631C63344000CEBDE0 /* HTMockUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79241C63344000CEBDE0 /* HTMockUserInfo.m */; };
-		E60D79641C63344000CEBDE0 /* RKDemoUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79261C63344000CEBDE0 /* RKDemoUserInfo.m */; };
-		E60D79651C63344000CEBDE0 /* HTAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D792A1C63344000CEBDE0 /* HTAddress.m */; };
-		E60D79661C63344000CEBDE0 /* HTArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D792C1C63344000CEBDE0 /* HTArticle.m */; };
-		E60D79671C63344000CEBDE0 /* HTArticleRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D792E1C63344000CEBDE0 /* HTArticleRequest.m */; };
-		E60D79681C63344000CEBDE0 /* HTAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79301C63344000CEBDE0 /* HTAuthor.m */; };
-		E60D79691C63344000CEBDE0 /* HTAuthorRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79321C63344000CEBDE0 /* HTAuthorRequest.m */; };
-		E60D796A1C63344000CEBDE0 /* HTComment.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79341C63344000CEBDE0 /* HTComment.m */; };
-		E60D796B1C63344000CEBDE0 /* HTCommentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79361C63344000CEBDE0 /* HTCommentRequest.m */; };
-		E60D796C1C63344000CEBDE0 /* HTPostArticleRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79391C63344000CEBDE0 /* HTPostArticleRequest.m */; };
-		E60D796D1C63344000CEBDE0 /* HTDemoAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D793D1C63344000CEBDE0 /* HTDemoAddress.m */; };
-		E60D796E1C63344000CEBDE0 /* HTDemoArticle+HTYYTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D793F1C63344000CEBDE0 /* HTDemoArticle+HTYYTest.m */; };
-		E60D796F1C63344000CEBDE0 /* HTDemoArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79411C63344000CEBDE0 /* HTDemoArticle.m */; };
-		E60D79701C63344000CEBDE0 /* HTDemoArticleEx.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79431C63344000CEBDE0 /* HTDemoArticleEx.m */; };
-		E60D79711C63344000CEBDE0 /* HTDemoAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79451C63344000CEBDE0 /* HTDemoAuthor.m */; };
-		E60D79721C63344000CEBDE0 /* HTDemoCycleA.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79471C63344000CEBDE0 /* HTDemoCycleA.m */; };
-		E60D79731C63344000CEBDE0 /* HTDemoCycleB.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79491C63344000CEBDE0 /* HTDemoCycleB.m */; };
-		E60D79741C63344000CEBDE0 /* HTDemoCycleC.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D794B1C63344000CEBDE0 /* HTDemoCycleC.m */; };
-		E60D79751C63344000CEBDE0 /* HTDemoPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D794D1C63344000CEBDE0 /* HTDemoPerson.m */; };
-		E60D79761C63344000CEBDE0 /* HTDemoSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D794F1C63344000CEBDE0 /* HTDemoSubscriber.m */; };
-		E60D79771C63344000CEBDE0 /* HTDerivedArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79511C63344000CEBDE0 /* HTDerivedArticle.m */; };
-		E60D79781C63344000CEBDE0 /* HTSimpleAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79531C63344000CEBDE0 /* HTSimpleAddress.m */; };
-		E60D79791C63344000CEBDE0 /* HTSpecialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79551C63344000CEBDE0 /* HTSpecialModel.m */; };
-		E60D797A1C63344000CEBDE0 /* RKWikiPage.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79571C63344000CEBDE0 /* RKWikiPage.m */; };
-		E60D797B1C63344000CEBDE0 /* HTDemoResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D795A1C63344000CEBDE0 /* HTDemoResponse.m */; };
-		E60D797C1C63344000CEBDE0 /* HTDemoSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D795C1C63344000CEBDE0 /* HTDemoSpec.m */; };
-		E60D797D1C63344000CEBDE0 /* HTDemoSpecValue.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D795E1C63344000CEBDE0 /* HTDemoSpecValue.m */; };
-		E60D797E1C63344000CEBDE0 /* RKEPhotoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79601C63344000CEBDE0 /* RKEPhotoInfo.m */; };
+		E608B4101E090E93009F4D4A /* HTMyCachePolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B40F1E090E93009F4D4A /* HTMyCachePolicy.m */; };
+		E608B42A1E091369009F4D4A /* HTAdvanceFeatureDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B4191E091369009F4D4A /* HTAdvanceFeatureDemoViewController.m */; };
+		E608B42B1E091369009F4D4A /* HTBaseRequestDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B41B1E091369009F4D4A /* HTBaseRequestDemoViewController.m */; };
+		E608B42C1E091369009F4D4A /* HTCacheDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B41D1E091369009F4D4A /* HTCacheDemoViewController.m */; };
+		E608B42D1E091369009F4D4A /* HTFreezeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B41F1E091369009F4D4A /* HTFreezeDemoViewController.m */; };
+		E608B42E1E091369009F4D4A /* HTHttpTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B4211E091369009F4D4A /* HTHttpTableViewController.m */; };
+		E608B42F1E091369009F4D4A /* HTMainFreezeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B4231E091369009F4D4A /* HTMainFreezeDemoViewController.m */; };
+		E608B4301E091369009F4D4A /* HTRACDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B4251E091369009F4D4A /* HTRACDemoViewController.m */; };
+		E608B4311E091369009F4D4A /* HTRKDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B4271E091369009F4D4A /* HTRKDemoViewController.m */; };
+		E608B4321E091369009F4D4A /* HTRKFreezeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B4291E091369009F4D4A /* HTRKFreezeDemoViewController.m */; };
+		E608B43C1E09136F009F4D4A /* HTDemoErrorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B4351E09136F009F4D4A /* HTDemoErrorInfo.m */; };
+		E608B43D1E09136F009F4D4A /* HTDemoPhotoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B4371E09136F009F4D4A /* HTDemoPhotoInfo.m */; };
+		E608B43E1E09136F009F4D4A /* HTMockUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B4391E09136F009F4D4A /* HTMockUserInfo.m */; };
+		E608B43F1E09136F009F4D4A /* RKDemoUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B43B1E09136F009F4D4A /* RKDemoUserInfo.m */; };
+		E608B45F1E091374009F4D4A /* HTDemoCacheIgnoreParamsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B4421E091374009F4D4A /* HTDemoCacheIgnoreParamsRequest.m */; };
+		E608B4601E091374009F4D4A /* HTDemoCacheRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B4441E091374009F4D4A /* HTDemoCacheRequest.m */; };
+		E608B4611E091374009F4D4A /* HTDemoCustomCacheRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B4461E091374009F4D4A /* HTDemoCustomCacheRequest.m */; };
+		E608B4621E091374009F4D4A /* HTDemoCustomFreezeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B4481E091374009F4D4A /* HTDemoCustomFreezeRequest.m */; };
+		E608B4631E091374009F4D4A /* HTDemoCustomizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B44A1E091374009F4D4A /* HTDemoCustomizeRequest.m */; };
+		E608B4641E091374009F4D4A /* HTDemoFreezeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B44C1E091374009F4D4A /* HTDemoFreezeRequest.m */; };
+		E608B4651E091374009F4D4A /* HTDemoGetPhotoListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B44E1E091374009F4D4A /* HTDemoGetPhotoListRequest.m */; };
+		E608B4661E091374009F4D4A /* HTDemoGetUserInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B4501E091374009F4D4A /* HTDemoGetUserInfoRequest.m */; };
+		E608B4671E091374009F4D4A /* HTDemoGetUserPhotoListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B4521E091374009F4D4A /* HTDemoGetUserPhotoListRequest.m */; };
+		E608B4681E091374009F4D4A /* HTDemoRACPhotoListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B4541E091374009F4D4A /* HTDemoRACPhotoListRequest.m */; };
+		E608B4691E091374009F4D4A /* HTDemoResponseMappingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B4561E091374009F4D4A /* HTDemoResponseMappingRequest.m */; };
+		E608B46A1E091374009F4D4A /* HTDemoUploadImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B4581E091374009F4D4A /* HTDemoUploadImageRequest.m */; };
+		E608B46B1E091374009F4D4A /* HTDemoValidResultBlockRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B45A1E091374009F4D4A /* HTDemoValidResultBlockRequest.m */; };
+		E608B46C1E091374009F4D4A /* HTDemoWithTypeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B45C1E091374009F4D4A /* HTDemoWithTypeRequest.m */; };
+		E608B46D1E091374009F4D4A /* HTMockUserInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E608B45E1E091374009F4D4A /* HTMockUserInfoRequest.m */; };
 		E60D79891C63348F00CEBDE0 /* HTMockAuthorize.json in Resources */ = {isa = PBXBuildFile; fileRef = E60D79811C63348F00CEBDE0 /* HTMockAuthorize.json */; };
 		E60D798A1C63348F00CEBDE0 /* HTDemoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79841C63348F00CEBDE0 /* HTDemoHelper.m */; };
 		E60D798B1C63348F00CEBDE0 /* RKObjectRequestOperation+HTDemoRAC.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79861C63348F00CEBDE0 /* RKObjectRequestOperation+HTDemoRAC.m */; };
 		E60D798C1C63348F00CEBDE0 /* UITableView+HTHTTPDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D79881C63348F00CEBDE0 /* UITableView+HTHTTPDemo.m */; };
-		E65E249F1CA131D50053F1D3 /* HTAdvanceFeatureDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E24851CA131D50053F1D3 /* HTAdvanceFeatureDemoViewController.m */; };
-		E65E24A01CA131D50053F1D3 /* HTBaseRequestDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E24871CA131D50053F1D3 /* HTBaseRequestDemoViewController.m */; };
-		E65E24A11CA131D50053F1D3 /* HTCacheDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E24891CA131D50053F1D3 /* HTCacheDemoViewController.m */; };
-		E65E24A21CA131D50053F1D3 /* HTFreezeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E248B1CA131D50053F1D3 /* HTFreezeDemoViewController.m */; };
-		E65E24A31CA131D50053F1D3 /* HTMainFreezeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E248D1CA131D50053F1D3 /* HTMainFreezeDemoViewController.m */; };
-		E65E24A41CA131D50053F1D3 /* HTRACDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E248F1CA131D50053F1D3 /* HTRACDemoViewController.m */; };
-		E65E24A51CA131D50053F1D3 /* HTRKDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E24911CA131D50053F1D3 /* HTRKDemoViewController.m */; };
-		E65E24A61CA131D50053F1D3 /* HTRKFreezeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E24931CA131D50053F1D3 /* HTRKFreezeDemoViewController.m */; };
-		E65E24A71CA131D50053F1D3 /* HTBaseRequestTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E24961CA131D50053F1D3 /* HTBaseRequestTestViewController.m */; };
-		E65E24A81CA131D50053F1D3 /* HTFreezeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E24981CA131D50053F1D3 /* HTFreezeTestViewController.m */; };
-		E65E24A91CA131D50053F1D3 /* HTHttpModelTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E249A1CA131D50053F1D3 /* HTHttpModelTestController.m */; };
-		E65E24AA1CA131D50053F1D3 /* HTRACTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E249C1CA131D50053F1D3 /* HTRACTestViewController.m */; };
-		E65E24AB1CA131D50053F1D3 /* HTTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E249E1CA131D50053F1D3 /* HTTestViewController.m */; };
-		E6818CEC1C5F070A00BEB91A /* HTHttpTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6818CE31C5F070A00BEB91A /* HTHttpTableViewController.m */; };
 		E68D6CC51B60EA280010D863 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E68D6CC41B60EA280010D863 /* main.m */; };
 		E68D6CC81B60EA280010D863 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E68D6CC71B60EA280010D863 /* AppDelegate.m */; };
 		E68D6CD11B60EA280010D863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68D6CCF1B60EA280010D863 /* Main.storyboard */; };
 		E68D6CD31B60EA280010D863 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68D6CD21B60EA280010D863 /* Images.xcassets */; };
 		E68D6CD61B60EA280010D863 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E68D6CD41B60EA280010D863 /* LaunchScreen.xib */; };
-		E69345E91C747B7200DE5494 /* HTCampany.m in Sources */ = {isa = PBXBuildFile; fileRef = E69345DA1C747B7200DE5494 /* HTCampany.m */; };
-		E69345EA1C747B7200DE5494 /* HTDemoBaseURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E69345DC1C747B7200DE5494 /* HTDemoBaseURLRequest.m */; };
-		E69345EB1C747B7200DE5494 /* HTDemoComplextRequest1.m in Sources */ = {isa = PBXBuildFile; fileRef = E69345DE1C747B7200DE5494 /* HTDemoComplextRequest1.m */; };
-		E69345EC1C747B7200DE5494 /* HTDemoErrorMsgRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E69345E01C747B7200DE5494 /* HTDemoErrorMsgRequest.m */; };
-		E69345ED1C747B7200DE5494 /* HTDemoWithTypeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E69345E21C747B7200DE5494 /* HTDemoWithTypeRequest.m */; };
-		E69345EE1C747B7200DE5494 /* HTGetCompanyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E69345E41C747B7200DE5494 /* HTGetCompanyRequest.m */; };
-		E69345EF1C747B7200DE5494 /* HTTestRefreshTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E69345E61C747B7200DE5494 /* HTTestRefreshTokenRequest.m */; };
-		E69345F01C747B7200DE5494 /* HTTestValidParamRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E69345E81C747B7200DE5494 /* HTTestValidParamRequest.m */; };
 		E6C0A2C51C2A4086006B92B9 /* HTHttpDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E68D6CE11B60EA280010D863 /* HTHttpDemoTests.m */; };
-		E6C2C5F81C6094DF00D29F35 /* HTDemoCacheRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C2C5EB1C6094DF00D29F35 /* HTDemoCacheRequest.m */; };
-		E6C2C5F91C6094DF00D29F35 /* HTDemoGetPhotoListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C2C5ED1C6094DF00D29F35 /* HTDemoGetPhotoListRequest.m */; };
-		E6C2C5FA1C6094DF00D29F35 /* HTDemoGetUserInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C2C5EF1C6094DF00D29F35 /* HTDemoGetUserInfoRequest.m */; };
-		E6C2C5FB1C6094DF00D29F35 /* HTDemoGetUserPhotoListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C2C5F11C6094DF00D29F35 /* HTDemoGetUserPhotoListRequest.m */; };
-		E6C2C5FC1C6094DF00D29F35 /* HTDemoUploadImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C2C5F31C6094DF00D29F35 /* HTDemoUploadImageRequest.m */; };
-		E6C2C5FD1C6094DF00D29F35 /* HTDemoValidResultBlockRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C2C5F51C6094DF00D29F35 /* HTDemoValidResultBlockRequest.m */; };
-		E6C2C5FE1C6094DF00D29F35 /* HTMockUserInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C2C5F71C6094DF00D29F35 /* HTMockUserInfoRequest.m */; };
-		E6C2C6261C6097E200D29F35 /* HTDemoResponseMappingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C2C6251C6097E200D29F35 /* HTDemoResponseMappingRequest.m */; };
 		E6E936011C7F05DD003199F3 /* 13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6E936001C7F05DD003199F3 /* 13.jpg */; };
 		E6EAB2551C716049006610D3 /* HTCustomCachePolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EAB2541C716049006610D3 /* HTCustomCachePolicy.m */; };
-		E6EAB25B1C7163AB006610D3 /* HTDemoCacheIgnoreParamsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EAB25A1C7163AB006610D3 /* HTDemoCacheIgnoreParamsRequest.m */; };
-		E6EAB25E1C717DF5006610D3 /* HTDemoCustomFreezeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EAB25D1C717DF5006610D3 /* HTDemoCustomFreezeRequest.m */; };
 		E6EAB2611C71811D006610D3 /* HTCustomFreezePolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EAB2601C71811D006610D3 /* HTCustomFreezePolicy.m */; };
-		E6EAB2641C71CAE6006610D3 /* HTDemoRACPhotoListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EAB2631C71CAE6006610D3 /* HTDemoRACPhotoListRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,72 +66,64 @@
 		4AB674F7DAB8804A02E71979 /* libPods-HTHttpDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HTHttpDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24D5991BB9360BA324A1EC4 /* Pods-HTHttpDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTHttpDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HTHttpDemo/Pods-HTHttpDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D876D2825E7290335199146D /* Pods-HTHttpDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTHttpDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HTHttpDemo/Pods-HTHttpDemo.release.xcconfig"; sourceTree = "<group>"; };
-		E60D79131C6300C000CEBDE0 /* HTDemoFreezeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoFreezeRequest.h; sourceTree = "<group>"; };
-		E60D79141C6300C000CEBDE0 /* HTDemoFreezeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoFreezeRequest.m; sourceTree = "<group>"; };
-		E60D79161C63018300CEBDE0 /* HTDemoCustomizeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoCustomizeRequest.h; sourceTree = "<group>"; };
-		E60D79171C63018300CEBDE0 /* HTDemoCustomizeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoCustomizeRequest.m; sourceTree = "<group>"; };
-		E60D791F1C63344000CEBDE0 /* HTDemoErrorInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoErrorInfo.h; sourceTree = "<group>"; };
-		E60D79201C63344000CEBDE0 /* HTDemoErrorInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoErrorInfo.m; sourceTree = "<group>"; };
-		E60D79211C63344000CEBDE0 /* HTDemoPhotoInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoPhotoInfo.h; sourceTree = "<group>"; };
-		E60D79221C63344000CEBDE0 /* HTDemoPhotoInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoPhotoInfo.m; sourceTree = "<group>"; };
-		E60D79231C63344000CEBDE0 /* HTMockUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMockUserInfo.h; sourceTree = "<group>"; };
-		E60D79241C63344000CEBDE0 /* HTMockUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMockUserInfo.m; sourceTree = "<group>"; };
-		E60D79251C63344000CEBDE0 /* RKDemoUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDemoUserInfo.h; sourceTree = "<group>"; };
-		E60D79261C63344000CEBDE0 /* RKDemoUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDemoUserInfo.m; sourceTree = "<group>"; };
-		E60D79291C63344000CEBDE0 /* HTAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTAddress.h; sourceTree = "<group>"; };
-		E60D792A1C63344000CEBDE0 /* HTAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTAddress.m; sourceTree = "<group>"; };
-		E60D792B1C63344000CEBDE0 /* HTArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTArticle.h; sourceTree = "<group>"; };
-		E60D792C1C63344000CEBDE0 /* HTArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTArticle.m; sourceTree = "<group>"; };
-		E60D792D1C63344000CEBDE0 /* HTArticleRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTArticleRequest.h; sourceTree = "<group>"; };
-		E60D792E1C63344000CEBDE0 /* HTArticleRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTArticleRequest.m; sourceTree = "<group>"; };
-		E60D792F1C63344000CEBDE0 /* HTAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTAuthor.h; sourceTree = "<group>"; };
-		E60D79301C63344000CEBDE0 /* HTAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTAuthor.m; sourceTree = "<group>"; };
-		E60D79311C63344000CEBDE0 /* HTAuthorRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTAuthorRequest.h; sourceTree = "<group>"; };
-		E60D79321C63344000CEBDE0 /* HTAuthorRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTAuthorRequest.m; sourceTree = "<group>"; };
-		E60D79331C63344000CEBDE0 /* HTComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTComment.h; sourceTree = "<group>"; };
-		E60D79341C63344000CEBDE0 /* HTComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTComment.m; sourceTree = "<group>"; };
-		E60D79351C63344000CEBDE0 /* HTCommentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTCommentRequest.h; sourceTree = "<group>"; };
-		E60D79361C63344000CEBDE0 /* HTCommentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTCommentRequest.m; sourceTree = "<group>"; };
-		E60D79371C63344000CEBDE0 /* HTModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTModels.h; sourceTree = "<group>"; };
-		E60D79381C63344000CEBDE0 /* HTPostArticleRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTPostArticleRequest.h; sourceTree = "<group>"; };
-		E60D79391C63344000CEBDE0 /* HTPostArticleRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTPostArticleRequest.m; sourceTree = "<group>"; };
-		E60D793A1C63344000CEBDE0 /* HTRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTRequests.h; sourceTree = "<group>"; };
-		E60D793C1C63344000CEBDE0 /* HTDemoAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoAddress.h; sourceTree = "<group>"; };
-		E60D793D1C63344000CEBDE0 /* HTDemoAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoAddress.m; sourceTree = "<group>"; };
-		E60D793E1C63344000CEBDE0 /* HTDemoArticle+HTYYTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HTDemoArticle+HTYYTest.h"; sourceTree = "<group>"; };
-		E60D793F1C63344000CEBDE0 /* HTDemoArticle+HTYYTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HTDemoArticle+HTYYTest.m"; sourceTree = "<group>"; };
-		E60D79401C63344000CEBDE0 /* HTDemoArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoArticle.h; sourceTree = "<group>"; };
-		E60D79411C63344000CEBDE0 /* HTDemoArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoArticle.m; sourceTree = "<group>"; };
-		E60D79421C63344000CEBDE0 /* HTDemoArticleEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoArticleEx.h; sourceTree = "<group>"; };
-		E60D79431C63344000CEBDE0 /* HTDemoArticleEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoArticleEx.m; sourceTree = "<group>"; };
-		E60D79441C63344000CEBDE0 /* HTDemoAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoAuthor.h; sourceTree = "<group>"; };
-		E60D79451C63344000CEBDE0 /* HTDemoAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoAuthor.m; sourceTree = "<group>"; };
-		E60D79461C63344000CEBDE0 /* HTDemoCycleA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoCycleA.h; sourceTree = "<group>"; };
-		E60D79471C63344000CEBDE0 /* HTDemoCycleA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoCycleA.m; sourceTree = "<group>"; };
-		E60D79481C63344000CEBDE0 /* HTDemoCycleB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoCycleB.h; sourceTree = "<group>"; };
-		E60D79491C63344000CEBDE0 /* HTDemoCycleB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoCycleB.m; sourceTree = "<group>"; };
-		E60D794A1C63344000CEBDE0 /* HTDemoCycleC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoCycleC.h; sourceTree = "<group>"; };
-		E60D794B1C63344000CEBDE0 /* HTDemoCycleC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoCycleC.m; sourceTree = "<group>"; };
-		E60D794C1C63344000CEBDE0 /* HTDemoPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoPerson.h; sourceTree = "<group>"; };
-		E60D794D1C63344000CEBDE0 /* HTDemoPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoPerson.m; sourceTree = "<group>"; };
-		E60D794E1C63344000CEBDE0 /* HTDemoSubscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoSubscriber.h; sourceTree = "<group>"; };
-		E60D794F1C63344000CEBDE0 /* HTDemoSubscriber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoSubscriber.m; sourceTree = "<group>"; };
-		E60D79501C63344000CEBDE0 /* HTDerivedArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDerivedArticle.h; sourceTree = "<group>"; };
-		E60D79511C63344000CEBDE0 /* HTDerivedArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDerivedArticle.m; sourceTree = "<group>"; };
-		E60D79521C63344000CEBDE0 /* HTSimpleAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTSimpleAddress.h; sourceTree = "<group>"; };
-		E60D79531C63344000CEBDE0 /* HTSimpleAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTSimpleAddress.m; sourceTree = "<group>"; };
-		E60D79541C63344000CEBDE0 /* HTSpecialModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTSpecialModel.h; sourceTree = "<group>"; };
-		E60D79551C63344000CEBDE0 /* HTSpecialModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTSpecialModel.m; sourceTree = "<group>"; };
-		E60D79561C63344000CEBDE0 /* RKWikiPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKWikiPage.h; sourceTree = "<group>"; };
-		E60D79571C63344000CEBDE0 /* RKWikiPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKWikiPage.m; sourceTree = "<group>"; };
-		E60D79591C63344000CEBDE0 /* HTDemoResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoResponse.h; sourceTree = "<group>"; };
-		E60D795A1C63344000CEBDE0 /* HTDemoResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoResponse.m; sourceTree = "<group>"; };
-		E60D795B1C63344000CEBDE0 /* HTDemoSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoSpec.h; sourceTree = "<group>"; };
-		E60D795C1C63344000CEBDE0 /* HTDemoSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoSpec.m; sourceTree = "<group>"; };
-		E60D795D1C63344000CEBDE0 /* HTDemoSpecValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoSpecValue.h; sourceTree = "<group>"; };
-		E60D795E1C63344000CEBDE0 /* HTDemoSpecValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoSpecValue.m; sourceTree = "<group>"; };
-		E60D795F1C63344000CEBDE0 /* RKEPhotoInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKEPhotoInfo.h; sourceTree = "<group>"; };
-		E60D79601C63344000CEBDE0 /* RKEPhotoInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKEPhotoInfo.m; sourceTree = "<group>"; };
+		E608B40E1E090E93009F4D4A /* HTMyCachePolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMyCachePolicy.h; sourceTree = "<group>"; };
+		E608B40F1E090E93009F4D4A /* HTMyCachePolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMyCachePolicy.m; sourceTree = "<group>"; };
+		E608B4181E091369009F4D4A /* HTAdvanceFeatureDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTAdvanceFeatureDemoViewController.h; sourceTree = "<group>"; };
+		E608B4191E091369009F4D4A /* HTAdvanceFeatureDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTAdvanceFeatureDemoViewController.m; sourceTree = "<group>"; };
+		E608B41A1E091369009F4D4A /* HTBaseRequestDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTBaseRequestDemoViewController.h; sourceTree = "<group>"; };
+		E608B41B1E091369009F4D4A /* HTBaseRequestDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTBaseRequestDemoViewController.m; sourceTree = "<group>"; };
+		E608B41C1E091369009F4D4A /* HTCacheDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTCacheDemoViewController.h; sourceTree = "<group>"; };
+		E608B41D1E091369009F4D4A /* HTCacheDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTCacheDemoViewController.m; sourceTree = "<group>"; };
+		E608B41E1E091369009F4D4A /* HTFreezeDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTFreezeDemoViewController.h; sourceTree = "<group>"; };
+		E608B41F1E091369009F4D4A /* HTFreezeDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTFreezeDemoViewController.m; sourceTree = "<group>"; };
+		E608B4201E091369009F4D4A /* HTHttpTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTHttpTableViewController.h; sourceTree = "<group>"; };
+		E608B4211E091369009F4D4A /* HTHttpTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTHttpTableViewController.m; sourceTree = "<group>"; };
+		E608B4221E091369009F4D4A /* HTMainFreezeDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMainFreezeDemoViewController.h; sourceTree = "<group>"; };
+		E608B4231E091369009F4D4A /* HTMainFreezeDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMainFreezeDemoViewController.m; sourceTree = "<group>"; };
+		E608B4241E091369009F4D4A /* HTRACDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTRACDemoViewController.h; sourceTree = "<group>"; };
+		E608B4251E091369009F4D4A /* HTRACDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTRACDemoViewController.m; sourceTree = "<group>"; };
+		E608B4261E091369009F4D4A /* HTRKDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTRKDemoViewController.h; sourceTree = "<group>"; };
+		E608B4271E091369009F4D4A /* HTRKDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTRKDemoViewController.m; sourceTree = "<group>"; };
+		E608B4281E091369009F4D4A /* HTRKFreezeDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTRKFreezeDemoViewController.h; sourceTree = "<group>"; };
+		E608B4291E091369009F4D4A /* HTRKFreezeDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTRKFreezeDemoViewController.m; sourceTree = "<group>"; };
+		E608B4341E09136F009F4D4A /* HTDemoErrorInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoErrorInfo.h; sourceTree = "<group>"; };
+		E608B4351E09136F009F4D4A /* HTDemoErrorInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoErrorInfo.m; sourceTree = "<group>"; };
+		E608B4361E09136F009F4D4A /* HTDemoPhotoInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoPhotoInfo.h; sourceTree = "<group>"; };
+		E608B4371E09136F009F4D4A /* HTDemoPhotoInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoPhotoInfo.m; sourceTree = "<group>"; };
+		E608B4381E09136F009F4D4A /* HTMockUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMockUserInfo.h; sourceTree = "<group>"; };
+		E608B4391E09136F009F4D4A /* HTMockUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMockUserInfo.m; sourceTree = "<group>"; };
+		E608B43A1E09136F009F4D4A /* RKDemoUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDemoUserInfo.h; sourceTree = "<group>"; };
+		E608B43B1E09136F009F4D4A /* RKDemoUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDemoUserInfo.m; sourceTree = "<group>"; };
+		E608B4411E091374009F4D4A /* HTDemoCacheIgnoreParamsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoCacheIgnoreParamsRequest.h; sourceTree = "<group>"; };
+		E608B4421E091374009F4D4A /* HTDemoCacheIgnoreParamsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoCacheIgnoreParamsRequest.m; sourceTree = "<group>"; };
+		E608B4431E091374009F4D4A /* HTDemoCacheRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoCacheRequest.h; sourceTree = "<group>"; };
+		E608B4441E091374009F4D4A /* HTDemoCacheRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoCacheRequest.m; sourceTree = "<group>"; };
+		E608B4451E091374009F4D4A /* HTDemoCustomCacheRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoCustomCacheRequest.h; sourceTree = "<group>"; };
+		E608B4461E091374009F4D4A /* HTDemoCustomCacheRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoCustomCacheRequest.m; sourceTree = "<group>"; };
+		E608B4471E091374009F4D4A /* HTDemoCustomFreezeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoCustomFreezeRequest.h; sourceTree = "<group>"; };
+		E608B4481E091374009F4D4A /* HTDemoCustomFreezeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoCustomFreezeRequest.m; sourceTree = "<group>"; };
+		E608B4491E091374009F4D4A /* HTDemoCustomizeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoCustomizeRequest.h; sourceTree = "<group>"; };
+		E608B44A1E091374009F4D4A /* HTDemoCustomizeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoCustomizeRequest.m; sourceTree = "<group>"; };
+		E608B44B1E091374009F4D4A /* HTDemoFreezeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoFreezeRequest.h; sourceTree = "<group>"; };
+		E608B44C1E091374009F4D4A /* HTDemoFreezeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoFreezeRequest.m; sourceTree = "<group>"; };
+		E608B44D1E091374009F4D4A /* HTDemoGetPhotoListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoGetPhotoListRequest.h; sourceTree = "<group>"; };
+		E608B44E1E091374009F4D4A /* HTDemoGetPhotoListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoGetPhotoListRequest.m; sourceTree = "<group>"; };
+		E608B44F1E091374009F4D4A /* HTDemoGetUserInfoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoGetUserInfoRequest.h; sourceTree = "<group>"; };
+		E608B4501E091374009F4D4A /* HTDemoGetUserInfoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoGetUserInfoRequest.m; sourceTree = "<group>"; };
+		E608B4511E091374009F4D4A /* HTDemoGetUserPhotoListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoGetUserPhotoListRequest.h; sourceTree = "<group>"; };
+		E608B4521E091374009F4D4A /* HTDemoGetUserPhotoListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoGetUserPhotoListRequest.m; sourceTree = "<group>"; };
+		E608B4531E091374009F4D4A /* HTDemoRACPhotoListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoRACPhotoListRequest.h; sourceTree = "<group>"; };
+		E608B4541E091374009F4D4A /* HTDemoRACPhotoListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoRACPhotoListRequest.m; sourceTree = "<group>"; };
+		E608B4551E091374009F4D4A /* HTDemoResponseMappingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoResponseMappingRequest.h; sourceTree = "<group>"; };
+		E608B4561E091374009F4D4A /* HTDemoResponseMappingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoResponseMappingRequest.m; sourceTree = "<group>"; };
+		E608B4571E091374009F4D4A /* HTDemoUploadImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoUploadImageRequest.h; sourceTree = "<group>"; };
+		E608B4581E091374009F4D4A /* HTDemoUploadImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoUploadImageRequest.m; sourceTree = "<group>"; };
+		E608B4591E091374009F4D4A /* HTDemoValidResultBlockRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoValidResultBlockRequest.h; sourceTree = "<group>"; };
+		E608B45A1E091374009F4D4A /* HTDemoValidResultBlockRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoValidResultBlockRequest.m; sourceTree = "<group>"; };
+		E608B45B1E091374009F4D4A /* HTDemoWithTypeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoWithTypeRequest.h; sourceTree = "<group>"; };
+		E608B45C1E091374009F4D4A /* HTDemoWithTypeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoWithTypeRequest.m; sourceTree = "<group>"; };
+		E608B45D1E091374009F4D4A /* HTMockUserInfoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMockUserInfoRequest.h; sourceTree = "<group>"; };
+		E608B45E1E091374009F4D4A /* HTMockUserInfoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMockUserInfoRequest.m; sourceTree = "<group>"; };
 		E60D79811C63348F00CEBDE0 /* HTMockAuthorize.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HTMockAuthorize.json; sourceTree = "<group>"; };
 		E60D79831C63348F00CEBDE0 /* HTDemoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoHelper.h; sourceTree = "<group>"; };
 		E60D79841C63348F00CEBDE0 /* HTDemoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoHelper.m; sourceTree = "<group>"; };
@@ -176,34 +132,6 @@
 		E60D79871C63348F00CEBDE0 /* UITableView+HTHTTPDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+HTHTTPDemo.h"; sourceTree = "<group>"; };
 		E60D79881C63348F00CEBDE0 /* UITableView+HTHTTPDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+HTHTTPDemo.m"; sourceTree = "<group>"; };
 		E64AE1EB1BC6671F000637A0 /* HTHTTPDemo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTHTTPDemo.pch; path = ../HTHTTPDemo.pch; sourceTree = "<group>"; };
-		E65E24841CA131D50053F1D3 /* HTAdvanceFeatureDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTAdvanceFeatureDemoViewController.h; sourceTree = "<group>"; };
-		E65E24851CA131D50053F1D3 /* HTAdvanceFeatureDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTAdvanceFeatureDemoViewController.m; sourceTree = "<group>"; };
-		E65E24861CA131D50053F1D3 /* HTBaseRequestDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTBaseRequestDemoViewController.h; sourceTree = "<group>"; };
-		E65E24871CA131D50053F1D3 /* HTBaseRequestDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTBaseRequestDemoViewController.m; sourceTree = "<group>"; };
-		E65E24881CA131D50053F1D3 /* HTCacheDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTCacheDemoViewController.h; sourceTree = "<group>"; };
-		E65E24891CA131D50053F1D3 /* HTCacheDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTCacheDemoViewController.m; sourceTree = "<group>"; };
-		E65E248A1CA131D50053F1D3 /* HTFreezeDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTFreezeDemoViewController.h; sourceTree = "<group>"; };
-		E65E248B1CA131D50053F1D3 /* HTFreezeDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTFreezeDemoViewController.m; sourceTree = "<group>"; };
-		E65E248C1CA131D50053F1D3 /* HTMainFreezeDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMainFreezeDemoViewController.h; sourceTree = "<group>"; };
-		E65E248D1CA131D50053F1D3 /* HTMainFreezeDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMainFreezeDemoViewController.m; sourceTree = "<group>"; };
-		E65E248E1CA131D50053F1D3 /* HTRACDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTRACDemoViewController.h; sourceTree = "<group>"; };
-		E65E248F1CA131D50053F1D3 /* HTRACDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTRACDemoViewController.m; sourceTree = "<group>"; };
-		E65E24901CA131D50053F1D3 /* HTRKDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTRKDemoViewController.h; sourceTree = "<group>"; };
-		E65E24911CA131D50053F1D3 /* HTRKDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTRKDemoViewController.m; sourceTree = "<group>"; };
-		E65E24921CA131D50053F1D3 /* HTRKFreezeDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTRKFreezeDemoViewController.h; sourceTree = "<group>"; };
-		E65E24931CA131D50053F1D3 /* HTRKFreezeDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTRKFreezeDemoViewController.m; sourceTree = "<group>"; };
-		E65E24951CA131D50053F1D3 /* HTBaseRequestTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTBaseRequestTestViewController.h; sourceTree = "<group>"; };
-		E65E24961CA131D50053F1D3 /* HTBaseRequestTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTBaseRequestTestViewController.m; sourceTree = "<group>"; };
-		E65E24971CA131D50053F1D3 /* HTFreezeTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTFreezeTestViewController.h; sourceTree = "<group>"; };
-		E65E24981CA131D50053F1D3 /* HTFreezeTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTFreezeTestViewController.m; sourceTree = "<group>"; };
-		E65E24991CA131D50053F1D3 /* HTHttpModelTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTHttpModelTestController.h; sourceTree = "<group>"; };
-		E65E249A1CA131D50053F1D3 /* HTHttpModelTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTHttpModelTestController.m; sourceTree = "<group>"; };
-		E65E249B1CA131D50053F1D3 /* HTRACTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTRACTestViewController.h; sourceTree = "<group>"; };
-		E65E249C1CA131D50053F1D3 /* HTRACTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTRACTestViewController.m; sourceTree = "<group>"; };
-		E65E249D1CA131D50053F1D3 /* HTTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTestViewController.h; sourceTree = "<group>"; };
-		E65E249E1CA131D50053F1D3 /* HTTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTestViewController.m; sourceTree = "<group>"; };
-		E6818CE21C5F070A00BEB91A /* HTHttpTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTHttpTableViewController.h; sourceTree = "<group>"; };
-		E6818CE31C5F070A00BEB91A /* HTHttpTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTHttpTableViewController.m; sourceTree = "<group>"; };
 		E68D6CBF1B60EA280010D863 /* HTHttpDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTHttpDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68D6CC31B60EA280010D863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E68D6CC41B60EA280010D863 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -215,49 +143,11 @@
 		E68D6CDB1B60EA280010D863 /* HTHttpDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTHttpDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68D6CE01B60EA280010D863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E68D6CE11B60EA280010D863 /* HTHttpDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTHttpDemoTests.m; sourceTree = "<group>"; };
-		E69345D91C747B7200DE5494 /* HTCampany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTCampany.h; sourceTree = "<group>"; };
-		E69345DA1C747B7200DE5494 /* HTCampany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTCampany.m; sourceTree = "<group>"; };
-		E69345DB1C747B7200DE5494 /* HTDemoBaseURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoBaseURLRequest.h; sourceTree = "<group>"; };
-		E69345DC1C747B7200DE5494 /* HTDemoBaseURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoBaseURLRequest.m; sourceTree = "<group>"; };
-		E69345DD1C747B7200DE5494 /* HTDemoComplextRequest1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoComplextRequest1.h; sourceTree = "<group>"; };
-		E69345DE1C747B7200DE5494 /* HTDemoComplextRequest1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoComplextRequest1.m; sourceTree = "<group>"; };
-		E69345DF1C747B7200DE5494 /* HTDemoErrorMsgRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoErrorMsgRequest.h; sourceTree = "<group>"; };
-		E69345E01C747B7200DE5494 /* HTDemoErrorMsgRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoErrorMsgRequest.m; sourceTree = "<group>"; };
-		E69345E11C747B7200DE5494 /* HTDemoWithTypeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoWithTypeRequest.h; sourceTree = "<group>"; };
-		E69345E21C747B7200DE5494 /* HTDemoWithTypeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoWithTypeRequest.m; sourceTree = "<group>"; };
-		E69345E31C747B7200DE5494 /* HTGetCompanyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTGetCompanyRequest.h; sourceTree = "<group>"; };
-		E69345E41C747B7200DE5494 /* HTGetCompanyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTGetCompanyRequest.m; sourceTree = "<group>"; };
-		E69345E51C747B7200DE5494 /* HTTestRefreshTokenRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTestRefreshTokenRequest.h; sourceTree = "<group>"; };
-		E69345E61C747B7200DE5494 /* HTTestRefreshTokenRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTestRefreshTokenRequest.m; sourceTree = "<group>"; };
-		E69345E71C747B7200DE5494 /* HTTestValidParamRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTestValidParamRequest.h; sourceTree = "<group>"; };
-		E69345E81C747B7200DE5494 /* HTTestValidParamRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTestValidParamRequest.m; sourceTree = "<group>"; };
-		E6C2C5EA1C6094DF00D29F35 /* HTDemoCacheRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoCacheRequest.h; sourceTree = "<group>"; };
-		E6C2C5EB1C6094DF00D29F35 /* HTDemoCacheRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoCacheRequest.m; sourceTree = "<group>"; };
-		E6C2C5EC1C6094DF00D29F35 /* HTDemoGetPhotoListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoGetPhotoListRequest.h; sourceTree = "<group>"; };
-		E6C2C5ED1C6094DF00D29F35 /* HTDemoGetPhotoListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoGetPhotoListRequest.m; sourceTree = "<group>"; };
-		E6C2C5EE1C6094DF00D29F35 /* HTDemoGetUserInfoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoGetUserInfoRequest.h; sourceTree = "<group>"; };
-		E6C2C5EF1C6094DF00D29F35 /* HTDemoGetUserInfoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoGetUserInfoRequest.m; sourceTree = "<group>"; };
-		E6C2C5F01C6094DF00D29F35 /* HTDemoGetUserPhotoListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoGetUserPhotoListRequest.h; sourceTree = "<group>"; };
-		E6C2C5F11C6094DF00D29F35 /* HTDemoGetUserPhotoListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoGetUserPhotoListRequest.m; sourceTree = "<group>"; };
-		E6C2C5F21C6094DF00D29F35 /* HTDemoUploadImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoUploadImageRequest.h; sourceTree = "<group>"; };
-		E6C2C5F31C6094DF00D29F35 /* HTDemoUploadImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoUploadImageRequest.m; sourceTree = "<group>"; };
-		E6C2C5F41C6094DF00D29F35 /* HTDemoValidResultBlockRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoValidResultBlockRequest.h; sourceTree = "<group>"; };
-		E6C2C5F51C6094DF00D29F35 /* HTDemoValidResultBlockRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoValidResultBlockRequest.m; sourceTree = "<group>"; };
-		E6C2C5F61C6094DF00D29F35 /* HTMockUserInfoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMockUserInfoRequest.h; sourceTree = "<group>"; };
-		E6C2C5F71C6094DF00D29F35 /* HTMockUserInfoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMockUserInfoRequest.m; sourceTree = "<group>"; };
-		E6C2C6241C6097E200D29F35 /* HTDemoResponseMappingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoResponseMappingRequest.h; sourceTree = "<group>"; };
-		E6C2C6251C6097E200D29F35 /* HTDemoResponseMappingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoResponseMappingRequest.m; sourceTree = "<group>"; };
 		E6E936001C7F05DD003199F3 /* 13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13.jpg; sourceTree = "<group>"; };
 		E6EAB2531C716049006610D3 /* HTCustomCachePolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTCustomCachePolicy.h; sourceTree = "<group>"; };
 		E6EAB2541C716049006610D3 /* HTCustomCachePolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTCustomCachePolicy.m; sourceTree = "<group>"; };
-		E6EAB2591C7163AB006610D3 /* HTDemoCacheIgnoreParamsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoCacheIgnoreParamsRequest.h; sourceTree = "<group>"; };
-		E6EAB25A1C7163AB006610D3 /* HTDemoCacheIgnoreParamsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoCacheIgnoreParamsRequest.m; sourceTree = "<group>"; };
-		E6EAB25C1C717DF5006610D3 /* HTDemoCustomFreezeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoCustomFreezeRequest.h; sourceTree = "<group>"; };
-		E6EAB25D1C717DF5006610D3 /* HTDemoCustomFreezeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoCustomFreezeRequest.m; sourceTree = "<group>"; };
 		E6EAB25F1C71811D006610D3 /* HTCustomFreezePolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTCustomFreezePolicy.h; sourceTree = "<group>"; };
 		E6EAB2601C71811D006610D3 /* HTCustomFreezePolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTCustomFreezePolicy.m; sourceTree = "<group>"; };
-		E6EAB2621C71CAE6006610D3 /* HTDemoRACPhotoListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDemoRACPhotoListRequest.h; sourceTree = "<group>"; };
-		E6EAB2631C71CAE6006610D3 /* HTDemoRACPhotoListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDemoRACPhotoListRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,113 +186,98 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E60D791D1C63344000CEBDE0 /* Model */ = {
+		E608B40D1E090E93009F4D4A /* Extend */ = {
 			isa = PBXGroup;
 			children = (
-				E60D791E1C63344000CEBDE0 /* Demo */,
-				E60D79271C63344000CEBDE0 /* Test */,
+				E608B40E1E090E93009F4D4A /* HTMyCachePolicy.h */,
+				E608B40F1E090E93009F4D4A /* HTMyCachePolicy.m */,
+			);
+			path = Extend;
+			sourceTree = "<group>";
+		};
+		E608B4171E091369009F4D4A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E608B46E1E09178E009F4D4A /* MainControllers */,
+				E608B4181E091369009F4D4A /* HTAdvanceFeatureDemoViewController.h */,
+				E608B4191E091369009F4D4A /* HTAdvanceFeatureDemoViewController.m */,
+				E608B4221E091369009F4D4A /* HTMainFreezeDemoViewController.h */,
+				E608B41C1E091369009F4D4A /* HTCacheDemoViewController.h */,
+				E608B41D1E091369009F4D4A /* HTCacheDemoViewController.m */,
+				E608B41E1E091369009F4D4A /* HTFreezeDemoViewController.h */,
+				E608B41F1E091369009F4D4A /* HTFreezeDemoViewController.m */,
+				E608B4201E091369009F4D4A /* HTHttpTableViewController.h */,
+				E608B4211E091369009F4D4A /* HTHttpTableViewController.m */,
+				E608B4231E091369009F4D4A /* HTMainFreezeDemoViewController.m */,
+				E608B4281E091369009F4D4A /* HTRKFreezeDemoViewController.h */,
+				E608B4291E091369009F4D4A /* HTRKFreezeDemoViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E608B4331E09136F009F4D4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E608B4341E09136F009F4D4A /* HTDemoErrorInfo.h */,
+				E608B4351E09136F009F4D4A /* HTDemoErrorInfo.m */,
+				E608B4361E09136F009F4D4A /* HTDemoPhotoInfo.h */,
+				E608B4371E09136F009F4D4A /* HTDemoPhotoInfo.m */,
+				E608B4381E09136F009F4D4A /* HTMockUserInfo.h */,
+				E608B4391E09136F009F4D4A /* HTMockUserInfo.m */,
+				E608B43A1E09136F009F4D4A /* RKDemoUserInfo.h */,
+				E608B43B1E09136F009F4D4A /* RKDemoUserInfo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		E60D791E1C63344000CEBDE0 /* Demo */ = {
+		E608B4401E091374009F4D4A /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				E60D791F1C63344000CEBDE0 /* HTDemoErrorInfo.h */,
-				E60D79201C63344000CEBDE0 /* HTDemoErrorInfo.m */,
-				E60D79211C63344000CEBDE0 /* HTDemoPhotoInfo.h */,
-				E60D79221C63344000CEBDE0 /* HTDemoPhotoInfo.m */,
-				E60D79231C63344000CEBDE0 /* HTMockUserInfo.h */,
-				E60D79241C63344000CEBDE0 /* HTMockUserInfo.m */,
-				E60D79251C63344000CEBDE0 /* RKDemoUserInfo.h */,
-				E60D79261C63344000CEBDE0 /* RKDemoUserInfo.m */,
+				E608B4411E091374009F4D4A /* HTDemoCacheIgnoreParamsRequest.h */,
+				E608B4421E091374009F4D4A /* HTDemoCacheIgnoreParamsRequest.m */,
+				E608B4431E091374009F4D4A /* HTDemoCacheRequest.h */,
+				E608B4441E091374009F4D4A /* HTDemoCacheRequest.m */,
+				E608B4451E091374009F4D4A /* HTDemoCustomCacheRequest.h */,
+				E608B4461E091374009F4D4A /* HTDemoCustomCacheRequest.m */,
+				E608B4471E091374009F4D4A /* HTDemoCustomFreezeRequest.h */,
+				E608B4481E091374009F4D4A /* HTDemoCustomFreezeRequest.m */,
+				E608B4491E091374009F4D4A /* HTDemoCustomizeRequest.h */,
+				E608B44A1E091374009F4D4A /* HTDemoCustomizeRequest.m */,
+				E608B44B1E091374009F4D4A /* HTDemoFreezeRequest.h */,
+				E608B44C1E091374009F4D4A /* HTDemoFreezeRequest.m */,
+				E608B44D1E091374009F4D4A /* HTDemoGetPhotoListRequest.h */,
+				E608B44E1E091374009F4D4A /* HTDemoGetPhotoListRequest.m */,
+				E608B44F1E091374009F4D4A /* HTDemoGetUserInfoRequest.h */,
+				E608B4501E091374009F4D4A /* HTDemoGetUserInfoRequest.m */,
+				E608B4511E091374009F4D4A /* HTDemoGetUserPhotoListRequest.h */,
+				E608B4521E091374009F4D4A /* HTDemoGetUserPhotoListRequest.m */,
+				E608B4531E091374009F4D4A /* HTDemoRACPhotoListRequest.h */,
+				E608B4541E091374009F4D4A /* HTDemoRACPhotoListRequest.m */,
+				E608B4551E091374009F4D4A /* HTDemoResponseMappingRequest.h */,
+				E608B4561E091374009F4D4A /* HTDemoResponseMappingRequest.m */,
+				E608B4571E091374009F4D4A /* HTDemoUploadImageRequest.h */,
+				E608B4581E091374009F4D4A /* HTDemoUploadImageRequest.m */,
+				E608B4591E091374009F4D4A /* HTDemoValidResultBlockRequest.h */,
+				E608B45A1E091374009F4D4A /* HTDemoValidResultBlockRequest.m */,
+				E608B45B1E091374009F4D4A /* HTDemoWithTypeRequest.h */,
+				E608B45C1E091374009F4D4A /* HTDemoWithTypeRequest.m */,
+				E608B45D1E091374009F4D4A /* HTMockUserInfoRequest.h */,
+				E608B45E1E091374009F4D4A /* HTMockUserInfoRequest.m */,
 			);
-			path = Demo;
+			path = Request;
 			sourceTree = "<group>";
 		};
-		E60D79271C63344000CEBDE0 /* Test */ = {
+		E608B46E1E09178E009F4D4A /* MainControllers */ = {
 			isa = PBXGroup;
 			children = (
-				E60D79281C63344000CEBDE0 /* GenerateModel */,
-				E60D793B1C63344000CEBDE0 /* HTHTTPModels */,
-				E60D79581C63344000CEBDE0 /* HTModel */,
-				E60D795F1C63344000CEBDE0 /* RKEPhotoInfo.h */,
-				E60D79601C63344000CEBDE0 /* RKEPhotoInfo.m */,
+				E608B4241E091369009F4D4A /* HTRACDemoViewController.h */,
+				E608B4251E091369009F4D4A /* HTRACDemoViewController.m */,
+				E608B4261E091369009F4D4A /* HTRKDemoViewController.h */,
+				E608B4271E091369009F4D4A /* HTRKDemoViewController.m */,
+				E608B41A1E091369009F4D4A /* HTBaseRequestDemoViewController.h */,
+				E608B41B1E091369009F4D4A /* HTBaseRequestDemoViewController.m */,
 			);
-			path = Test;
-			sourceTree = "<group>";
-		};
-		E60D79281C63344000CEBDE0 /* GenerateModel */ = {
-			isa = PBXGroup;
-			children = (
-				E60D79291C63344000CEBDE0 /* HTAddress.h */,
-				E60D792A1C63344000CEBDE0 /* HTAddress.m */,
-				E60D792B1C63344000CEBDE0 /* HTArticle.h */,
-				E60D792C1C63344000CEBDE0 /* HTArticle.m */,
-				E60D792D1C63344000CEBDE0 /* HTArticleRequest.h */,
-				E60D792E1C63344000CEBDE0 /* HTArticleRequest.m */,
-				E60D792F1C63344000CEBDE0 /* HTAuthor.h */,
-				E60D79301C63344000CEBDE0 /* HTAuthor.m */,
-				E60D79311C63344000CEBDE0 /* HTAuthorRequest.h */,
-				E60D79321C63344000CEBDE0 /* HTAuthorRequest.m */,
-				E60D79331C63344000CEBDE0 /* HTComment.h */,
-				E60D79341C63344000CEBDE0 /* HTComment.m */,
-				E60D79351C63344000CEBDE0 /* HTCommentRequest.h */,
-				E60D79361C63344000CEBDE0 /* HTCommentRequest.m */,
-				E60D79371C63344000CEBDE0 /* HTModels.h */,
-				E60D79381C63344000CEBDE0 /* HTPostArticleRequest.h */,
-				E60D79391C63344000CEBDE0 /* HTPostArticleRequest.m */,
-				E60D793A1C63344000CEBDE0 /* HTRequests.h */,
-			);
-			path = GenerateModel;
-			sourceTree = "<group>";
-		};
-		E60D793B1C63344000CEBDE0 /* HTHTTPModels */ = {
-			isa = PBXGroup;
-			children = (
-				E60D793C1C63344000CEBDE0 /* HTDemoAddress.h */,
-				E60D793D1C63344000CEBDE0 /* HTDemoAddress.m */,
-				E60D793E1C63344000CEBDE0 /* HTDemoArticle+HTYYTest.h */,
-				E60D793F1C63344000CEBDE0 /* HTDemoArticle+HTYYTest.m */,
-				E60D79401C63344000CEBDE0 /* HTDemoArticle.h */,
-				E60D79411C63344000CEBDE0 /* HTDemoArticle.m */,
-				E60D79421C63344000CEBDE0 /* HTDemoArticleEx.h */,
-				E60D79431C63344000CEBDE0 /* HTDemoArticleEx.m */,
-				E60D79441C63344000CEBDE0 /* HTDemoAuthor.h */,
-				E60D79451C63344000CEBDE0 /* HTDemoAuthor.m */,
-				E60D79461C63344000CEBDE0 /* HTDemoCycleA.h */,
-				E60D79471C63344000CEBDE0 /* HTDemoCycleA.m */,
-				E60D79481C63344000CEBDE0 /* HTDemoCycleB.h */,
-				E60D79491C63344000CEBDE0 /* HTDemoCycleB.m */,
-				E60D794A1C63344000CEBDE0 /* HTDemoCycleC.h */,
-				E60D794B1C63344000CEBDE0 /* HTDemoCycleC.m */,
-				E60D794C1C63344000CEBDE0 /* HTDemoPerson.h */,
-				E60D794D1C63344000CEBDE0 /* HTDemoPerson.m */,
-				E60D794E1C63344000CEBDE0 /* HTDemoSubscriber.h */,
-				E60D794F1C63344000CEBDE0 /* HTDemoSubscriber.m */,
-				E60D79501C63344000CEBDE0 /* HTDerivedArticle.h */,
-				E60D79511C63344000CEBDE0 /* HTDerivedArticle.m */,
-				E60D79521C63344000CEBDE0 /* HTSimpleAddress.h */,
-				E60D79531C63344000CEBDE0 /* HTSimpleAddress.m */,
-				E60D79541C63344000CEBDE0 /* HTSpecialModel.h */,
-				E60D79551C63344000CEBDE0 /* HTSpecialModel.m */,
-				E60D79561C63344000CEBDE0 /* RKWikiPage.h */,
-				E60D79571C63344000CEBDE0 /* RKWikiPage.m */,
-			);
-			path = HTHTTPModels;
-			sourceTree = "<group>";
-		};
-		E60D79581C63344000CEBDE0 /* HTModel */ = {
-			isa = PBXGroup;
-			children = (
-				E60D79591C63344000CEBDE0 /* HTDemoResponse.h */,
-				E60D795A1C63344000CEBDE0 /* HTDemoResponse.m */,
-				E60D795B1C63344000CEBDE0 /* HTDemoSpec.h */,
-				E60D795C1C63344000CEBDE0 /* HTDemoSpec.m */,
-				E60D795D1C63344000CEBDE0 /* HTDemoSpecValue.h */,
-				E60D795E1C63344000CEBDE0 /* HTDemoSpecValue.m */,
-			);
-			path = HTModel;
+			name = MainControllers;
 			sourceTree = "<group>";
 		};
 		E60D797F1C63348F00CEBDE0 /* Test */ = {
@@ -439,66 +314,6 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		E64AE1E31BC665A7000637A0 /* Requests */ = {
-			isa = PBXGroup;
-			children = (
-				E6C2C6111C60953100D29F35 /* Test */,
-				E6C2C5E91C6094DF00D29F35 /* Demo */,
-			);
-			name = Requests;
-			sourceTree = "<group>";
-		};
-		E65E24831CA131D50053F1D3 /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				E65E24841CA131D50053F1D3 /* HTAdvanceFeatureDemoViewController.h */,
-				E65E24851CA131D50053F1D3 /* HTAdvanceFeatureDemoViewController.m */,
-				E65E24861CA131D50053F1D3 /* HTBaseRequestDemoViewController.h */,
-				E65E24871CA131D50053F1D3 /* HTBaseRequestDemoViewController.m */,
-				E65E24881CA131D50053F1D3 /* HTCacheDemoViewController.h */,
-				E65E24891CA131D50053F1D3 /* HTCacheDemoViewController.m */,
-				E65E248A1CA131D50053F1D3 /* HTFreezeDemoViewController.h */,
-				E65E248B1CA131D50053F1D3 /* HTFreezeDemoViewController.m */,
-				E65E248C1CA131D50053F1D3 /* HTMainFreezeDemoViewController.h */,
-				E65E248D1CA131D50053F1D3 /* HTMainFreezeDemoViewController.m */,
-				E65E248E1CA131D50053F1D3 /* HTRACDemoViewController.h */,
-				E65E248F1CA131D50053F1D3 /* HTRACDemoViewController.m */,
-				E65E24901CA131D50053F1D3 /* HTRKDemoViewController.h */,
-				E65E24911CA131D50053F1D3 /* HTRKDemoViewController.m */,
-				E65E24921CA131D50053F1D3 /* HTRKFreezeDemoViewController.h */,
-				E65E24931CA131D50053F1D3 /* HTRKFreezeDemoViewController.m */,
-			);
-			path = Demo;
-			sourceTree = "<group>";
-		};
-		E65E24941CA131D50053F1D3 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				E65E24951CA131D50053F1D3 /* HTBaseRequestTestViewController.h */,
-				E65E24961CA131D50053F1D3 /* HTBaseRequestTestViewController.m */,
-				E65E24971CA131D50053F1D3 /* HTFreezeTestViewController.h */,
-				E65E24981CA131D50053F1D3 /* HTFreezeTestViewController.m */,
-				E65E24991CA131D50053F1D3 /* HTHttpModelTestController.h */,
-				E65E249A1CA131D50053F1D3 /* HTHttpModelTestController.m */,
-				E65E249B1CA131D50053F1D3 /* HTRACTestViewController.h */,
-				E65E249C1CA131D50053F1D3 /* HTRACTestViewController.m */,
-				E65E249D1CA131D50053F1D3 /* HTTestViewController.h */,
-				E65E249E1CA131D50053F1D3 /* HTTestViewController.m */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
-		E6818CDD1C5F070A00BEB91A /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				E65E24831CA131D50053F1D3 /* Demo */,
-				E65E24941CA131D50053F1D3 /* Test */,
-				E6818CE21C5F070A00BEB91A /* HTHttpTableViewController.h */,
-				E6818CE31C5F070A00BEB91A /* HTHttpTableViewController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		E68D6CB61B60EA280010D863 = {
 			isa = PBXGroup;
 			children = (
@@ -522,6 +337,10 @@
 		E68D6CC11B60EA280010D863 /* HTHttpDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E608B4401E091374009F4D4A /* Request */,
+				E608B4331E09136F009F4D4A /* Model */,
+				E608B4171E091369009F4D4A /* Controllers */,
+				E608B40D1E090E93009F4D4A /* Extend */,
 				E60D797F1C63348F00CEBDE0 /* Test */,
 				E60D79821C63348F00CEBDE0 /* Utilities */,
 				E68D6CC61B60EA280010D863 /* AppDelegate.h */,
@@ -529,9 +348,6 @@
 				E68D6CD21B60EA280010D863 /* Images.xcassets */,
 				E68D6CD41B60EA280010D863 /* LaunchScreen.xib */,
 				E68D6CCF1B60EA280010D863 /* Main.storyboard */,
-				E6818CDD1C5F070A00BEB91A /* Controllers */,
-				E60D791D1C63344000CEBDE0 /* Model */,
-				E64AE1E31BC665A7000637A0 /* Requests */,
 				E68D6CC21B60EA280010D863 /* Supporting Files */,
 			);
 			path = HTHttpDemo;
@@ -562,64 +378,6 @@
 				E68D6CE01B60EA280010D863 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E6C2C5E91C6094DF00D29F35 /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				E6EAB2591C7163AB006610D3 /* HTDemoCacheIgnoreParamsRequest.h */,
-				E6EAB25A1C7163AB006610D3 /* HTDemoCacheIgnoreParamsRequest.m */,
-				E6C2C5EA1C6094DF00D29F35 /* HTDemoCacheRequest.h */,
-				E6C2C5EB1C6094DF00D29F35 /* HTDemoCacheRequest.m */,
-				E6C2C5EC1C6094DF00D29F35 /* HTDemoGetPhotoListRequest.h */,
-				E6C2C5ED1C6094DF00D29F35 /* HTDemoGetPhotoListRequest.m */,
-				E6C2C5EE1C6094DF00D29F35 /* HTDemoGetUserInfoRequest.h */,
-				E6C2C5EF1C6094DF00D29F35 /* HTDemoGetUserInfoRequest.m */,
-				E6C2C5F01C6094DF00D29F35 /* HTDemoGetUserPhotoListRequest.h */,
-				E6C2C5F11C6094DF00D29F35 /* HTDemoGetUserPhotoListRequest.m */,
-				E6C2C5F21C6094DF00D29F35 /* HTDemoUploadImageRequest.h */,
-				E6C2C5F31C6094DF00D29F35 /* HTDemoUploadImageRequest.m */,
-				E6C2C5F41C6094DF00D29F35 /* HTDemoValidResultBlockRequest.h */,
-				E6C2C5F51C6094DF00D29F35 /* HTDemoValidResultBlockRequest.m */,
-				E6C2C5F61C6094DF00D29F35 /* HTMockUserInfoRequest.h */,
-				E6C2C5F71C6094DF00D29F35 /* HTMockUserInfoRequest.m */,
-				E6C2C6241C6097E200D29F35 /* HTDemoResponseMappingRequest.h */,
-				E6C2C6251C6097E200D29F35 /* HTDemoResponseMappingRequest.m */,
-				E60D79131C6300C000CEBDE0 /* HTDemoFreezeRequest.h */,
-				E60D79141C6300C000CEBDE0 /* HTDemoFreezeRequest.m */,
-				E60D79161C63018300CEBDE0 /* HTDemoCustomizeRequest.h */,
-				E60D79171C63018300CEBDE0 /* HTDemoCustomizeRequest.m */,
-				E6EAB25C1C717DF5006610D3 /* HTDemoCustomFreezeRequest.h */,
-				E6EAB25D1C717DF5006610D3 /* HTDemoCustomFreezeRequest.m */,
-				E6EAB2621C71CAE6006610D3 /* HTDemoRACPhotoListRequest.h */,
-				E6EAB2631C71CAE6006610D3 /* HTDemoRACPhotoListRequest.m */,
-			);
-			name = Demo;
-			path = Request/Demo;
-			sourceTree = "<group>";
-		};
-		E6C2C6111C60953100D29F35 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				E69345D91C747B7200DE5494 /* HTCampany.h */,
-				E69345DA1C747B7200DE5494 /* HTCampany.m */,
-				E69345DB1C747B7200DE5494 /* HTDemoBaseURLRequest.h */,
-				E69345DC1C747B7200DE5494 /* HTDemoBaseURLRequest.m */,
-				E69345DD1C747B7200DE5494 /* HTDemoComplextRequest1.h */,
-				E69345DE1C747B7200DE5494 /* HTDemoComplextRequest1.m */,
-				E69345DF1C747B7200DE5494 /* HTDemoErrorMsgRequest.h */,
-				E69345E01C747B7200DE5494 /* HTDemoErrorMsgRequest.m */,
-				E69345E11C747B7200DE5494 /* HTDemoWithTypeRequest.h */,
-				E69345E21C747B7200DE5494 /* HTDemoWithTypeRequest.m */,
-				E69345E31C747B7200DE5494 /* HTGetCompanyRequest.h */,
-				E69345E41C747B7200DE5494 /* HTGetCompanyRequest.m */,
-				E69345E51C747B7200DE5494 /* HTTestRefreshTokenRequest.h */,
-				E69345E61C747B7200DE5494 /* HTTestRefreshTokenRequest.m */,
-				E69345E71C747B7200DE5494 /* HTTestValidParamRequest.h */,
-				E69345E81C747B7200DE5494 /* HTTestValidParamRequest.m */,
-			);
-			name = Test;
-			path = Request/Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -776,77 +534,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E60D79181C63018300CEBDE0 /* HTDemoCustomizeRequest.m in Sources */,
-				E60D796D1C63344000CEBDE0 /* HTDemoAddress.m in Sources */,
-				E65E24A31CA131D50053F1D3 /* HTMainFreezeDemoViewController.m in Sources */,
-				E60D79741C63344000CEBDE0 /* HTDemoCycleC.m in Sources */,
-				E6C2C5F81C6094DF00D29F35 /* HTDemoCacheRequest.m in Sources */,
-				E6C2C5FD1C6094DF00D29F35 /* HTDemoValidResultBlockRequest.m in Sources */,
-				E60D79671C63344000CEBDE0 /* HTArticleRequest.m in Sources */,
-				E60D797C1C63344000CEBDE0 /* HTDemoSpec.m in Sources */,
-				E65E24A21CA131D50053F1D3 /* HTFreezeDemoViewController.m in Sources */,
-				E60D797A1C63344000CEBDE0 /* RKWikiPage.m in Sources */,
-				E65E24A11CA131D50053F1D3 /* HTCacheDemoViewController.m in Sources */,
-				E60D796E1C63344000CEBDE0 /* HTDemoArticle+HTYYTest.m in Sources */,
-				E60D79711C63344000CEBDE0 /* HTDemoAuthor.m in Sources */,
-				E60D79721C63344000CEBDE0 /* HTDemoCycleA.m in Sources */,
-				E65E24A61CA131D50053F1D3 /* HTRKFreezeDemoViewController.m in Sources */,
-				E60D79651C63344000CEBDE0 /* HTAddress.m in Sources */,
-				E6818CEC1C5F070A00BEB91A /* HTHttpTableViewController.m in Sources */,
-				E65E24A71CA131D50053F1D3 /* HTBaseRequestTestViewController.m in Sources */,
-				E60D79781C63344000CEBDE0 /* HTSimpleAddress.m in Sources */,
-				E65E24A91CA131D50053F1D3 /* HTHttpModelTestController.m in Sources */,
-				E65E24AB1CA131D50053F1D3 /* HTTestViewController.m in Sources */,
-				E65E24A01CA131D50053F1D3 /* HTBaseRequestDemoViewController.m in Sources */,
-				E60D796B1C63344000CEBDE0 /* HTCommentRequest.m in Sources */,
-				E60D79751C63344000CEBDE0 /* HTDemoPerson.m in Sources */,
-				E69345F01C747B7200DE5494 /* HTTestValidParamRequest.m in Sources */,
-				E65E249F1CA131D50053F1D3 /* HTAdvanceFeatureDemoViewController.m in Sources */,
-				E60D797D1C63344000CEBDE0 /* HTDemoSpecValue.m in Sources */,
-				E60D796A1C63344000CEBDE0 /* HTComment.m in Sources */,
-				E60D79681C63344000CEBDE0 /* HTAuthor.m in Sources */,
-				E6C2C5FC1C6094DF00D29F35 /* HTDemoUploadImageRequest.m in Sources */,
-				E60D79661C63344000CEBDE0 /* HTArticle.m in Sources */,
-				E69345EB1C747B7200DE5494 /* HTDemoComplextRequest1.m in Sources */,
-				E6EAB25B1C7163AB006610D3 /* HTDemoCacheIgnoreParamsRequest.m in Sources */,
-				E60D79611C63344000CEBDE0 /* HTDemoErrorInfo.m in Sources */,
-				E60D79791C63344000CEBDE0 /* HTSpecialModel.m in Sources */,
-				E60D79621C63344000CEBDE0 /* HTDemoPhotoInfo.m in Sources */,
+				E608B4311E091369009F4D4A /* HTRKDemoViewController.m in Sources */,
+				E608B4621E091374009F4D4A /* HTDemoCustomFreezeRequest.m in Sources */,
+				E608B4681E091374009F4D4A /* HTDemoRACPhotoListRequest.m in Sources */,
+				E608B42B1E091369009F4D4A /* HTBaseRequestDemoViewController.m in Sources */,
+				E608B46D1E091374009F4D4A /* HTMockUserInfoRequest.m in Sources */,
+				E608B4641E091374009F4D4A /* HTDemoFreezeRequest.m in Sources */,
+				E608B4101E090E93009F4D4A /* HTMyCachePolicy.m in Sources */,
 				E68D6CC81B60EA280010D863 /* AppDelegate.m in Sources */,
-				E60D79761C63344000CEBDE0 /* HTDemoSubscriber.m in Sources */,
+				E608B43E1E09136F009F4D4A /* HTMockUserInfo.m in Sources */,
+				E608B42A1E091369009F4D4A /* HTAdvanceFeatureDemoViewController.m in Sources */,
+				E608B4611E091374009F4D4A /* HTDemoCustomCacheRequest.m in Sources */,
+				E608B42D1E091369009F4D4A /* HTFreezeDemoViewController.m in Sources */,
+				E608B4651E091374009F4D4A /* HTDemoGetPhotoListRequest.m in Sources */,
+				E608B46B1E091374009F4D4A /* HTDemoValidResultBlockRequest.m in Sources */,
 				E60D798B1C63348F00CEBDE0 /* RKObjectRequestOperation+HTDemoRAC.m in Sources */,
-				E60D79691C63344000CEBDE0 /* HTAuthorRequest.m in Sources */,
+				E608B4631E091374009F4D4A /* HTDemoCustomizeRequest.m in Sources */,
+				E608B4671E091374009F4D4A /* HTDemoGetUserPhotoListRequest.m in Sources */,
 				E6EAB2611C71811D006610D3 /* HTCustomFreezePolicy.m in Sources */,
-				E69345EA1C747B7200DE5494 /* HTDemoBaseURLRequest.m in Sources */,
-				E60D79641C63344000CEBDE0 /* RKDemoUserInfo.m in Sources */,
-				E69345EF1C747B7200DE5494 /* HTTestRefreshTokenRequest.m in Sources */,
-				E60D79771C63344000CEBDE0 /* HTDerivedArticle.m in Sources */,
-				E6C2C5FB1C6094DF00D29F35 /* HTDemoGetUserPhotoListRequest.m in Sources */,
+				E608B43D1E09136F009F4D4A /* HTDemoPhotoInfo.m in Sources */,
+				E608B4601E091374009F4D4A /* HTDemoCacheRequest.m in Sources */,
+				E608B42C1E091369009F4D4A /* HTCacheDemoViewController.m in Sources */,
 				E60D798C1C63348F00CEBDE0 /* UITableView+HTHTTPDemo.m in Sources */,
-				E69345EC1C747B7200DE5494 /* HTDemoErrorMsgRequest.m in Sources */,
 				E60D798A1C63348F00CEBDE0 /* HTDemoHelper.m in Sources */,
-				E69345E91C747B7200DE5494 /* HTCampany.m in Sources */,
-				E60D79701C63344000CEBDE0 /* HTDemoArticleEx.m in Sources */,
-				E60D79731C63344000CEBDE0 /* HTDemoCycleB.m in Sources */,
-				E6C2C5F91C6094DF00D29F35 /* HTDemoGetPhotoListRequest.m in Sources */,
-				E60D797E1C63344000CEBDE0 /* RKEPhotoInfo.m in Sources */,
-				E60D796C1C63344000CEBDE0 /* HTPostArticleRequest.m in Sources */,
-				E6EAB2641C71CAE6006610D3 /* HTDemoRACPhotoListRequest.m in Sources */,
-				E69345ED1C747B7200DE5494 /* HTDemoWithTypeRequest.m in Sources */,
-				E6C2C5FE1C6094DF00D29F35 /* HTMockUserInfoRequest.m in Sources */,
-				E6C2C5FA1C6094DF00D29F35 /* HTDemoGetUserInfoRequest.m in Sources */,
-				E6EAB25E1C717DF5006610D3 /* HTDemoCustomFreezeRequest.m in Sources */,
-				E60D797B1C63344000CEBDE0 /* HTDemoResponse.m in Sources */,
-				E65E24A81CA131D50053F1D3 /* HTFreezeTestViewController.m in Sources */,
-				E6C2C6261C6097E200D29F35 /* HTDemoResponseMappingRequest.m in Sources */,
-				E65E24A41CA131D50053F1D3 /* HTRACDemoViewController.m in Sources */,
-				E65E24AA1CA131D50053F1D3 /* HTRACTestViewController.m in Sources */,
-				E60D79631C63344000CEBDE0 /* HTMockUserInfo.m in Sources */,
-				E60D79151C6300C000CEBDE0 /* HTDemoFreezeRequest.m in Sources */,
-				E69345EE1C747B7200DE5494 /* HTGetCompanyRequest.m in Sources */,
-				E65E24A51CA131D50053F1D3 /* HTRKDemoViewController.m in Sources */,
-				E60D796F1C63344000CEBDE0 /* HTDemoArticle.m in Sources */,
+				E608B43F1E09136F009F4D4A /* RKDemoUserInfo.m in Sources */,
+				E608B43C1E09136F009F4D4A /* HTDemoErrorInfo.m in Sources */,
+				E608B4321E091369009F4D4A /* HTRKFreezeDemoViewController.m in Sources */,
+				E608B42F1E091369009F4D4A /* HTMainFreezeDemoViewController.m in Sources */,
 				E68D6CC51B60EA280010D863 /* main.m in Sources */,
+				E608B42E1E091369009F4D4A /* HTHttpTableViewController.m in Sources */,
+				E608B46C1E091374009F4D4A /* HTDemoWithTypeRequest.m in Sources */,
+				E608B4301E091369009F4D4A /* HTRACDemoViewController.m in Sources */,
+				E608B45F1E091374009F4D4A /* HTDemoCacheIgnoreParamsRequest.m in Sources */,
+				E608B4661E091374009F4D4A /* HTDemoGetUserInfoRequest.m in Sources */,
+				E608B4691E091374009F4D4A /* HTDemoResponseMappingRequest.m in Sources */,
+				E608B46A1E091374009F4D4A /* HTDemoUploadImageRequest.m in Sources */,
 				E6EAB2551C716049006610D3 /* HTCustomCachePolicy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

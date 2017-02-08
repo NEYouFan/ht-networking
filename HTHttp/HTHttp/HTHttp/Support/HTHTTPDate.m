@@ -6,7 +6,7 @@
 //
 //
 
-#import <Support/HTHTTPDate.h>
+#import "HTHTTPDate.h"
 
 @implementation HTHTTPDate
 

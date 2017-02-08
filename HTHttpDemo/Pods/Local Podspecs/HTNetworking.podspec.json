@@ -1,12 +1,12 @@
 {
   "name": "HTNetworking",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "summary": "HTNetworking is a high level request util based on AFNetworking and RestKit.",
   "homepage": "https://github.com/NEYouFan/HTNetworking",
   "license": "Apache License, Version 2.0",
   "source": {
     "git": "https://github.com/NEYouFan/HTNetworking.git",
-    "tag": "v0.2.0"
+    "tag": "v0.3.0"
   },
   "authors": {
     "wlp": "hzwangliping@corp.netease.com"
@@ -24,7 +24,6 @@
 
         ]
       },
-      "header_mappings_dir": "HTHttp/HTHttp/HTHttp",
       "subspecs": [
         {
           "name": "Core",
@@ -51,9 +50,6 @@
             ],
             "HTNetworking/HT/Support": [
 
-            ],
-            "AFDownloadRequestOperation": [
-              "~> 2.0"
             ]
           }
         },
@@ -118,8 +114,6 @@
     },
     {
       "name": "HTRestKit",
-      "header_mappings_dir": "HTHttp/RestKit/Code",
-      "header_dir": "RestKit",
       "subspecs": [
         {
           "name": "Core",
@@ -175,9 +169,6 @@
             ]
           },
           "dependencies": {
-            "SOCKit": [
-
-            ],
             "AFNetworking": [
               "~> 2.5"
             ],
@@ -186,9 +177,16 @@
             ],
             "HTNetworking/HTRestKit/Support": [
 
+            ],
+            "HTNetworking/HTRestKit/SOCKit": [
+
             ]
           },
           "prefix_header_contents": "#import <Availability.h>\n#define _AFNETWORKING_PIN_SSL_CERTIFICATES_\n#if __IPHONE_OS_VERSION_MIN_REQUIRED\n  #import <SystemConfiguration/SystemConfiguration.h>\n  #import <MobileCoreServices/MobileCoreServices.h>\n  #import <Security/Security.h>\n#else\n  #import <SystemConfiguration/SystemConfiguration.h>\n  #import <CoreServices/CoreServices.h>\n  #import <Security/Security.h>\n#endif"
+        },
+        {
+          "name": "SOCKit",
+          "source_files": "HTHTTP/RestKit/Code/SOCKit/**/*"
         },
         {
           "name": "CoreData",

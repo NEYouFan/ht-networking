@@ -9,7 +9,7 @@
 #ifndef HTHttp_HTHttpLog_h
 #define HTHttp_HTHttpLog_h
 
-#import "CocoaLumberjack.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 ////////////////////////////////////////////////////////////////
 //Module Macro

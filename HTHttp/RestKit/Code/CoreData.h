@@ -19,15 +19,15 @@
 //
 
 #import <CoreData/CoreData.h>
-#import <RestKit/CoreData/RKEntityMapping.h>
-#import <RestKit/CoreData/RKFetchRequestManagedObjectCache.h>
-#import <RestKit/CoreData/RKInMemoryManagedObjectCache.h>
-#import <RestKit/CoreData/RKManagedObjectCaching.h>
-#import <RestKit/CoreData/RKManagedObjectImporter.h>
-#import <RestKit/CoreData/RKManagedObjectMappingOperationDataSource.h>
-#import <RestKit/CoreData/RKManagedObjectStore.h>
-#import <RestKit/ObjectMapping.h>
+#import "RKEntityMapping.h"
+#import "RKFetchRequestManagedObjectCache.h"
+#import "RKInMemoryManagedObjectCache.h"
+#import "RKManagedObjectCaching.h"
+#import "RKManagedObjectImporter.h"
+#import "RKManagedObjectMappingOperationDataSource.h"
+#import "RKManagedObjectStore.h"
+#import "ObjectMapping.h"
 
-#import <RestKit/CoreData/NSManagedObject+RKAdditions.h>
-#import <RestKit/CoreData/NSManagedObjectContext+RKAdditions.h>
-#import <RestKit/CoreData/RKPropertyInspector+CoreData.h>
+#import "NSManagedObject+RKAdditions.h"
+#import "NSManagedObjectContext+RKAdditions.h"
+#import "RKPropertyInspector+CoreData.h"

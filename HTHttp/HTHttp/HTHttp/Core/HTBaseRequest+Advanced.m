@@ -6,17 +6,17 @@
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
 
-#import <Core/HTBaseRequest+Advanced.h>
+#import "HTBaseRequest+Advanced.h"
 #import "HTBaseRequest.h"
 #import "NSURLRequest+HTCache.h"
 #import "NSURLRequest+HTFreeze.h"
 #import "NSURLRequest+RKRequest.h"
-#import <Core/NSURLRequest+HTMock.h>
+#import "NSURLRequest+HTMock.h"
 #import "RKObjectManager.h"
 #import "HTCachePolicyManager.h"
 #import "HTFreezePolicyMananger.h"
-#import <Core/HTHTTPRequestOperation.h>
-#import <Core/HTMockHTTPRequestOperation.h>
+#import "HTHTTPRequestOperation.h"
+#import "HTMockHTTPRequestOperation.h"
 #import "HTHttpLog.h"
 
 @interface HTBaseRequest ()

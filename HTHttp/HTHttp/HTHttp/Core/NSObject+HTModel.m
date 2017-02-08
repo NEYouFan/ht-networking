@@ -8,13 +8,13 @@
 
 #import "NSObject+HTModel.h"
 #import <objc/runtime.h>
-#import <RestKit/RestKit.h>
-#import <RestKit/ObjectMapping/RKObjectUtilities.h>
+#import "RestKit.h"
+#import "RKObjectUtilities.h"
 #import "RKObjectMappingOperationDataSource.h"
-#import <Core/HTModelProtocol.h>
-#import <Core/HTModelMappingHandler.h>
-#import <Core/HTObjectHelper.h>
-#import <Core/NSObject+HTMapping.h>
+#import "HTModelProtocol.h"
+#import "HTModelMappingHandler.h"
+#import "HTObjectHelper.h"
+#import "NSObject+HTMapping.h"
 
 static void * HTModelCachedPropertyDicKey = &HTModelCachedPropertyDicKey;
 static void * HTModelCachedAllPropertyDicKey = &HTModelCachedAllPropertyDicKey;
@@ -215,7 +215,9 @@ static void * HTModelCachedAllPropertyDicKey = &HTModelCachedAllPropertyDicKey;
     NSDictionary *propertyInfoDic = [[self class] ht_allPropertyInfoDic];
     for (NSString *propertyName in propertyInfoDic) {
         NSObject *value = [aDecoder decodeObjectForKey:propertyName];
-        [self setValue:value forKey:propertyName];
+        if (nil != value) {
+            [self setValue:value forKey:propertyName];
+        }
     }
     
     return self;

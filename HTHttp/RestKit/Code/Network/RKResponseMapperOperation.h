@@ -20,9 +20,9 @@
 //  Modified by (Netease)Wangliping on 11/09/15.
 //  Main Modification: Allow user to access deserialized response object via property `responseObject`.
 
-#import <RestKit/ObjectMapping/RKMapperOperation.h>
-#import <RestKit/ObjectMapping/RKMappingOperationDataSource.h>
-#import <RestKit/ObjectMapping/RKMappingResult.h>
+#import "RKMapperOperation.h"
+#import "RKMappingOperationDataSource.h"
+#import "RKMappingResult.h"
 
 #ifdef _COREDATADEFINES_H
 @protocol RKManagedObjectCaching;

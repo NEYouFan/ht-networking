@@ -8,7 +8,7 @@
 
 #import "HTCustomFreezePolicy.h"
 #import "HTNetworking.h"
-#import <HTNetworking/Freeze/HTFrozenRequest.h>
+#import "HTFrozenRequest.h"
 
 @implementation HTCustomFreezePolicy
 

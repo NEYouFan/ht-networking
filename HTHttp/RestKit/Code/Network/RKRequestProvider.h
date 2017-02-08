@@ -21,9 +21,9 @@
 
 #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-#import "AFURLConnectionOperation.h"
-
 #import <Availability.h>
+
+#import <AFNetworking/AFSecurityPolicy.h>
 
 /**
 

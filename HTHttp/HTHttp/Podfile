@@ -1,38 +1,22 @@
 source 'https://github.com/CocoaPods/Specs.git'
-source 'https://git.hz.netease.com/git/open/HTSpecRepo.git'
 
 inhibit_all_warnings!
 
-def import_pods
-  pod 'Specta', '0.2.1'
-  pod 'OCMock', '2.2.4'
-  pod 'OCHamcrest', '3.0.1'
-  pod 'Expecta', '0.3.1'
-  
-  # Used for testing Value Transformer integration
-  pod 'RKCLLocationValueTransformer', '~> 1.1.0'
-  
-  # Following dependencies are used to replace dependency to RestKit.
-  pod 'HTNetworking', :path => '../../'
-  pod 'HTNetworking/HTRestKit/Testing', :path => '../../'
-  pod 'HTNetworking/HTRestKit/Search', :path => '../../'
-  pod 'HTNetworking/HTRestKit/CocoaLumberjack', :path => '../../'
-  pod 'TransitionKit', '~> 2.1.0'
-  pod 'SOCKit'
-  pod 'AFNetworking', '2.6.2'
-  pod 'RKValueTransformers', '~> 1.1.0'
-  pod 'ISO8601DateFormatterValueTransformer', '~> 0.6.0'
-end
+target 'HTNetworking' do
 
-target :ios do
-  platform :ios, '7.0'
-  link_with 'HTHttpTests'
-  import_pods
+    pod 'Specta', '0.2.1'
+    pod 'OCMock', '2.2.4'
+    pod 'OCHamcrest', '3.0.1'
+    pod 'Expecta', '0.3.1'
 
-  platform :ios, '7.0'
-  pod 'FMDB'
-  pod 'ReactiveCocoa', '2.1.8'
-  pod 'HTCommonUtility'
+    pod 'FMDB'
+    pod 'HTCommonUtility'
+    pod 'TransitionKit', '~> 2.2'
+    pod 'CocoaLumberjack', '~> 2.0'
+    pod 'AFNetworking', '~> 2.6.0'
+    pod 'RKValueTransformers', '~> 1.1.0'
+    pod 'ISO8601DateFormatterValueTransformer', '~> 0.6.1'
+    pod 'ReactiveCocoa', '~> 2.1'
 
 end
 

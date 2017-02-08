@@ -7,9 +7,9 @@
 //
 
 #import "HTAutoBaseRequest.h"
-#import <RestKit/Network/RKObjectManager.h>
+#import "RKObjectManager.h"
 #import "NSObject+HTModel.h"
-#import <Core/HTModelProtocol.h>
+#import "HTModelProtocol.h"
 
 @interface HTAutoBaseRequest () <HTModelProtocol>
 
@@ -83,7 +83,7 @@
 
 - (void)customRequest:(NSMutableURLRequest *)request {
     if (nil == _customRequestBlock) {
-        return [self customRequest:request];
+        return [super customRequest:request];
     }
     
     __weak HTAutoBaseRequest *weakSelf = self;
@@ -114,6 +114,20 @@
 // 该方法的实现允许Request子类将子类的属性转换成为JSON对象或者JSON字符串.
 + (NSArray *)modelPropertyBlacklist {
     return [[[HTAutoBaseRequest class] ht_allPropertyInfoDic] allKeys];
+}
+
+#pragma mark - Handle Invalid Request Url
+
++ (NSString *)requestFullPath {
+    NSString *baseUrl = [self baseUrl];
+    NSString *requestUrl = [self requestUrl];
+    NSInteger index = [requestUrl rangeOfString:@"?"].location;
+    if (index > 0) {
+        requestUrl = [requestUrl substringToIndex:index];
+    }
+    
+    NSString *path = [baseUrl length] > 0 ? [NSString stringWithFormat:@"%@%@", baseUrl, requestUrl] : requestUrl;
+    return [path stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
 }
 
 @end

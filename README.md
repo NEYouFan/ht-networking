@@ -99,6 +99,10 @@ HTNetworking
 
 1. 在Podfile中添加 `pod 'HTNetworking'`
 2. 执行`pod install`或`pod update`
+
+说明：  
+
+当前支持CocoaPods 0.38, CocoaPods 0.39以及CocoaPods 1.0等版本，但暂不支持`!use_framework`的方式使用。
 	
 系统要求
 ---

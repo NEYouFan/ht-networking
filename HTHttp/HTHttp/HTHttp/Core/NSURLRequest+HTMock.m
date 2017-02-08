@@ -6,7 +6,7 @@
 //
 //
 
-#import <Core/NSURLRequest+HTMock.h>
+#import "NSURLRequest+HTMock.h"
 #import <objc/runtime.h>
 
 static const void *keyHTMockResponseObject = &keyHTMockResponseObject;

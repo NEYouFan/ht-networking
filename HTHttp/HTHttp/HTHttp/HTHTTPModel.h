@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
-#import <Core/HTModelProtocol.h>
+#import "HTModelProtocol.h"
 
 @class RKMapping;
 

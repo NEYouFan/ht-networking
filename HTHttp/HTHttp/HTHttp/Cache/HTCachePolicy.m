@@ -11,6 +11,10 @@
 
 @implementation HTCachePolicy
 
++ (nullable NSCachedURLResponse *)willCacheResponse:(NSCachedURLResponse *)cachedResponse forRequest:(RKHTTPRequestOperation *)requestOperation {
+    return cachedResponse;
+}
+
 + (BOOL)hasCacheForRequest:(RKHTTPRequestOperation *)requestOperation {
     return NO;
 }

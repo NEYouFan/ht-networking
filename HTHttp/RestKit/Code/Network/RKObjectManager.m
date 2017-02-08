@@ -20,23 +20,23 @@
 //  Modified by (Netease)Wangliping on 12/10/15.
 //  Main Modification: Don't depend on AFNetworking directly any more.
 
-#import <RestKit/Network/RKObjectManager.h>
-#import <RestKit/Network/RKObjectParameterization.h>
-#import <RestKit/Network/RKObjectRequestOperation.h>
-#import <RestKit/Network/RKPaginator.h>
-#import <RestKit/Network/RKPathMatcher.h>
-#import <RestKit/Network/RKRequestDescriptor.h>
-#import <RestKit/Network/RKResponseDescriptor.h>
-#import <RestKit/Network/RKRoute.h>
-#import <RestKit/Network/RKRouteSet.h>
-#import <RestKit/Network/RKRouter.h>
-#import <RestKit/ObjectMapping/RKDynamicMapping.h>
-#import <RestKit/ObjectMapping/RKMappingErrors.h>
-#import <RestKit/ObjectMapping/RKRelationshipMapping.h>
-#import <RestKit/Support/RKDictionaryUtilities.h>
-#import <RestKit/Support/RKLog.h>
-#import <RestKit/Support/RKMIMETypeSerialization.h>
-#import <RestKit/Support/RKMIMETypes.h>
+#import "RKObjectManager.h"
+#import "RKObjectParameterization.h"
+#import "RKObjectRequestOperation.h"
+#import "RKPaginator.h"
+#import "RKPathMatcher.h"
+#import "RKRequestDescriptor.h"
+#import "RKResponseDescriptor.h"
+#import "RKRoute.h"
+#import "RKRouteSet.h"
+#import "RKRouter.h"
+#import "RKDynamicMapping.h"
+#import "RKMappingErrors.h"
+#import "RKRelationshipMapping.h"
+#import "RKDictionaryUtilities.h"
+#import "RKLog.h"
+#import "RKMIMETypeSerialization.h"
+#import "RKMIMETypes.h"
 #import <objc/runtime.h>
 
 #ifdef _COREDATADEFINES_H

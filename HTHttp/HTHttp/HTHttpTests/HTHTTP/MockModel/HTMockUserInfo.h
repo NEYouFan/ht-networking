@@ -13,7 +13,7 @@
 
 @property (nonatomic, copy) NSString *accessToken;
 @property (nonatomic, copy) NSString *userName;
-@property (nonatomic, copy) NSString *yunxinToken;
+@property (nonatomic, copy) NSString *testToken;
 @property (nonatomic, copy) NSString *refreshToken;
 @property (nonatomic, assign) BOOL admin;
 @property (nonatomic, assign) CGFloat expireIn;

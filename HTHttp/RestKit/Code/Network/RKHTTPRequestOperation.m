@@ -20,12 +20,14 @@
 //  Modified by (Netease)Wangliping on 12/15/15.
 //  Main Modification: RKHTTPRequestOperation does not derived from AFHTTPRequestOperation any more.
 
-#import <RestKit/Network/RKHTTPRequestOperation.h>
-#import <RestKit/Network/RKConcreteHTTPRequestOperation.h>
-#import <RestKit/Network/RKHTTPRequestOperationProtocol.h>
-#import <RestKit/Network/NSURLRequest+RKRequest.h>
-#import <RestKit/Network/RKRequestTypeOperation.h>
-#import <RestKit/Support/RKLog.h>
+#import "RKHTTPRequestOperation.h"
+#import "RKHTTPRequestOperationProtocol.h"
+#import "NSURLRequest+RKRequest.h"
+#import "RKRequestTypeOperation.h"
+#import "RKRequestTypes.h"
+#import "RKConcreteHTTPRequestOperation.h"
+#import "RKLog.h"
+
 
 // Notification Definition converted from AFNetworkingOperationDidStartNotification.
 NSString *const RKHTTPRequestOperationDidStartNotification = @"RKHTTPRequestOperationDidStartNotification";
@@ -125,7 +127,9 @@ NSString *const RKHTTPRequestOperationDidFinishNotification = @"RKHTTPRequestOpe
 }
 
 - (void)waitUntilFinished {
-    return [self.httpRequestOperation waitUntilFinished];
+    if ([self.httpRequestOperation respondsToSelector:@selector(waitUntilFinished)]) {
+        [self.httpRequestOperation waitUntilFinished];
+    }
 }
 
 - (void)cancel {

@@ -8,8 +8,8 @@
 
 #import "HTCustomCachePolicy.h"
 #import "HTNetworking.h"
-#import <HTNetworking/Cache/HTCachedResponse.h>
-#import <HTNetworking/Support/HTHTTPDate.h>
+#import "HTCachedResponse.h"
+#import "HTHTTPDate.h"
 
 @implementation HTCustomCachePolicy
 

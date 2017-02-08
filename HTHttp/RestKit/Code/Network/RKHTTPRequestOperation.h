@@ -20,7 +20,7 @@
 //  Modified by (Netease)Wangliping on 12/15/15.
 //  Main Modification: RKHTTPRequestOperation does not derived from AFHTTPRequestOperation any more.
 
-#import <RestKit/Network/RKRequestProvider.h>
+#import "RKRequestProvider.h"
 
 /**
 

@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-#import <RestKit/ObjectMapping/RKObjectUtilities.h>
+#import "RKObjectUtilities.h"
 #import <objc/message.h>
 #import <objc/runtime.h>
 

@@ -20,10 +20,10 @@
 //  Modified by (Netease)Wangliping on 11/09/15.
 //  Main Modification: Continue object mapping even if the request has different base url from RKObjectManager.
 
-#import <RestKit/Network/RKPathMatcher.h>
-#import <RestKit/Network/RKResponseDescriptor.h>
-#import <RestKit/ObjectMapping/RKHTTPUtilities.h>
-#import <RestKit/ObjectMapping/RKMapping.h>
+#import "RKPathMatcher.h"
+#import "RKResponseDescriptor.h"
+#import "RKHTTPUtilities.h"
+#import "RKMapping.h"
 
 // Cloned from AFStringFromIndexSet -- method should be non-static for reuse
 NSString *RKStringFromIndexSet(NSIndexSet *indexSet);

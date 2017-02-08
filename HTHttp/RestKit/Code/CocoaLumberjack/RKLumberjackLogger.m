@@ -8,7 +8,14 @@
 
 #if __has_include(<CocoaLumberjack/CocoaLumberjack.h>)
 #import <CocoaLumberjack/CocoaLumberjack.h>
-#import <RestKit/CocoaLumberjack/RKLumberjackLogger.h>
+#import "RKLumberjackLogger.h"
+
+/**
+ * Whether async should be used by log messages, excluding error messages that are always sent sync.
+ **/
+#ifndef LOG_ASYNC_ENABLED
+#define LOG_ASYNC_ENABLED YES
+#endif
 
 @implementation RKLumberjackLogger
 
@@ -72,8 +79,9 @@
     // LWANG Comment: 日志等级开关是在_RKlcl_component_level中. 调用者传递的level只控制flag.
     // 与HTLog对应的是: RKLogInfo这里面传递的level对应的是HTLog的flag; 而_RKlcl_component_level对应的是level.
     DDLogLevel componentLevel = [self ddLogLevelFromRKLogLevel:_RKlcl_component_level[component]];
+    
     BOOL async = LOG_ASYNC_ENABLED && ((flag & DDLogFlagError) == 0);
-
+    
     [DDLog log:async
          level:componentLevel
           flag:flag
@@ -88,7 +96,7 @@
 
 /* Create a DDRegisteredDynamicLogging class for each RestKit component */
 
-#import <RestKit/Support/lcl_config_components_RK.h>
+#import "lcl_config_components_RK.h"
 
 #undef   _RKlcl_component
 #define  _RKlcl_component(_identifier, _header, _name)                                       \

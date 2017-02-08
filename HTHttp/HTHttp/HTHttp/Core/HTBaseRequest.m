@@ -54,6 +54,13 @@ static const NSTimeInterval kHTDefaultTimeInterval = 60;
     }
 }
 
+- (instancetype)init{
+    if (self = [super init]) {
+        self.enableMock = YES;
+    }
+    return self;
+}
+
 #pragma mark - Basic Configuration
 
 + (RKRequestMethod)requestMethod {
@@ -74,6 +81,10 @@ static const NSTimeInterval kHTDefaultTimeInterval = 60;
 }
 
 - (NSDictionary *)requestParams {
+    return nil;
+}
+
+- (NSString *)urlQueryParamString {
     return nil;
 }
 
@@ -261,10 +272,8 @@ static const NSTimeInterval kHTDefaultTimeInterval = 60;
 }
 
 - (NSString *)defaultMockJsonFilePath {
-    NSString *method = [RKStringFromRequestMethod([[self class] requestMethod]) lowercaseString];
-    NSString *requestUrl = [[self class] requestUrl];
-    NSString *requestUrlToName = [requestUrl stringByReplacingOccurrencesOfString:@"/" withString:@"_"];
-    NSString *jsonFileName = [NSString stringWithFormat:@"%@%@", method, requestUrlToName];
+    NSString * classString = NSStringFromClass([self class]);
+    NSString * jsonFileName = [classString substringWithRange:NSMakeRange(0, [classString length] - 7)];
     return [[NSBundle mainBundle] pathForResource:jsonFileName ofType:@"json"];
 }
 
@@ -460,7 +469,7 @@ static const NSTimeInterval kHTDefaultTimeInterval = 60;
 
 - (RKObjectRequestOperation *)buildCustomRequestOperationWithManager:(RKObjectManager *)manager {
     RKRequestMethod requestMethod = [[self class] requestMethod];
-    NSString *path = [[self class] requestFullPath];
+    NSString *path = [self buildRequestFullPath];
     NSDictionary *params = [self requestParams];
     HTConstructingMultipartFormBlock block = [self constructingBodyBlock];
     NSURLRequest *originRequest = nil;
@@ -477,7 +486,7 @@ static const NSTimeInterval kHTDefaultTimeInterval = 60;
 
 - (RKObjectRequestOperation *)buildRequestOperationWithManager:(RKObjectManager *)manager {
     RKRequestMethod requestMethod = [[self class] requestMethod];
-    NSString *path = [[self class] requestFullPath];
+    NSString *path = [self buildRequestFullPath];
     NSDictionary *params = [self requestParams];
     return [manager appropriateObjectRequestOperationWithObject:nil method:requestMethod path:path parameters:params];
 }
@@ -501,7 +510,18 @@ static const NSTimeInterval kHTDefaultTimeInterval = 60;
     NSString *baseUrl = [self baseUrl];
     NSString *requestUrl = [self requestUrl];
     NSString *path = [baseUrl length] > 0 ? [NSString stringWithFormat:@"%@%@", baseUrl, requestUrl] : requestUrl;
-    return path;
+    return [path stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+}
+
+- (NSString *)buildRequestFullPath {
+    NSString *requestFullPath = [[self class] requestFullPath];
+    NSString *urlQueryParamString = [self urlQueryParamString];
+    if ([urlQueryParamString length] > 0) {
+        NSAssert([[self class] requestMethod] != RKRequestMethodGET, @"GET请求的参数应该直接放在request url中");
+        requestFullPath = [NSString stringWithFormat:@"%@?%@", requestFullPath, urlQueryParamString];
+    }
+    
+    return requestFullPath;
 }
 
 @end
